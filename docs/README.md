@@ -9,7 +9,7 @@
 
 Is life too easy for your D&D 5e players? Want to add some _immersive_ rpg mechanics to your campaigns? Then try **Giffyglyph's Darker Dungeons**—200+ pages of modular rules, advice, templates, and character sheets compatible with any 5e game. Create a dark and dangerous world!
 
-* [Read the Latest PDF (v4.0.0)](https://github.com/giffyglyph/giffyglyphs-darker-dungeons/raw/master/releases/giffyglyphs_darker_dungeons_v4_0_0.pdf)
+* [Read the Latest PDF (v4.0.0)](https://github.com/giffyglyph/giffyglyphs-darker-dungeons/releases/download/v4.0.0/giffyglyphs_darker_dungeons_v4_0_0.pdf)
 * [Read the Changelog](https://github.com/giffyglyph/giffyglyphs-darker-dungeons/blob/master/docs/CHANGELOG.md) 
 
 ## Features
