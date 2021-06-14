@@ -1,0 +1,64 @@
+// Styles for potions chapters.
+
+.page--potions {
+
+	.table--potions {
+		@include table-column(1, center, 13%);
+		@include table-column(2, center, 29%);
+		@include table-column(3, center, 29%);
+		@include table-column(4, center, 29%);
+	}
+
+	.tables--potion-identify .table {
+		@include table-column(1, left, 70%);
+		@include table-column(2, center, 30%);
+	}
+
+	.table--consumables {
+		@include table-column(1, left, 24%);
+		@include table-column(2, left, 76%);
+	}
+
+	.table--toxicity {
+		@include table-column(1, center, 12%);
+		@include table-column(2, left, 88%);
+	}
+
+	.table--potion-healing,
+	.table--potion-stamina,
+	.table--potion-recovery,
+	.table--potion-respite,
+	.table--potion-spellpower {
+		@include table-column(1, left, 20%);
+		@include table-column(2, left, 25%);
+		@include table-column(3, left, 55%);
+	}
+
+	.table--potion-recipes {
+		@include table-column(1, left, 30%);
+		@include table-column(2, left, 30%);
+		@include table-column(3, left, 40%);
+	}
+
+	.table--material-quality {
+		@include table-column(1, left, 30%);
+		@include table-column(2, left, 35%);
+		@include table-column(3, left, 35%);
+	}
+
+	.tables--potion-costs {
+		@include table-column(1, left, 60%);
+		@include table-column(2, right, 40%);
+	}
+
+	.table--potion-availability {
+		@include table-column(1, left, 40%);
+		@include table-column(2, center, 20%);
+		@include table-column(3, center, 20%);
+		@include table-column(4, center, 20%);
+
+		thead tr:first-of-type th:last-of-type {
+			width: 60%;
+		}
+	}
+}

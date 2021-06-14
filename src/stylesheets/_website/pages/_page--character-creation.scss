@@ -1,0 +1,88 @@
+// Styles for character creation pages.
+
+.page--character-creation {
+
+	.tables--race,
+	.tables--background,
+	.tables--class {
+
+		.table {
+			@include table-column(1, center, 5rem);
+		}
+	}
+
+	.table--subrace,
+	.table--class-specialisation {
+		@include table-column-align(1, left);
+		@include table-column(2, center, 5rem);
+		@include table-column-align(3, left);
+		@include table-column(4, center, 5rem);
+		@include table-column-align(5, left);
+
+		tr.rowspan-child {
+			@include table-column(1, center, 5rem);
+			@include table-column-align(2, left);
+			@include table-column(3, center, 5rem);
+			@include table-column-align(4, left);
+		}
+	}
+
+	.tables--ability-scores .table {
+		@include table-column(1, center, 5rem);
+		@include table-column(2, center, 50%);
+	}
+
+	.table--character-age,
+	.table--character-height,
+	.table--character-weight,
+	.table--character-family,
+	.table--character-parents,
+	.table--character-feature,
+	.table--habit {
+		@include table-column(1, center, 5rem);
+	}
+
+	.table--memories,
+	.table--motivation {
+		@include table-column(1, center, 5rem);
+	}
+
+	.table--quest {
+		@include table-column(1, center, 5rem);
+	}
+
+	.table--wealth {
+		@include table-column(1, left, 20%);
+		@include table-column(2, center, 20%);
+		@include table-column(3, center, 20%);
+		@include table-column(4, center, 20%);
+		@include table-column(5, center, 20%);
+	}
+
+	.panel--character-creation-viridian {
+
+		.abilities {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-column-gap: 0.25rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+
+			.ability {
+				background: #e2dcca;
+				border-radius: 0.5rem;
+				text-align: center;
+				padding: 0.5rem 0;
+			}
+
+			.ability__name,
+			.ability__value {
+				display: block;
+			}
+
+			.ability__name {
+				font-weight: bold;
+			}
+		}
+	}
+}

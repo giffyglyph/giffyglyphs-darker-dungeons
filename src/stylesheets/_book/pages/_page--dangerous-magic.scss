@@ -1,0 +1,53 @@
+// Styles for dangerous magic pages.
+
+.page--dangerous-magic {
+
+	.table--miscasting-consequences {
+		@include table-column(1, center, 2.55rem);
+	}
+
+	.table--burnout-reasons {
+		@include table-column(1, center, 12%);
+		@include table-column-align(2, left);
+	}
+
+	.tables--burnout-risk .table {
+		@include table-column(1, center, 50%);
+		@include table-column(2, center, 50%);
+	}
+
+	.table--miscast-modifiers {
+		@include table-column(1, center, 18%);
+		@include table-column(2, left, 18%);
+		@include table-column(3, left, 64%);
+	}
+
+	.tables--miscasting-consequences-variant .table {
+		@include table-column(1, center, 14%);
+		@include table-column(2, left, 43%);
+		@include table-column(3, left, 43%);
+
+		td:nth-child(2),
+		td:nth-child(3) {
+			padding-right: 2px;
+		}
+	}
+
+	.table--item-mana-potion {
+		@include table-column(1, left, 25%);
+		@include table-column(2, left, 25%);
+		@include table-column(3, left, 25%);
+		@include table-column(4, right, 25%);
+	}
+
+	.table--spellcaster-ranks {
+		@include table-column(1, left, 24%);
+		@include table-column(2, left, 57%);
+		@include table-column(3, center, 19%);
+
+		th:nth-child(3) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}

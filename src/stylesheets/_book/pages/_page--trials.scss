@@ -1,0 +1,83 @@
+// Styles for trials chapters.
+
+.page--trials {
+
+  .table--trial-check-results {
+    @include table-column(1, center, 25%);
+    @include table-column(2, left, 75%);
+
+    ol {
+      margin-top: 0;
+    }
+  }
+
+  .table--task-types {
+    @include table-column(1, left, 23%);
+    @include table-column(2, left, 77%);
+  }
+
+	.tables--trial-difficulty .table {
+		@include table-column(1, left, 58%);
+		@include table-column(2, center, 42%);
+  }
+
+  .tables--trial-pacing .table {
+		@include table-column(1, left, 43%);
+		@include table-column(2, left, 57%);
+  }
+  
+  .tables--trial-complexity .table {
+    @include table-column(1, left, 58%);
+    @include table-column(2, center, 42%);
+  }
+
+  .example--creating-tasks {
+
+    ol p + p {
+      text-indent: 0;
+    }
+  }
+
+  .table--chances {
+    @include table-column(1, center, 16%);
+    @include table-column(2, center, 14%);
+    @include table-column(3, center, 14%);
+    @include table-column(4, center, 14%);
+    @include table-column(5, center, 14%);
+    @include table-column(6, center, 14%);
+    @include table-column(7, center, 14%);
+
+    thead tr:first-of-type th:last-of-type {
+			width: 84%;
+    }
+    
+    thead tr:last-of-type th {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .table--chances-dc {
+    @include table-column(1, center, 25%);
+    @include table-column(2, center, 25%);
+    @include table-column(3, center, 25%);
+    @include table-column(4, center, 25%);
+    
+
+    thead tr:first-of-type th:last-of-type {
+			width: 75%;
+    }
+  }
+
+  .table--spellpower {
+    @include table-column(1, center, 25%);
+    @include table-column(2, center, 25%);
+    @include table-column(3, center, 25%);
+    @include table-column(4, center, 25%);
+    
+
+    thead tr:first-of-type th:last-of-type {
+			width: 75%;
+    }
+  }
+}

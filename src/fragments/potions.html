@@ -1,0 +1,870 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--potions" data-header-icon="potion-vial">
+				<h1 id="potions">Potions</h1>
+				<p>Magic permeates the world—it's in the air you breathe, the food you eat, and the liquids you drink. With carefully craft and preparation, this magic can be harnessed to create powerful consumables that help—or hinder—your adventures.</p>
+				<p>This chapter introduces seven consumable potions, their magical properties, and how you can interact with them in your game.</p>
+
+				<h2>Magical Potions</h2>
+				<p>A potion is a magically-infused liquid that bestows an effect on your character when consumed—health restoration, damage resistance, recovered spellpower, additional strength, etc.</p>
+				<p>Potions can vary greatly in appearance, texture, and taste depending on their recipe and maker. Use the <i>Potion Description</i> table below to determine the overall appearance of your potion—or use your own description.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion Description</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--potions">
+							<thead>
+								<tr>
+									<th>d12</th>
+									<th>Texture</th>
+									<th>Color</th>
+									<th>Taste/Smell</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Thin</td>
+									<td>Blue</td>
+									<td>Citrus</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Thick</td>
+									<td>Red</td>
+									<td>Sweet</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Bubbly</td>
+									<td>Yellow</td>
+									<td>Sour</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Fizzy</td>
+									<td>Silver</td>
+									<td>Bitter</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Jelly</td>
+									<td>Gold</td>
+									<td>Salty</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Chunky</td>
+									<td>Purple</td>
+									<td>Savory</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Watery</td>
+									<td>Orange</td>
+									<td>Spicy</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>Oily</td>
+									<td>Green</td>
+									<td>Foul</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>Slimy</td>
+									<td>Brown</td>
+									<td>Delicious</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>Crunchy</td>
+									<td>Black</td>
+									<td>Sickening</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>Chewy</td>
+									<td>White</td>
+									<td>Tangy</td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>Moving</td>
+									<td>Teal</td>
+									<td>Familiar</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<col-break></col-break>
+
+				<h3>Drinking a Potion</h3>
+				<p>Drinking a potion requires you to spend a bonus action. Alternatively, to feed a potion to someone else, you must spend an action. You must have at least one free hand to perform either of these actions.</p>
+
+				<h3>Identifying a Potion</h3>
+				<p>Not all magic potions look alike—even a simple healing potion can vary wildly in appearance depending on who made it and which recipe was used.</p>
+				<p>During a short rest, you can attempt to identify one unidentified potion by making an <i>Arcana</i> knowledge check with an alchemist's kit—base the DC against it's rarity.</p>
+
+				<ul>
+					<li><strong>Success:</strong> You learn the true name of the potion.</li>
+					<li><strong>Fail:</strong> You know if the potion is at least safe to drink.</li>
+					<li><strong>Critical Fail (10 or more):</strong> You (unknowingly) learn a false or misleading name of the potion.</li>
+				</ul>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion Identification DC</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--columns-3 tables--potion-identify">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Rarity</th>
+										<th>DC</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Common</td>
+										<td>10</td>
+									</tr>
+									<tr>
+										<td>Uncommon</td>
+										<td>15</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Rarity</th>
+										<th>DC</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Rare</td>
+										<td>20</td>
+									</tr>
+									<tr>
+										<td>Very rare</td>
+										<td>25</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Rarity</th>
+										<th>DC</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Legendary</td>
+										<td>30</td>
+									</tr>
+									<tr class="empty">
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>While exploring the Nightglade, Chansi finds an unidentified potion—which the GM knows to be a rare <i>Potion of Heroism</i>. During the next short rest, she attempts to identify it with her alchemist's kit—rolling 13 against a secret DC of 20.</p>
+						<p>She isn't able to discover exactly what the potion is, but she at least learns that it's safe to drink.</p>
+					</section>
+				</example>
+			</page>
+			<page class="page page--generic page--potions">
+				<h2>Consumables</h2>
+				<p>An adventurer can always find room for a potion or two. If your campaign setting allows it, you may loot, buy, or craft some of these special potions for your adventures—including the seven basic potions listed below.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Consumables</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--consumables">
+							<thead>
+								<tr>
+									<th>Potion</th>
+									<th>Effect</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Healing</td>
+									<td>Regain expended hit points.</td>
+								</tr>
+								<tr>
+									<td>Luck</td>
+									<td>Gain 3 inspiration points.</td>
+								</tr>
+								<tr>
+									<td>Recovery</td>
+									<td>Regain expended hit dice.</td>
+								</tr>
+								<tr>
+									<td>Respite</td>
+									<td>Gain temporary hit points.</td>
+								</tr>
+								<tr>
+									<td>Restoration</td>
+									<td>Regain one expended class or racial feature.</td>
+								</tr>
+								<tr>
+									<td>Spellpower</td>
+									<td>Spend a hit die to recover a spell slot.</td>
+								</tr>
+								<tr>
+									<td>Stamina</td>
+									<td>Ignore some exhaustion for one hour.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Krazak squinted at the label on the glass bottle. "Recovery, eh? Perfect—just what the cleric ordered."</p>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">A</span>Potion of Healing</h3>
+				<p>Healing potions are an adventurer's best friend, bringing many a hero back from certain death.</p>
+				<p>When you drink a healing potion, you gain a number of hit points based on the size of your most common hit die. If you don't have a hit die value for any reason, roll a d4.</p>
+				<p><strong>Multiclassing:</strong> If you are multiclassed and have hit dice of varying sizes, use the hit die value of whichever class you have the most levels in. On a tie, choose the highest.</p>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion of Healing</h4>
+						<ul class="panel__tags">
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This red potion feels strangely warm to the touch. It tastes of cinnamon and orange.</p>
+						<p>When you drink this potion, you instantly recover some hit points without needing to spend any hit dice—the better the quality, the more hit points you are able to restore.</p>
+						<div class="panel__table-wrapper">
+							<table class="table table--potion-healing">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Rarity</th>
+										<th>Recovery</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lesser</td>
+										<td>Common</td>
+										<td>Regain [2 × hit die] + 2 hp</td>
+									</tr>
+									<tr>
+										<td>Greater</td>
+										<td>Uncommon</td>
+										<td>Regain [4 × hit die] + 4 hp</td>
+									</tr>
+									<tr>
+										<td>Superior</td>
+										<td>Rare</td>
+										<td>Regain [6 × hit die] + 8 hp</td>
+									</tr>
+									<tr>
+										<td>Supreme</td>
+										<td>Very rare</td>
+										<td>Regain [8 × hit die] + 16 hp</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</item>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Krazak, a barbarian, drinks a greater healing potion with his bonus action. Using his hit die value (d12), he rolls 4d12 + 4 to see how many hit points he recovers.</p>
+						<p>Viridian, a 3rd-level Bard / 1st-level Fighter, has 3d8 and 1d10 hit dice. When he drinks a lesser healing potion, he refers to his most common hit die size (d8) and rolls 2d8 + 2.</p>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<h3><span class="h3__highlight">B</span>Potion of Luck</h3>
+				<p>Sometimes, the only thing standing between life and death is one lucky roll of the dice. With a luck potion, you can twist fortune in your favor—a precious boon for adventurers and gamblers alike.</p>
+				<p>When you drink a luck potion, you instantly gain 3 points of inspiration. You can't exceed your maximum number of inspiration points in this way.</p>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion of Luck</h4>
+						<ul class="panel__tags">
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This rare, golden potion tastes like metal and sticks to your teeth for an hour, giving them a slightly golden sheen.</p>
+						<p>When you drink this potion, you instantly gain 3 points of inspiration (up to your maximum).</p>
+					</section>
+				</item>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Viridian sat down at the crowded card table and grinned cheerfully. "Deal me in, gentlemen. I'm feeling <i>extra</i> lucky today."</p>
+						<p>The thugs stared at him in dumbfounded silence, until Fander Welt—leader of the Brass Knuckles gang—leaned forward with a grin of his own.</p>
+						<p>"Nice teeth, <i>goldie</i>," said Fander with a knowing sneer. "Been drinkin' some liquid luck, 'ave we?"</p>
+						<p>Viridian stopped grinning—damn it, he'd been showboating again. "Uh... would you believe that they're <i>naturally</i> gold?"</p>
+						<p>"Nope," said Fander curtly. "C'mon boys, let's put his luck to the test." Chairs scraped loudly as the thugs stood up, fists clenched in anticipation...</p>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">C</span>Potion of Recovery</h3>
+				<p>Hit dice are highly prized by adventurers—the more you have, the faster you can recover from lasting harm.</p>
+				<p>When you drink a recovery potion, you regain a number of expended hit dice. If you have multiple sizes of hit die—such as from multiclassing—you may choose which expended dice you recover.</p>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion of Recovery</h4>
+						<ul class="panel__tags">
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This watery, green potion smells of freshly cut grass. If left in natural sunlight, it spoils after one hour.</p>
+						<p>You instantly recover a number of expended hit dice when you drink this potion—the better the quality, the more hit dice you recover. You may choose which of your hit dice are restored.</p>
+						<div class="panel__table-wrapper">
+							<table class="table table--potion-recovery">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Rarity</th>
+										<th>Effect</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lesser</td>
+										<td>Common</td>
+										<td>Recover 2 expended hit dice</td>
+									</tr>
+									<tr>
+										<td>Greater</td>
+										<td>Uncommon</td>
+										<td>Recover 4 expended hit dice</td>
+									</tr>
+									<tr>
+										<td>Superior</td>
+										<td>Rare</td>
+										<td>Recover 6 expended hit dice</td>
+									</tr>
+									<tr>
+										<td>Supreme</td>
+										<td>Very rare</td>
+										<td>Recover 8 expended hit dice</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</item>
+			</page>
+			<page class="page page--generic page--potions">
+				<!-- <aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4>Exhaustion and Stamina</h4>
+					</header>
+					<section class="panel__body">
+						<p>Stamina potions can be a fun addition to your game if exhaustion is a common threat for your players, but if exhaustion is rarely used—or has little risk—stamina potions won't be of much interest.</p>
+					</section>
+				</aside> -->
+
+				<h3><span class="h3__highlight">D</span>Potion of Respite</h3>
+				<p>When you know you're heading into a dangerous situation, a prepared adventurer makes sure to stock up on protection beforehand.</p>
+				<p>When you drink a respite potion, you may either a) spend one hit die or b) gain a level of exhaustion to gain a number of temporary hit points based on the size of your most common hit die.</p>
+				<p>Temporary hit points don't stack, and any unused points expire when you finish a long rest.</p>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion of Respite</h4>
+						<ul class="panel__tags">
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This oily-grey potion sparkles with motes of iron. When you drink it, you feel like you could take on the world.</p>
+						<p>When you drink this potion, you may either a) expend one hit die or b) gain a level of exhaustion to gain a number of temporary hit points—the better the quality of the potion, the more temporary hit points you gain.</p>
+						<div class="panel__table-wrapper">
+							<table class="table table--potion-respite">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Rarity</th>
+										<th>Effect</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lesser</td>
+										<td>Common</td>
+										<td>Gain [1 × hit die] + 1 thp</td>
+									</tr>
+									<tr>
+										<td>Greater</td>
+										<td>Uncommon</td>
+										<td>Gain [2 × hit die] + 2 thp</td>
+									</tr>
+									<tr>
+										<td>Superior</td>
+										<td>Rare</td>
+										<td>Gain [3 × hit die] + 4 thp</td>
+									</tr>
+									<tr>
+										<td>Supreme</td>
+										<td>Very rare</td>
+										<td>Gain [4 × hit die] + 8 thp</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</item>
+
+				<h3><span class="h3__highlight">E</span>Potion of Restoration</h3>
+				<p>In a desperate pinch, when all seems lost, a potion of restoration can turn the tide. These legendary potions are said to contain fragments of compressed time, allowing your body to recover some instant power.</p>
+				<p>When you drink a restoration potion, you may either a) expend one hit die or b) gain a level of exhaustion to recover one expended class or racial feature of your choosing. This feature must normally recharge during a short or long rest.</p>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion of Restoration</h4>
+						<ul class="panel__tags">
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This <i>very rare</i> potion glistens with a myriad of rainbow colors. When you hold it, the flow of time feels strange.</p>
+						<p>When you drink this potion, you may either a) expend one hit die or b) gain a level of exhaustion to regain one expended class or racial feature of your choosing.</p>
+					</section>
+				</item>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Reynis was exhausted. She'd burned through her primal power already, exhausting all of her wild shapes, and yet the undead horde was relentless. Her druidic strength was all gone. Or was it...?</p>
+						<p>Reynis quickly drank her restoration potion, and—as time compressed around her for one split second—instantly felt her wild shapes restored. She grinned, teeth lengthening as she began to shapeshift...</p>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<h3><span class="h3__highlight">F</span>Potion of Stamina</h3>
+				<p>Stamina potions grant a small burst of energy to those suffering from exhaustion—a potential life-saver on long, dangerous journeys far from a safe resting place.</p>
+				<p>When you drink a stamina potion, you can ignore a small amount of exhaustion for one hour. This energy boost is short-lived, however—your exhaustion will return in full strength once the potion wears off.</p>
+				<p><strong>Exhaustion Limits:</strong> Your total level of exhaustion can't go lower than 0, nor higher than 6, as per normal.</p>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion of Stamina</h4>
+						<ul class="panel__tags">
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This cold, black potion tastes strongly of old coffee and sour milk. It fizzes when shaken.</p>
+						<p>You may ignore the effects of some exhaustion for up to one hour when you drink this potion.</p>
+						<div class="panel__table-wrapper">
+							<table class="table table--potion-stamina">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Rarity</th>
+										<th>Effect (1 hour)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lesser</td>
+										<td>Common</td>
+										<td>−1 exhaustion</td>
+									</tr>
+									<tr>
+										<td>Greater</td>
+										<td>Uncommon</td>
+										<td>−2 exhaustion</td>
+									</tr>
+									<tr>
+										<td>Superior</td>
+										<td>Rare</td>
+										<td>−4 exhaustion</td>
+									</tr>
+									<tr>
+										<td>Supreme</td>
+										<td>Very rare</td>
+										<td>Ignore all exhaustion</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</item>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Chansi suffers from two levels of exhaustion, causing disadvantage on ability checks <i>and</i> halving her speed.</p>
+						<p>As a bonus action, she drinks a lesser stamina potion. For the next hour, she ignores one level of exhaustion—her exhaustion drops from 2 to 1, removing the half-speed penalty. Once the potion wears off, her exhaustion goes back up to 2.</p>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">G</span>Potion of Spellpower</h3>
+				<p>Spellpower potions infuse your body with a sudden burst of magical power—but at the cost of some stamina.</p>
+				<p>When you drink a spellpower potion, you may either a) spend one hit die or b) gain a level of exhaustion to regain an expended spell slot of your choosing.</p>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion of Spellpower</h4>
+						<ul class="panel__tags">
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This glowing, blue potion glistens with tiny crystalline fragments. It tastes of lightning and glass.</p>
+						<p>When you drink this potion, you may expend one hit die and regain one expended spell slot of your choosing—the better the quality, the higher the maximum spell slot level.</p>
+						<div class="panel__table-wrapper">
+							<table class="table table--potion-spellpower">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Rarity</th>
+										<th>Max. Spell Slot</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lesser</td>
+										<td>Common</td>
+										<td>1st-level</td>
+									</tr>
+									<tr>
+										<td>Greater</td>
+										<td>Uncommon</td>
+										<td>2nd-level</td>
+									</tr>
+									<tr>
+										<td>Superior</td>
+										<td>Rare</td>
+										<td>3rd-level</td>
+									</tr>
+									<tr>
+										<td>Supreme</td>
+										<td>Very rare</td>
+										<td>5th-level</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</item>
+			</page>
+			<page class="page page--generic page--potions">
+				<h2>Brewing a Potion</h2>
+				<p>If you are proficient with both a) arcana and b) an alchemist's kit, you can brew magical potions. There are three steps to follow:</p>
+
+				<h3><span class="h3__highlight">1</span>Pick a Potion</h4>
+				<p>First, you must decide which potion you want to craft. A potion has two major components: a <i>gemstone</i> and a <i>crafting material</i>—the recipe will tell you which types are needed for your brew.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion Recipes</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--potion-recipes">
+							<thead>
+								<tr>
+									<th>Potion</th>
+									<th>Gemstone</th>
+									<th>Material</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Healing</td>
+									<td>Diamond</td>
+									<td>Flesh, radiant</td>
+								</tr>
+								<tr>
+									<td>Luck</td>
+									<td>Amethyst</td>
+									<td>Metal, psychic</td>
+								</tr>
+								<tr>
+									<td>Recovery</td>
+									<td>Ruby</td>
+									<td>Plant, fire</td>
+								</tr>
+								<tr>
+									<td>Respite</td>
+									<td>Sapphire</td>
+									<td>Skin, water</td>
+								</tr>
+								<tr>
+									<td>Restoration</td>
+									<td>Aquamarine</td>
+									<td>Wood, force</td>
+								</tr>
+								<tr>
+									<td>Stamina</td>
+									<td>Topaz</td>
+									<td>Fluid, lightning</td>
+								</tr>
+								<tr>
+									<td>Spellpower</td>
+									<td>Quartz</td>
+									<td>Otherworldly, force</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h3><span class="h3__highlight">2</span>Get the Materials</h3>
+				<p>Next, you must acquire your gemstone and materials.</p>
+				<p><strong>Gemstone:</strong> Your gemstone must be both a) cut and b) of a certain quality depending on the rarity of your potion.</p>
+				<p><strong>Crafting material:</strong> The quality of your crafting material must be equal to or greater than the quality of your potion.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Material Quality</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--material-quality">
+							<thead>
+								<tr>
+									<th>Potion Rarity</th>
+									<th>Gemstone Quality</th>
+									<th>Material Quality</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Common</td>
+									<td>Clear</td>
+									<td>Common</td>
+								</tr>
+								<tr>
+									<td>Uncommon</td>
+									<td>Pristine</td>
+									<td>Uncommon</td>
+								</tr>
+								<tr>
+									<td>Rare</td>
+									<td>Royal</td>
+									<td>Rare</td>
+								</tr>
+								<tr>
+									<td>Very rare</td>
+									<td>Lucent</td>
+									<td>Very rare</td>
+								</tr>
+								<tr>
+									<td>Legendary</td>
+									<td>Astral</td>
+									<td>Legendary</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h3><span class="h3__highlight">3</span>Craft the Potion</h3>
+				<p>It takes 8 hours of work with an alchemist's kit to brew a potion. Once you have spent this time, roll to see if your efforts were successful.</p>
+				<p>Make an Intelligence (Arcana) check against the rarity of your potion: common (DC 10), uncommon (DC 15), rare (DC 20), very rare (DC 25), or legendary (DC 30).</p>
+
+				<ul>
+					<li><strong>Critical Success:</strong> Your potion was perfectly formed—you were able to create three vials of potion.</li>
+					<li><strong>Success:</strong> You were able to create two vials of potion.</li>
+					<li><strong>Failure:</strong> The mixture's gone bad and can't be used.</li>
+				</ul>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>While brewing a batch of lesser healing potion, Clanda has a critical success—she pours three separate vials.</p>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<h2>Variant Dials</h2>
+				<p>If you want to customize <i>Potions</i> to better fit your game, consider some of the following variant dials.</p>
+
+				<h3><span class="h3__highlight">A</span>Potion Toxicity</h3>
+				<p>If you want players to think more carefully about drinking a potion, consider using <i>Potion Toxicity</i>.</p>
+				<p>You may drink one potion per long rest without issue—for every additional potion, you risk suffering toxicity. After you consume a potion, roll a d6 on the <i>Potion Toxicity</i> table below to see if you suffer any side effects.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion Toxicity</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--toxicity">
+							<thead>
+								<tr>
+									<th>d6</th>
+									<th>Side-effect</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Gain a level of exhaustion.</td>
+								</tr>
+								<tr>
+									<td>2-3</td>
+									<td>Lose a hit die, or gain a level of exhaustion if you have no remaining hit die.</td>
+								</tr>
+								<tr>
+									<td>4-6</td>
+									<td>No side-effect.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h3><span class="h3__highlight">B</span>Hard Limit</h3>
+				<p>If you want to seriously restrict the use of potions in your game, consider using <i>Hard Limit</i>.</p>
+				<p>You may drink two potions per long rest without issue. If you drink an additional potion, it has no positive effect on you—negative effects, however, may still occur.</p>
+
+				<h3><span class="h3__highlight">C</span>Potion Seller</h3>
+				<p>If you want your players to be able to buy potions in your game, consider using <i>Potion Seller</i>.</p>
+				<p>When you want to buy a potion from a potion seller, you must first roll a d100 to see if it's available to buy—the bigger your settlement (village/town/city), the more likely it is that you can find someone who will sell your potion. Use the percentages listed in the <i>Potion Availability</i> table below as a guideline.</p>
+				<p>To buy a potion, use the costings below as a guide.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion Availability</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--potion-availability">
+							<thead>
+								<tr>
+									<th>Potion Rarity</th>
+									<th colspan="3"><span class="spacer">Settlement Size</span></th>
+								</tr>
+								<tr>
+									<th></th>
+									<th>Village</th>
+									<th>Town</th>
+									<th>City</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Common</td>
+									<td>30%</td>
+									<td>50%</td>
+									<td>70%</td>
+								</tr>
+								<tr>
+									<td>Uncommon</td>
+									<td>10%</td>
+									<td>30%</td>
+									<td>50%</td>
+								</tr>
+								<tr>
+									<td>Rare</td>
+									<td>1%</td>
+									<td>10%</td>
+									<td>30%</td>
+								</tr>
+								<tr>
+									<td>Very Rare</td>
+									<td><span class="empty">—</span></td>
+									<td>1%</td>
+									<td>10%</td>
+								</tr>
+								<tr>
+									<td>Legendary</td>
+									<td><span class="empty">—</span></td>
+									<td><span class="empty">—</span></td>
+									<td>1%</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion Costs</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--potion-costs">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Potion Rarity</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Common</td>
+										<td>50 gp</td>
+									</tr>
+									<tr>
+										<td>Uncommon</td>
+										<td>150 gp</td>
+									</tr>
+									<tr>
+										<td>Rare</td>
+										<td>450 gp.</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Potion Rarity</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Very Rare</td>
+										<td>1,350 gp</td>
+									</tr>
+									<tr>
+										<td>Legendary</td>
+										<td>4,050 gp</td>
+									</tr>
+									<tr>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+			</page>
+		</book>
+	</body>
+</html>

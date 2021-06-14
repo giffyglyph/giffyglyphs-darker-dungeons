@@ -1,0 +1,22 @@
+// Styles for active xp pages.
+
+.page--active-xp {
+
+	.tables--advancement .table {
+		@include table-column(1, center, 42%);
+		@include table-column(2, center, 58%);
+	}
+
+	.tables--experience-challenge .table,
+	.tables--treasure-challenge .table {
+		@include table-column(1, center, 40%);
+		@include table-column(2, center, 60%);
+	}
+
+	.table--relative-difficulty,
+	.table--threat {
+		@include table-column(1, left, 21%);
+		@include table-column(2, center, 18%);
+		@include table-column(3, left, 61%);
+	}
+}

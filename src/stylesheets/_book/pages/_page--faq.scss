@@ -1,0 +1,20 @@
+.page--faq {
+
+	.tables--usage-dice-uses .table {
+		@include table-column(1, center, 48%);
+		@include table-column(2, center, 52%);
+
+		th {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.button-group--links {
+		margin-bottom: 7.5px;
+
+		.button + * {
+			margin-top: 7.5px;
+		}
+	}
+}

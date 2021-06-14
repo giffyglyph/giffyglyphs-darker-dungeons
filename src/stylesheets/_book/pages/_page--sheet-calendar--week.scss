@@ -1,0 +1,65 @@
+// Styles for the calendar sheet (week).
+
+.page--calendar--week {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-rows: ($sheet-spacing * 10) auto;
+		grid-template-areas:
+			"header"
+			"week";
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.calendar-weeks > .box__body {
+		display: grid;
+		height: 100%;
+		grid-template-rows: auto 140px;
+		grid-template-areas:
+			"week"
+			"notes";
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.date {
+		border-bottom: 1px solid $sheet-bg-color;
+		text-align: left;
+		padding-left: 5px;
+		margin: 0;
+		line-height: 22px;
+	}
+
+	.layout--columns--2 {
+		column-rule-color: $box-line-color;
+	}
+
+	.table {
+
+		.day {
+			width: 7%;
+			text-align: center;
+
+			&.no-border {
+				border-bottom: 0;
+			}
+		}
+
+		.hour {
+			width: 6%;
+			text-align: center;
+		}
+
+		.event {
+			width: 67%;
+			text-align: left;
+			padding-left: 5px;
+		}
+
+		.xp {
+			width: 20%;
+			text-align: left;
+			padding-left: 5px;
+		}
+	}
+}

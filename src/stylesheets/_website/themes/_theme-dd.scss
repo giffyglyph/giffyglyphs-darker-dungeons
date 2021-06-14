@@ -1,0 +1,10 @@
+.page__header,
+.webpage__sidebar .block__list.block__list--collapsible .list__header[aria-expanded="true"],
+.webpage__sidebar .block__list.block__list--collapsible .list__body li a.selected i,
+.webpage__sidebar .block__list.block__list--collapsible .list__body li a.selected .index {
+  background: #1756a5;
+}
+
+.page__body h2 {
+  border-bottom-color: #1756a5;
+}

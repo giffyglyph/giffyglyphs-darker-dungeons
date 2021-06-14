@@ -1,0 +1,879 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--active-crafting" data-header-icon="stone-cutting">
+				<h1 id="active-crafting">Active Crafting</h1>
+				<p>To craft an item, you need three things: the right knowledge, the right tools and the right materials. But how do you know which materials to use for which recipe? And how do you gather them?</p>
+				<p>This chapter introduces <i>materials</i>, <i>recipes</i>, and <i>nodes</i>, and rules on how to use them in your campaign.</p>
+
+				<h2>Materials</h2>
+				<p>A <i>crafting material</i> is a generic resource that can be used in all forms of crafting—from brewing potions and forging weapons to building settlements. Materials are defined by three simple properties:</p>
+
+				<ol>
+					<li><strong>Rarity:</strong> How common is this material in the world? The rarer the material, the more difficult it is to find, gather, and collect.</li>
+					<li><strong>Substance:</strong> What is this material made of?</li>
+					<li><strong>Element:</strong> What magical properties—if any—can this material enhance? Most materials have an elemental affinity, even if they themselves are not magical.</li>
+				</ol>
+
+				<p>One "measure" of a material counts as a small item unless specified otherwise. Use the <i>Material Properties</i> table to create your own generic materials for your in-game crafting recipes.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>A GM introduces a new craftable item to their game—the <i>Sword of Elemental Rage</i>. This magic item requires the following materials:</p>
+						<ul>
+							<li>2 × Redsteel bar (common, metal, fire).</li>
+							<li>1 × Hellhound skin (uncommon, skin, fire).</li>
+							<li>1 × Flame elemental core (rare, stone, fire).</li>
+						</ul>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<h3>Swapping Materials</h3>
+				<p>When you craft an item from a recipe, you can oftentimes use a different set of materials to those listed—so long as the properties match. If you want to use materials with <i>differing</i> properties, the following applies:</p>
+
+				<ul>
+					<li><strong>Rarity:</strong> Materials you substitute must have an equal <i>or higher</i> rarity—you can't use materials of lesser rarity.</li>
+					<li><strong>Substance:</strong> You can change the substance of a material <i>if</i> it makes sense for the item and can be justified.</li>
+					<li><strong>Element:</strong> You can change the element of a material <i>if</i> it makes sense for the item and can be justified. If an item is strongly tied to an elemental theme, you may need to substitute the element of multiple materials.</li>
+				</ul>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Krazak has a salamander skin (rare, skin fire)—he can use this in place of hellhound skin.</p>
+						<p>Zane likes to use bone for his weapons—he replaces the redsteel bars with young red dragon bones (uncommon, bone, fire), crafting a bone sword instead of a steel sword.</p>
+						<p>Clanda wants to use a <i>lighting</i> elemental core (rare, stone, lightning) to craft a <i>sword of elemental shock</i>—however, she would also need to change the other materials to suit this new element.</p>
+					</section>
+				</example>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Material Names</h4>
+					</header>
+					<section class="panel__body">
+						<p>Material names can be entirely unique to your campaign and adventure—all you have to worry about <i>mechanically</i> are the material properties. Use names for <i>flavor</i> and let players contribute their own material ideas whenever possible—especially while harvesting materials from slain monsters.</p>
+					</section>
+				</aside>
+
+				<!-- <h2>Gathering</h2>
+				<p>You might not be able to buy all the materials you need—sometimes, you need to get your hands dirty. To gather a material yourself, there are two steps: locate and harvest.</p>
+
+				<h3><span class="h3__highlight">1</span>Locate</h3>
+				<p>First, you must find a source—a mine, a tree, a creature, etc. Rarer materials are harder to find—you must venture into dangerous lands and hunt challenging creatures.</p>
+
+				<h3><span class="h3__highlight">2</span>Harvest</h3>
+				<p>Once you've found a source, you can begin harvesting your material. It takes 1 hour to gather one measure of material, and you must use an appropriate tool for your the task—a pickaxe, a woodaxe, a skinning knife, etc.</p>
+				<p>At the end of this time, make an Intelligence (Nature) or Wisdom (Nature) check against the rarity of your material: common (DC 10), uncommon (DC 15), rare (DC 20), very rare (DC 25), or legendary (DC 30).</p>
+
+				<ol>
+					<li><strong>Critical Success:</strong> You gather two measures of material.</li>
+					<li><strong>Success:</strong> You gather one measure of material.</li>
+					<li><strong>Failure:</strong> You fail to gather anything.</li>
+				</ol>
+
+				<p>The GM will determine how many measures can be harvested from one source before it runs dry.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Zane wants to harvest some <i>very rare</i> toxin from a dead wyvern. After 1 hour, he makes an Intelligence (Nature) check (DC 25). He rolls 27 and gains 1 measure of wyvern toxin (very rare, fluid, necrotic).</p>
+					</section>
+				</example> -->
+			</page>
+			<page class="page page--generic page--columns-1 page--active-crafting">
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Material Properties</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--material-properties">
+							<thead>
+								<tr>
+									<th>d100</th>
+									<th>Type</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="header">
+									<td colspan="3"><span>Rarity</span></td>
+								</tr>
+								<tr>
+									<td>01-16</td>
+									<td>Common</td>
+									<td>You can find this almost anywhere in the world.</td>
+								</tr>
+								<tr>
+									<td>17-32</td>
+									<td>Uncommon</td>
+									<td>You can find this almost anywhere, but it's hard to gather or get access to.</td>
+								</tr>
+								<tr>
+									<td>33-48</td>
+									<td>Rare</td>
+									<td>This material is limited (by location, quantity, or time).</td>
+								</tr>
+								<tr>
+									<td>49-64</td>
+									<td>Very rare</td>
+									<td>This material is limited (by location, quantity, or time) <i>and</i> is hard to gather or get access to.</td>
+								</tr>
+								<tr>
+									<td>65-80</td>
+									<td>Legendary</td>
+									<td>A mythic material found in the most dangerous places of the world.</td>
+								</tr>
+								<tr>
+									<td>81-96</td>
+									<td>Unique</td>
+									<td>There is only one instance of this material in the world.</td>
+								</tr>
+								<tr class="header">
+									<td colspan="3"><span>Substance</span></td>
+								</tr>
+								<tr>
+									<td>01-07</td>
+									<td>Bone</td>
+									<td>Bone taken from a once-living creature.</td>
+								</tr>
+								<tr>
+									<td>08-14</td>
+									<td>Ceramic</td>
+									<td>A ceramic material—such as clay—commonly used to make earthenware, porcelain, and brick.</td>
+								</tr>
+								<tr>
+									<td>15-21</td>
+									<td>Fabric</td>
+									<td>A fabric material—such as wool, cotton, tweed, silk, etc.</td>
+								</tr>
+								<tr>
+									<td>22-28</td>
+									<td>Flesh</td>
+									<td>A chunk of flesh or organs taken from a once-living creature.</td>
+								</tr>
+								<tr>
+									<td>29-35</td>
+									<td>Fluid</td>
+									<td>A liquid—such as blood, water, oil, etc.</td>
+								</tr>
+								<tr>
+									<td>36-42</td>
+									<td>Gas</td>
+									<td>A gaseous substance.</td>
+								</tr>
+								<tr>
+									<td>43-49</td>
+									<td>Glass</td>
+									<td>A transparent or translucent substance, usually made from sand.</td>
+								</tr>
+								<tr>
+									<td>50-56</td>
+									<td>Metal</td>
+									<td>A metallic mineral or ore—iron, gold, steel, etc.</td>
+								</tr>
+								<tr>
+									<td>57-63</td>
+									<td>Otherworldly</td>
+									<td>An indescribable, otherworldly substance.</td>
+								</tr>
+								<tr>
+									<td>64-70</td>
+									<td>Plant</td>
+									<td>Material harvested from a plant—such as fibers, flowers, pollen, etc.</td>
+								</tr>
+								<tr>
+									<td>71-77</td>
+									<td>Skin</td>
+									<td>Skin taken from a once-living creature.</td>
+								</tr>
+								<tr>
+									<td>78-84</td>
+									<td>Stone</td>
+									<td>A hard form of rock commonly used for construction.</td>
+								</tr>
+								<tr>
+									<td>85-91</td>
+									<td>Wood</td>
+									<td>A hard material gathered from trees.</td>
+								</tr>
+								<tr class="header">
+									<td colspan="3"><span>Element</span></td>
+								</tr>
+								<tr>
+									<td>01-10</td>
+									<td>Air</td>
+									<td>Wind, sound, flexible, flighty.</td>
+								</tr>
+								<tr>
+									<td>11-20</td>
+									<td>Earth</td>
+									<td>Earth, nature, stubborn, reliable.</td>
+								</tr>
+								<tr>
+									<td>21-30</td>
+									<td>Fire</td>
+									<td>Flame, heat, passion, fury.</td>
+								</tr>
+								<tr>
+									<td>31-40</td>
+									<td>Force</td>
+									<td>Magic, immaterial, detached, spectral.</td>
+								</tr>
+								<tr>
+									<td>41-50</td>
+									<td>Lightning</td>
+									<td>Lightning, electricity, impulsive, energy.</td>
+								</tr>
+								<tr>
+									<td>51-60</td>
+									<td>Necrotic</td>
+									<td>Darkness, decay, morbid, fatalistic.</td>
+								</tr>
+								<tr>
+									<td>61-70</td>
+									<td>None</td>
+									<td>No discernable element.</td>
+								</tr>
+								<tr>
+									<td>71-80</td>
+									<td>Psychic</td>
+									<td>Mind, supernatural, insightful, otherworldly.</td>
+								</tr>
+								<tr>
+									<td>81-90</td>
+									<td>Radiant</td>
+									<td>Light, purify, calming, ordered.</td>
+								</tr>
+								<tr>
+									<td>91-00</td>
+									<td>Water</td>
+									<td>Water, cold, tempestuous, chaotic.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Example Monstrous Materials</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--example-materials">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Properties</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aarakocra feather</td>
+										<td>Uncommon, skin, air</td>
+									</tr>
+									<tr>
+										<td>Ancient red dragon blood</td>
+										<td>Legendary, fluid, fire</td>
+									</tr>
+									<tr>
+										<td>Air elemental whisp</td>
+										<td>Uncommon, gas, air</td>
+									</tr>
+									<tr>
+										<td>Beholder eye</td>
+										<td>Very rare, flesh, psychic</td>
+									</tr>
+									<tr>
+										<td>Blighted needle</td>
+										<td>Uncommon, plant, earth</td>
+									</tr>
+									<tr>
+										<td>Bugbear tooth</td>
+										<td>Uncommon, bone, fire</td>
+									</tr>
+									<tr>
+										<td>Bulette scales</td>
+										<td>Rare, skin, earth</td>
+									</tr>
+									<tr>
+										<td>Bullywug tongue</td>
+										<td>Uncommon, flesh, water</td>
+									</tr>
+									<tr>
+										<td>Carrion Slime</td>
+										<td>Uncommon, fluid, necrotic</td>
+									</tr>
+									<tr>
+										<td>Chimera liver</td>
+										<td>Rare, flesh, fire</td>
+									</tr>
+									<tr>
+										<td>Chuul eye</td>
+										<td>Rare, flesh, force</td>
+									</tr>
+									<tr>
+										<td>Cloaker skin</td>
+										<td>Rare, skin, force</td>
+									</tr>
+									<tr>
+										<td>Dracolich bone</td>
+										<td>Legendary, bone, necrotic</td>
+									</tr>
+									<tr>
+										<td>Gibbering tentacle</td>
+										<td>Rare, otherworldly, psychic</td>
+									</tr>
+									<tr>
+										<td>Gorgon plate</td>
+										<td>Rare, metal, necrotic</td>
+									</tr>
+									<tr>
+										<td>Gray ooze residue</td>
+										<td>Uncommon, fluid, necrotic</td>
+									</tr>
+									<tr>
+										<td>Iron golem plating</td>
+										<td>Very rare, metal, force</td>
+									</tr>
+									<tr>
+										<td>Illithid brain</td>
+										<td>Very rare, flesh, psychic</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Properties</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Merfolk fin</td>
+										<td>Uncommon, skin, water</td>
+									</tr>
+									<tr>
+										<td>Mimic tongue</td>
+										<td>Uncommon, otherworldly, psychic</td>
+									</tr>
+									<tr>
+										<td>Modron cog</td>
+										<td>Rare, metal, radiant</td>
+									</tr>
+									<tr>
+										<td>Mummy bandages</td>
+										<td>Very rare, fabric, necrotic</td>
+									</tr>
+									<tr>
+										<td>Myconid spore</td>
+										<td>Uncommon, plant, psychic</td>
+									</tr>
+									<tr>
+										<td>Pegasus feather</td>
+										<td>Rare, skin, air</td>
+									</tr>
+									<tr>
+										<td>Peryton horn</td>
+										<td>Rare, skin, air</td>
+									</tr>
+									<tr>
+										<td>Purple worm scale</td>
+										<td>Legendary, skin, earth</td>
+									</tr>
+									<tr>
+										<td>Remorhaz stomach</td>
+										<td>Very rare, flesh, necrotic</td>
+									</tr>
+									<tr>
+										<td>Roc heart</td>
+										<td>Very rare, flesh, air</td>
+									</tr>
+									<tr>
+										<td>Sahuagin eye</td>
+										<td>Uncommon, flesh, water</td>
+									</tr>
+									<tr>
+										<td>Salamander skin</td>
+										<td>Rare, skin, fire</td>
+									</tr>
+									<tr>
+										<td>Treant branch</td>
+										<td>Rare, wood, earth</td>
+									</tr>
+									<tr>
+										<td>Troll flesh</td>
+										<td>Rare, flesh, earth</td>
+									</tr>
+									<tr>
+										<td>Umber hulk pincer</td>
+										<td>Rare, bone, earth</td>
+									</tr>
+									<tr>
+										<td>Unicorn horn</td>
+										<td>Rare, bone, radiant</td>
+									</tr>
+									<tr>
+										<td>Vampire fang</td>
+										<td>Very rare, bone, necrotic</td>
+									</tr>
+									<tr>
+										<td>Wyvern toxin</td>
+										<td>Very rare, fluid, necrotic</td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+			</page>
+			<page class="page page--generic page--active-crafting">
+				<h2>Recipes</h2>
+				<p>Recipes teach you how to craft materials into rewards. You can discover crafting recipes through experimentation, or be trained by a willing mentor—often for a price. A simple crafting recipe describes four things:</p>
+
+				<ol>
+					<li><strong>Reward:</strong> What do you get once you craft this recipe?</li>
+					<li><strong>Crafting Materials:</strong> How many materials do you need and of what type for this reward?</li>
+					<li><strong>Time:</strong> How long will it take to craft this reward?</li>
+					<li><strong>Requirements:</strong> Are there any additional requirements?</li>
+				</ol>
+
+				<p>To create your own crafting recipes for your game, follow these four steps:</p>
+
+				<h3><span class="h3__highlight">1</span>Choose a Reward</h3>
+				<p>First, you need to choose the <i>reward</i> for crafting this recipe. A reward can be anything—a sword, a magical suit of armor, a house, a ship, a castle.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>A fiendish warlock wants to craft a suit of <i>Demon Armor</i>—a very rare magic item—to appease their patron. After some consideration, the GM decides to create a new crafting recipe for their game...</p>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">2</span>Pick some Materials</h3>
+				<p>Next, choose a reward size from the <i>Recipe Details</i> table below to see how many crafting materials your recipe will need—bigger rewards need bigger quantities of material.</p>
+				<p>As a general rule of thumb, choose three different types of crafting material for your recipe: a primary (50%), a secondary (30%), and a tertiary (20%) material. Select material rarities, substances, and elements that best fit the type—and theme—of reward.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Recipe Materials</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--recipe-materials">
+							<thead>
+								<tr>
+									<th>Reward Size</th>
+									<th>Materials</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Tiny</td>
+									<td>1-5</td>
+									<td>Smaller than a person.</td>
+								</tr>
+								<tr>
+									<td>Small</td>
+									<td>10</td>
+									<td>As big as a person.</td>
+								</tr>
+								<tr>
+									<td>Medium</td>
+									<td>100</td>
+									<td>As big as an elephant.</td>
+								</tr>
+								<tr>
+									<td>Large</td>
+									<td>1,000</td>
+									<td>As big as a house.</td>
+								</tr>
+								<tr>
+									<td>Huge</td>
+									<td>10,000</td>
+									<td>As big as a mansion.</td>
+								</tr>
+								<tr>
+									<td>Gargantuan</td>
+									<td>100,000</td>
+									<td>As big as a fort.</td>
+								</tr>
+								<tr>
+									<td>Astronomical</td>
+									<td>1,000,000+</td>
+									<td>As big as a castle.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>As a full-body suit of plate for one person, this <i>Demon Armor</i> recipe requires 10 crafting materials. The GM splits these into three types:</p>
+						<ul>
+							<li>5 × Dark iron ore (uncommon, metal, fire).</li>
+							<li>3 × Spellbinding oil (rare, fluid, force).</li>
+							<li>2 x Barlgura heart (very rare, flesh, fire).</li>
+						</ul>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Fiction First</h4>
+					</header>
+					<section class="panel__body">
+						<p>Crafting recipes can be a fun way to get characters out into the world in the hunt for rare materials..</p>
+						<p>Be evocative and flavourful with your recipe materials—and don't worry about simulating reality too closely. Use broad strokes to create compelling quest hooks.</p>
+					</section>
+				</aside>
+
+				<h3><span class="h3__highlight">3</span>Choose a Crafting Time</h3>
+				<p>Now it's time to decide how long it takes to craft the reward. A recipe measures crafting time in <i>days</i>—how many days would it take <i>one</i> average person to craft this reward once they have gathered all the materials? Choose a crafting time from the <i>Recipe Details</i> table below.</p>
+				<p><strong>Teamwork:</strong> Some rewards could take months, years, even centuries for one person to craft—a house, a castle, a ship, etc. For these long-term rewards, consider recruiting additional people to help with your crafting efforts.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Crafting Time</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--recipe-time">
+							<thead>
+								<tr>
+									<th>Time Scale</th>
+									<th>Days</th>
+									<th>Examples</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Days</td>
+									<td>1-5</td>
+									<td>A potion, a meal, a painting.</td>
+								</tr>
+								<tr>
+									<td>Weeks</td>
+									<td>10</td>
+									<td>A sword, a grand feast.</td>
+								</tr>
+								<tr>
+									<td>Months</td>
+									<td>100</td>
+									<td>A suit of armor, a tiny house.</td>
+								</tr>
+								<tr>
+									<td>Years</td>
+									<td>1,000</td>
+									<td>A large house, a temple.</td>
+								</tr>
+								<tr>
+									<td>Decades</td>
+									<td>10,000</td>
+									<td>A mansion, a church.</td>
+								</tr>
+								<tr>
+									<td>Centuries</td>
+									<td>100,000</td>
+									<td>A fort, a cathedral.</td>
+								</tr>
+								<tr>
+									<td>Millennia</td>
+									<td>1,000,000+</td>
+									<td>A castle, a giant pyramid.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h3><span class="h3__highlight">4</span>Apply Restrictions</h3>
+				<p>Finally, consider what restrictions (if any) this recipe may have—skills, tools, alignment, additional costs, etc.</p>
+				<p>And that's it—your recipe is complete! Now you can add it to your game for your players to starting gathering their crafting materials.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>The GM decides that it takes 100 days to craft some <i>Demon Armor</i>. In addition, to finish their recipe, they add the following crafting restrictions:</p>
+						<ul>
+							<li><strong>Proficiencies:</strong> Arcana, Smith's tools.</li>
+						</ul>
+					</section>
+				</example>
+
+				<recipe class="panel panel--recipe">
+					<header class="panel__header">
+						<h4 class="panel__title">Recipe: Demon Armor</h4>
+						<ul class="panel__tags">
+							<li>Recipe</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<ul class="recipe__details">
+							<li><strong>Reward</strong> 1 × Demon Armor</li>
+							<li><strong>Crafting Time</strong> 100 days</li>
+							<li><strong>Requirements</strong> Arcana, Smith's tools</li>
+						</ul>
+						<div class="panel__table-wrapper">
+							<table class="table table--recipe-armor-materials">
+								<thead>
+									<tr>
+										<th>Qty</th>
+										<th>Material</th>
+										<th>Properties</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>5</td>
+										<td>Dark iron ore</td>
+										<td>Uncommon, metal, fire</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Spellbinding oil</td>
+										<td>Rare, fluid, force</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Barlgura heart</td>
+										<td>Very rare, flesh, fire</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</recipe>
+
+				<div class="layout--col-wide layout--fixed-bottom">
+
+				</div>
+			</page>
+			<page class="page page--generic page--active-crafting">
+				<h2>Nodes</h2>
+				<p>To gather a crafting material, you must first find a source. These are <i>resource nodes</i> and they come in all shapes and sizes—trees, mines, rivers, cities, creatures, quarries, etc.</p>
+				<p>To create a new resource node for your game, follow these three steps:</p>
+
+				<h3><span class="h3__highlight">1</span>Choose some Materials</h3>
+				<p>First, choose the crafting materials that can be harvested from this resource node. A basic node will provide only one type of material, but some may hold two—or even three—different types.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>To help support the crafting of <i>demon armor</i>, the GM introduces two new resource nodes to the game:</p>
+						<ol>
+							<li><strong>Dark iron veins:</strong> These uncommon mining veins contain dark iron ore (uncommon, metal, fire) and coal (common, stone, necrotic).</li>
+							<li><strong>Dark iron golem:</strong> A new monster that—once defeated—can be stripped down for dark iron plating (rare, metal, fire).</li>
+						</ol>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">2</span>Set a Quantity</h3>
+				<p>Next, pick a <i>richness</i> for your node—the richer the node, the more materials you can harvest before it runs dry.</p>
+				<p><strong>Limited:</strong> Some nodes may contain a fixed number of specific materials—one heart, two animating cores, 2d6 ruby scales, etc. Assign these limits as appropriate.</p>
+				<p><strong>Regeneration:</strong> Some nodes can renew their materials over time and restore their quantity—a farm grows new crops, fish thrive in a pond, trees grow new branches, etc.</p>
+				<p>If you expect a resource node to be a long-term factor in your game, consider adding a regeneration rate and speed to reflect this.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Node Richness</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--node-richness">
+							<thead>
+								<tr>
+									<th>Richness</th>
+									<th>Quantity</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Exhausted</td>
+									<td>0</td>
+									<td>This node has run dry.</td>
+								</tr>
+								<tr>
+									<td>Meagre</td>
+									<td>1-5</td>
+									<td>A creature or basic resource.</td>
+								</tr>
+								<tr>
+									<td>Simple</td>
+									<td>10</td>
+									<td>A tree, a vein, a huge creature.</td>
+								</tr>
+								<tr>
+									<td>Rich</td>
+									<td>100</td>
+									<td>A giant tree, a gargantuan creature.</td>
+								</tr>
+								<tr>
+									<td>Plentiful</td>
+									<td>1,000</td>
+									<td>A small village, a cultivated farm.</td>
+								</tr>
+								<tr>
+									<td>Bountiful</td>
+									<td>10,000</td>
+									<td>As big as a fort.</td>
+								</tr>
+								<tr>
+									<td>Limitless</td>
+									<td>100,000</td>
+									<td>A city, a huge quarry.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>The GM sets the following for their new nodes:</p>
+						<ol>
+							<li>A <strong>dark iron vein</strong> is a <i>simple</i> node with 10 materials. Only 1d4 of these materials are dark iron ore.</li>
+							<li>A <strong>dark iron golem</strong> is a <i>meagre</i> node—it can only provide 1 material.</li>
+						</ol>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<h3><span class="h3__highlight">3</span>Pick a Gathering Time</h3>
+				<p>Choose a gathering time to see how long it takes to make one gathering attempt on this node.</p>
+				<!-- <p>Some nodes give up their materials quickly—fruit from a bush, feathers from a wing, blood from a creature, etc—while others require more effort—extracting poison from a gland, skinning a dragon, mining stone from a vein, etc.</p> -->
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Gathering Time</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--node-gathering">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Time Scale</th>
+										<th>Min. Time</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Seconds</td>
+										<td>1 second</td>
+									</tr>
+									<tr>
+										<td>Minutes</td>
+										<td>1 minute</td>
+									</tr>
+									<tr>
+										<td>Hours</td>
+										<td>1 hour</td>
+									</tr>
+									<tr>
+										<td>Days</td>
+										<td>1 day</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Time Scale</th>
+										<th>Min. Time</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Weeks</td>
+										<td>1 week</td>
+									</tr>
+									<tr>
+										<td>Months</td>
+										<td>1 month</td>
+									</tr>
+									<tr>
+										<td>Years</td>
+										<td>1 year</td>
+									</tr>
+									<tr>
+										<td>Decades</td>
+										<td>10 years</td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<h3><span class="h3__highlight">4</span>Set some Gathering Skills</h3>
+				<p>Next, choose some gathering skills that would be appropriate for your node and a DC required (if any) to harvest material. Below are listed some example skills and how they may be used:</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Common Gathering Skills</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--node-skills">
+							<thead>
+								<tr>
+									<th>Skill</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Animal Handling</td>
+									<td>You harvest materials from animals.</td>
+								</tr>
+								<tr>
+									<td>Arcana</td>
+									<td>You interact with the arcane.</td>
+								</tr>
+								<tr>
+									<td>Athletics</td>
+									<td>You harvest materials with brute force.</td>
+								</tr>
+								<tr>
+									<td>Intimidation</td>
+									<td>You bully and extort materials from a person or place.</td>
+								</tr>
+								<tr>
+									<td>Nature</td>
+									<td>You harvest materials from plantlife.</td>
+								</tr>
+								<tr>
+									<td>Persuasion</td>
+									<td>You charm and bargain materials from a person or place.</td>
+								</tr>
+								<tr>
+									<td>Religion</td>
+									<td>You interact with the divine.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<p>When you choose a skill, set a DC for the harvesting attempt: very easy (5), easy (10), medium (15), hard (20), very hard (25), or impossible (30). When a player spends the requisite amount of time gathering material, they may make a relevant ability check:</p>
+
+				<ul>
+					<li><strong>Critical Success:</strong> You harvest two measures of material.</li>
+					<li><strong>Success:</strong> You harvest one measure of material.</li>
+					<li><strong>Failure:</strong> You fail to gather anything.</li>
+					<li><strong>Critical Failure:</strong> You fail to gather anything and the node loses two measures of material.</li>
+				</ul>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>The GM decides that it takes 1 hour to make a mining attempt on a dark iron vein (Athletics, DC 15). It takes 1 day, however, to strip plating from a dark iron golem—this can be done using either Arcana or Athletics (DC 15).</p>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">5</span>Apply Restrictions</h3>
+				<p>Finally, consider what restrictions (if any) this node may require—skills, tools, knowledge, etc.</p>
+				<p>And that's it—your node is complete! Now you can add it to your game for your players to interact with and starting harvesting materials.</p>
+			</page>
+		</book>
+	</body>
+</html>

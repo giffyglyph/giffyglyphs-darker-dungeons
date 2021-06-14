@@ -1,0 +1,55 @@
+// Common book abstracts
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Common book styles
+
+@import 'pages/page--active-crafting';
+@import 'pages/page--active-inventory';
+@import 'pages/page--active-xp';
+@import 'pages/page--ammunition-dice';
+@import 'pages/page--arcane-jewels';
+@import 'pages/page--character-creation';
+@import 'pages/page--class-changes';
+@import 'pages/page--contents';
+@import 'pages/page--creating-adventures';
+@import 'pages/page--dangerous-magic';
+@import 'pages/page--deadly-disease';
+@import 'pages/page--death-and-resurrection';
+@import 'pages/page--dread';
+@import 'pages/page--faq';
+@import 'pages/page--feature-changes';
+@import 'pages/page--flasks';
+@import 'pages/page--gemstones';
+@import 'pages/page--leveling-up';
+@import 'pages/page--light-and-shadow';
+@import 'pages/page--long-rest';
+@import 'pages/page--making-a-journey';
+@import 'pages/page--oils';
+@import 'pages/page--potions';
+@import 'pages/page--quick-reference';
+@import 'pages/page--random-tables';
+@import 'pages/page--rookie-characters';
+@import 'pages/page--sheet-calendar--day';
+@import 'pages/page--sheet-calendar--week';
+@import 'pages/page--sheet-calendar--month';
+@import 'pages/page--sheet-character--1';
+@import 'pages/page--sheet-character--2';
+@import 'pages/page--sheet-character--3';
+@import 'pages/page--sheet-character--4';
+@import 'pages/page--sheet-equipment';
+@import 'pages/page--sheet-equipment-grid--1';
+@import 'pages/page--sheet-equipment-grid--2';
+@import 'pages/page--sheet-equipment-grid--3';
+@import 'pages/page--sheet-journey';
+@import 'pages/page--sheet-spellbook';
+@import 'pages/page--sheet-trials';
+@import 'pages/page--short-rest';
+@import 'pages/page--stress-and-afflictions';
+@import 'pages/page--survival-conditions';
+@import 'pages/page--trials';
+@import 'pages/page--wear-and-tear';
+@import 'pages/page--wounds-and-injuries';
+
+@import 'themes/theme--pf';

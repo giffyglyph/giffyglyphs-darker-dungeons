@@ -1,0 +1,160 @@
+// Styles for the calendar sheet (month).
+
+.page--sheet-trials {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: ($sheet-spacing * 10) auto;
+		grid-column-gap: 15px;
+		grid-template-areas:
+			"header"
+			"trial-a trial-b";
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.box--header {
+		grid-column: 1 / span 2;
+	}
+
+	.trial {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 75px 60px 30px 100px auto 1fr;
+		grid-column-gap: 7px;
+		grid-row-gap: 7px;
+		flex-grow: 1;
+
+		.trial__title {
+			grid-column: 1 / span 4;
+		}
+
+		.trial__successes {
+			grid-column: 2 / span 2;
+
+			.layout--columns--2 {
+				padding-top: 2px;
+			}
+
+			p {
+				color: #909090;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: smaller;
+			}
+		}
+
+		.trial__failures {
+			grid-column: 4;
+
+			.box__body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.dots {
+				display: flex;
+				flex-wrap: wrap;
+				grid-row-gap: 1px;
+				grid-column-gap: 2px;
+				align-items: center;
+				justify-content: center;
+
+				.dot + .dot {
+					margin: 0;
+				}
+			}
+		}
+
+		.trial__pace {
+			grid-column: 1 / span 2;
+
+			.box__header {
+				width: 55px;
+				flex-grow: 0;
+			}
+		}
+
+		.trial__deadline {
+			grid-column: 3 / span 2;
+
+			.box__header {
+				width: 55px;
+				flex-grow: 0;
+			}
+		}
+
+		.trial__goal {
+			grid-column: 1 / span 4;
+		}
+
+		.trial__outcomes {
+			grid-column: 1 / span 4;
+
+			.box__header {
+				display: none;
+			}
+
+			.table {
+				@include sheet-table-column(1, center, 13%, 0);
+				@include sheet-table-column(2, left, 87%, 0);
+
+				th,
+				td {
+					padding-left: 4px !important;
+					padding-right: 4px !important;
+					height: auto;
+				}
+
+				td {
+					font-size: 10px;
+					padding-bottom: 30px;
+				}
+
+				strong {
+					line-height: inherit;
+				}
+			}
+		}
+
+		.trial__tasks {
+			grid-column: 1 / span 4;
+
+			.box__header {
+				display: none;
+			}
+
+			.table {
+				@include sheet-table-column(1, left, 85%, 0);
+				@include sheet-table-column(2, center, 15%, 0);
+
+				th,
+				td {
+					padding-left: 4px !important;
+					padding-right: 4px !important;
+					height: auto;
+				}
+
+				td {
+					font-size: 10px;
+					padding-bottom: 60px;
+				}
+
+				strong {
+					line-height: inherit;
+				}
+			}
+		}
+
+		.trial__outcomes,
+		.trial__tasks {
+
+			.box__body {
+				margin-left: -3px;
+				margin-right: -3px;
+			}
+		}
+	}
+}

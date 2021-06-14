@@ -1,0 +1,21 @@
+// Styles for death and resurrection chapters.
+
+.page--death-and-resurrection {
+
+	.table--death-saving-throw {
+		@include table-column(1, center, 13%);
+		@include table-column(2, left, 87%);
+
+		td:nth-child(1) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.table--resurrection {
+		@include table-column(1, left, 33%);
+		@include table-column(2, center, 14%);
+		@include table-column(3, left, 20%);
+		@include table-column(4, left, 33%);
+	}
+}

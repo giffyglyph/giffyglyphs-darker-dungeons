@@ -1,0 +1,74 @@
+// Styles for wounds and injuries chapters.
+
+.page--making-a-journey {
+
+	.tables--journey-arrival .table {
+		@include table-column(1, left, 57%);
+		@include table-column(2, center, 43%);
+
+		td:nth-of-type(2) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.table--guidance {
+		@include table-column(1, center, 10%);
+		@include table-column(2, left, 90%);
+	}
+
+	.table--foraging {
+		@include table-column(1, center, 12%);
+		@include table-column(2, left, 88%);
+	}
+
+	.table--travelling-pace {
+		@include table-column(1, center, 13%);
+		@include table-column(2, center, 13%);
+		@include table-column(3, center, 14%);
+		@include table-column(4, center, 15%);
+		@include table-column(5, center, 15%);
+		@include table-column(6, center, 15%);
+		@include table-column(7, center, 15%);
+	}
+
+	.table--terrain-dangers {
+		@include table-column(1, left, 77%);
+		@include table-column(2, center, 23%);
+	}
+
+	.table--encounter-type {
+		@include table-column(1, center, 12%);
+		@include table-column(2, left, 88%);
+	}
+
+	.table--journey-discoveries {
+		@include table-column(1, center, 12%);
+		@include table-column(2, left, 88%);
+	}
+
+	.table-appendix {
+		@include table-column(1, center, 14%);
+		@include table-column(2, left, 86%);
+	}
+
+	.table--journey-seeds {
+		@include table-column(1, center, 14%);
+		@include table-column(2, center, 10%);
+		@include table-column(3, center, 10%);
+		@include table-column(4, center, 10%);
+		@include table-column(5, center, 10%);
+		@include table-column(6, center, 10%);
+		@include table-column(7, center, 10%);
+		@include table-column(8, left, 26%);
+
+		thead tr:first-of-type th:nth-of-type(2) {
+			width: 60%;
+		}
+
+		thead tr:first-of-type th:nth-of-type(3) {
+			width: 26%;
+			text-align: left;
+		}
+	}
+}

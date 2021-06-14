@@ -1,0 +1,38 @@
+// Styles for arcane jewels pages.
+
+.page--arcane-jewels {
+
+	.tables--item-jewel-elemental {
+		@include table-column(1, left, 50%);
+		@include table-column(2, left, 50%);
+	}
+
+	.table--jewels-recipes {
+		@include table-column(1, center, 7%);
+		@include table-column(2, left, 14%);
+		@include table-column(3, left, 12%);
+		@include table-column(4, center, 7%);
+		@include table-column(5, center, 8%);
+		@include table-column(6, left, 52%);
+
+		.header td {
+			width: 100%;
+		}
+	}
+
+	.table--legendary-jewels {
+		@include table-column(1, center, 7%);
+		@include table-column(2, left, 15%);
+		@include table-column(3, center, 9%);
+		@include table-column(4, left, 69%);
+
+		.header td {
+			width: 100%;
+		}
+	}
+
+	.tables--gemstones-rarity .table {
+		@include table-column(1, left, 40%);
+		@include table-column(2, left, 60%);
+	}
+}

@@ -1,0 +1,44 @@
+// Styles for death and resurrection chapters.
+
+.page--deadly-disease {
+
+	.table--becoming-contagious {
+		@include table-column(1, center, 20%);
+		@include table-column(2, left, 80%);
+	}
+
+	.table---diagnosing-disease {
+		@include table-column(1, left, 20%);
+		@include table-column(2, center, 15%);
+		@include table-column(3, left, 65%);
+	}
+
+	.table--magic-strength {
+		@include table-column(1, center, 15%);
+		@include table-column(2, center, 15%);
+		@include table-column(3, left, 70%);
+	}
+
+	.table--magical-immunity {
+		@include table-column(1, center, 20%);
+		@include table-column(2, left, 80%);
+	}
+
+	.table--disease-dc {
+		@include table-column(1, left, 80%);
+		@include table-column(2, center, 20%);
+	}
+
+	.table--diseases-contents {
+		@include table-column(1, left, 16%);
+		@include table-column(2, left, 44%);
+		@include table-column(3, left, 10%);
+		@include table-column(4, center, 5%);
+		@include table-column(5, left, 8%);
+		@include table-column(6, left, 17%);
+
+		td:nth-child(5) {
+			padding-right: 0;
+		}
+	}
+}

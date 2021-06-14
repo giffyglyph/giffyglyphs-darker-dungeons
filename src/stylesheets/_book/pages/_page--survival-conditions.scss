@@ -1,0 +1,33 @@
+// Styles for survival conditions chapters.
+
+.page--survival-conditions {
+
+	.table--survival-conditions {
+		@include table-column(1, center, 10%);
+		@include table-column(2, center, 15%);
+		@include table-column(3, center, 15%);
+		@include table-column(4, center, 15%);
+		@include table-column(5, center, 15%);
+		@include table-column(6, center, 15%);
+		@include table-column(7, center, 15%);
+	}
+
+	.table--hunger-thirst-fatigue {
+		@include table-column(1, center, 25%);
+		@include table-column(2, center, 25%);
+		@include table-column(3, center, 25%);
+		@include table-column(4, center, 25%);
+	}
+
+	.tables--stamina-check .table {
+		@include table-column(1, center, 30%);
+		@include table-column(2, center, 70%);
+	}
+
+	.table--temperature {
+		@include table-column(1, left, 25%);
+		@include table-column(2, center, 25%);
+		@include table-column(3, center, 25%);
+		@include table-column(4, center, 25%);
+	}
+}

@@ -1,0 +1,20 @@
+// Styles for contents pages.
+
+.page--contents {
+
+	.panel--contents {
+
+		li {
+			line-height: 13px;
+
+			+ li .contents__link--h0 {
+				margin-top: 13px;
+			}
+		}
+
+		.contents__link--h0 {
+			margin-bottom: 5.5px;
+			padding: 4.5px 0 3px;
+		}
+	}
+}

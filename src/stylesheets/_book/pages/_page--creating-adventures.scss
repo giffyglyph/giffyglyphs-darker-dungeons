@@ -1,0 +1,34 @@
+// Styles for creating adventures pages.
+
+.page--creating-adventures {
+
+	.table--hook-components {
+		@include table-column(1, center, 7%);
+		@include table-column(2, left, 12%);
+		@include table-column(3, left, 81%);
+
+		tr.header td {
+			width: 100%;
+		}
+	}
+
+	.table--ap {
+		@include table-column(1, center, 25%);
+		@include table-column(2, center, 25%);
+		@include table-column(3, center, 25%);
+		@include table-column(4, center, 25%);
+
+		thead tr:first-of-type th:last-of-type {
+			width: 75%;
+		}
+
+		thead tr:last-of-type {
+			margin-top: -22.5px;
+		}
+	}
+
+	.tables--flashpoints-cost .table {
+		@include table-column(1, left, 50%);
+		@include table-column(2, center, 50%);
+	}
+}

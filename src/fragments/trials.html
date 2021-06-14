@@ -1,0 +1,2308 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--trials" data-header-icon="puzzle-box">
+        <h1 id="trials">Trials</h1>
+        <p>Not every encounter has to end up in combat—sometimes, your skills can be mightier than your sword. When you need to solve a lot of <i>small</i> tasks to overcome one <i>big</i> problem, you're in a trial.</p>
+        <p>This chapter introduces <i>Trials</i>, how to create them, and advice on how to run them in your games.</p>
+
+        <h2>A Trial</h2>
+        <p>In a trial, players seek to accomplish a goal by completing a series of smaller tasks. They do this by working together and making <i>ability checks</i>—the more successes they get, the more tasks they can complete. Too many failures, however, and penalities may occur—or the entire trial may be forfeit.</p>
+        <p>Trials can take any form—a chase through a bustling city, decrypting a necromancer's sinister spellbook, exploring a fetid dungeon, a parley with a formidable warlord, a war against an infernal army—so be creative.</p>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <p>Chansi, Valiant, and Clanda are trapped in the Storm Wilds, surrounded by a horde of animated shadows sent by the Twilight Crown.</p>
+            <p>In a clearing, Clanda discovers the broken ruins of an elven portal. Can the adventurers reactivate the portal in time to escape the attacking shadows...?</p>
+          </section>
+        </example>
+
+        <aside class="panel panel--aside">
+          <header class="panel__header">
+            <h4 class="panel__title">Using a Trial</h4>
+          </header>
+          <section class="panel__body">
+            <p>Trials can help you to break up a large or <i>complicated</i> goal into lots of smaller tasks for players to overcome—use this as a means to give your puzzles, chases, explorations, and roleplaying sessions some structure.</p>
+          </section>
+        </aside>
+
+        <col-break></col-break>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">Escape the Twilight Crown</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Medium / Detailed</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">15</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">20</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">1 per Turn</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">10 Rounds</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>Fix the Storm Wild's fey portal to escape the Twilight Crown.</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> The party escape with a valuable prize—a captured, animated shadow.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> The party escape—just in time.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> The party escape—but suffer a significant loss.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> The portal is destroyed and the party are captured by the Twilight Crown.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Repair the Portal</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Restore the broken pillars of the portal circle.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Harvest Spellpower</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Gather arcane fragments and spellpower.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Cast the Ritual</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A and B)</i> Activate the fey portal.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">D</span>
+                <span class="title">Hold Back the Horde</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Defend yourself from the attacking shadows.</p>
+                </div>
+              </div>
+						</div>
+					</section>
+        </trial>
+      </page>
+      <page class="page page--generic page--trials">
+        <h2 id="running-a-trial">Running a Trial</h2>
+        <p>Once you have a trial mapped out for your players, it's time to put it into play. Follow these steps when running trials in your game:</p>
+
+        <h3><span class="h3__highlight">1</span>Triggering a Trial</h3>
+        <p>A trial can begin at any point—when a player tries to intimidate a formidable NPC, when a monster chases the party through a dark forest, when the rogue triggers a trap mid-combat, etc.</p>
+        <p>Once it looks like a trial is about to take place, announce it to the party.</p>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>You hear the whine of arcane power building up in the metal sphere—this force bomb will detonate in less than one minute. Clanda—what do you do?</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>I'm going to disarm the bomb, of course.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>Excellent—a risky gambit. A <i>trial</i> has begun...</span></li>
+						</ul>
+					</section>
+				</example>
+
+        <h3><span class="h3__highlight">2</span>Set the Stage</h3>
+        <p>Now, you must set the stage. It's important to let the players know the <i>details</i> of their trial—if your players aren't aware of their situation, they can't enagage with it in a fun or meaningful way.</p>
+        <p>Describe the rough outline of the trial—the goal, the tasks, the expected outcomes, and the effective difficulty (DC, successes required, pacing, deadlines, etc.).</p>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>This is a simple but <i>hard</i> trial—you need 5 DC 20 successes. If you succeed, you'll stop the bomb from exploding, if you don't...</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>So, don't drop the exploding death ball? Got it. What do I need to do?</span></li>
+              <li><span class="chat__speaker">GM:</span><span>You think there are three tasks: 1) carefully open the bomb casing, 2) decipher the arcane sigils within, and 3) countermand the spell.</span></li>
+              <li><span class="chat__speaker">Clanda:</span><span>How long do I have?</span></li>
+              <li><span class="chat__speaker">GM:</span><span>You think <i>maybe</i> 10 rounds—but you're not sure.</span></li>
+						</ul>
+					</section>
+        </example>
+
+        <h4>Limited Information</h4>
+        <p>You may decide that <i>some</i> information is—at first—obsured to players. Consider allowing them to discover this information with appropriate Intelligence checks—or other checks as appropriate.</p>
+        
+        <aside class="panel panel--aside">
+          <header class="panel__header">
+            <h4 class="panel__title">Mechanical Clarity</h4>
+          </header>
+          <section class="panel__body">
+            <p>It may be tempting to hide the mechanical details of a trial from your players. However, this can lead to frustration—an unclear trial is a trial your players can't easily contribute to.</p>
+            <p>Ensure that players can interact properly with your trials by describing them with the same mechanical clarity as you would a combat encounter.</p>
+          </section>
+        </aside>
+
+        <col-break></col-break>
+
+        <h3><span class="h3__highlight">3</span>Making a Check</h3>
+        <p>Whenever a player describes an action they are taking to resolve a task, the GM can ask that player to make an <i>ability check</i> against the DC of the trial.</p>
+        <p>Once the player makes their roll, check the <i>Trial Check Results</i> table below to see what the outcome is.</p>
+        <p><strong>Open Skills:</strong> When you decide which ability check to ask for, use attributes and skills in <i>any</i> combination as best matches the player's action.</p>
+        <p><strong>Advantage & Disadvantage:</strong> Depending on the situation and the action taken, you may choose to grant either advantage or disadvantage to the player's roll.</p>
+
+        <list class="panel panel--list">
+          <header class="panel__header">
+            <h4 class="panel__title">Trial Check Results</h4>
+          </header>
+          <section class="panel__body">
+            <table class="table table--trial-check-results">
+              <thead>
+                <tr>
+                  <th>Result</th>
+                  <th>Outcome</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>+10 or more</td>
+                  <td>
+                    <p><strong>Critical Success:</strong> Choose one of the following:</p>
+                    <ol type="A">
+                      <li>Gain two successes.</li>
+                      <li>Gain one success <i>and</i> remove one failure from the trial.</li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>+0 to +9</td>
+                  <td><strong>Success:</strong> Gain one success.</td>
+                </tr>
+                <tr>
+                  <td>−1 to −9</td>
+                  <td><strong>Failure:</strong> Gain one failure.</td>
+                </tr>
+                <tr>
+                  <td>−10 or lower</td>
+                  <td><strong>Critical Failure:</strong> Gain two failures.</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </list>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">Clanda:</span><span>Ok, first thing's first—lets crack open this case. Can I look for a weak spot in the plating and prise it open?</span></li>
+							<li><span class="chat__speaker">GM:</span><span>That sounds like an Intelligence (Athletics) check to me—make a roll.</span></li>
+              <li><span class="chat__speaker">Clanda:</span><span>Oof, athletics—not my strong point... <span class="chat__action">(rolls 17)</span> ...see? Sweaty hands.</span></li>
+              <li><span class="chat__speaker">GM:</span><span>That's one failure—the casing remains intact.</span></li>
+              <li><span class="chat__speaker">Clanda:</span><span>Blast. What if I use my tinker's tools?</span></li>
+              <li><span class="chat__speaker">GM:</span><span>Those tools are perfect for a device like this—make an Intelligence (Tools) check with advantage.</span></li>
+              <li><span class="chat__speaker">Clanda:</span><span>I knew these would come in handy... <span class="chat__action">(rolls 23)</span> ...ah now <i>that's</i> more like it.</span></li>
+              <li><span class="chat__speaker">GM:</span><span>That's one success. You hear a slight click and part of the casing slides open—you can see some of the glimmering arcane sigils within...</span></li>
+						</ul>
+					</section>
+				</example>
+
+        <h4 id="making-a-check-substitutions">Substitutions</h4>
+        <p>Your players may have access to special resources—tools, spells, gear, allies, etc. When a player opts to use one of these resources, consider one of the following:</p>
+
+        <ul>
+          <li><strong>It helps the situation:</strong> Grant a) advantage on a roll, b) one automatic success, or c) two automatic successes.</li>
+          <li><strong>It makes things worse:</strong> Grant a) disadvantage on a roll, b) one automatic failure, or c) two automatic failures.</li>
+        </ul>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">Clanda:</span><span>Can I use <i>Identify</i> to decifer these spell sigils?</span></li>
+							<li><span class="chat__speaker">GM:</span><span>You think <i>Identify</i> might give you two automatic successes—but it'll take you one minute to cast that ritual. That's 10 rounds, and the clock is ticking...</span></li>
+						</ul>
+					</section>
+				</example>
+      </page>
+      <page class="page page--generic page--trials">
+        <h4>Improvised Tasks</h4>
+        <p>Your players may naturally improvise tasks of their own based the trial's description. Try to be flexible with your trial outline—if the players have a good idea, incorporate it as best you can.</p>
+
+        <h4>Failure Consequences</h4>
+        <p>Depending on the trial and the action taken by the player, you can apply a <i>consequence</i> if an ability check results in a failure—taking damage, spending hit die, burning spell slots, losing gold, etc.</p>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+            <p>Clanda rolls a failure when trying to countermand the spell powering the arcane bomb. The GM decides to apply a consequence—arcane power lashes out and Clanda takes 2d12 points of force damage.</p>
+					</section>
+        </example>
+
+        <h4>Making an Attack</h4>
+        <p>Your players may opt to make an <i>attack</i> as their action within a trial. To resolve these attacks, don't use attack rolls or saving throws—instead, resolve them as a simple <i>ability check</i> based on the attack action described by the player. For example:</p>
+
+        <ul>
+          <li>A barbarian swings her axe with great power at an iron golem? Make a <strong>Strength (Athletics)</strong> check.</i></li>
+          <li>A rogue shoots a crossbow whilst hidden in the shadows? Make a <strong>Dexterity (Stealth)</strong> check.</li>
+          <li>An eldritch knight slashes a green flame blade at fearsome lich? Make an <strong>Intelligence (Athletics)</strong> check.</i></li>
+          <li>A wizard casts <i>magic missile</i> with great haste at a charging dragon? Make a <strong>Intelligence (Arcana)</strong> check.</li>
+          <li>A cleric casts <i>sacred flame</i> at a rampaging zombie? Make a <strong>Wisdom (Religion)</strong> check.</li>
+          <li>A druid casts <i>entangle</i> on a group of rowdy kobolds? Make a <strong>Wisdom (Nature)</strong> check.</li>
+          <li>A draconic sorcerer uses <i>burning hands</i> on a swarm of rats? Make a <strong>Charisma (Arcana)</strong> check.</li>
+        </ul>
+
+        <h5>Using Class Features & Abilities</h5>
+        <p>If the player uses a relevant ability—such as a class feature, spell, or other resource—consider granting them advantage (or an automatic success) to the roll.</p>
+        
+        <example class="panel panel--example">
+					<section class="panel__body">
+            <p>To <i>hold back the horde</i>, Valiant wants to attack the overwhelming shadows of the Twilight Crown with his mace. The GM asks for a Strength (Athletics) check.</p>
+            <p>Because Valiant has the <i>Divine Strike</i> passive ability—and the shadows are vulnerable to radiant—the GM grants advantage to the roll.</p>
+					</section>
+        </example>
+
+        <aside class="panel panel--aside">
+          <header class="panel__header">
+            <h4 class="panel__title">Choosing Attack Abilities</h4>
+          </header>
+          <section class="panel__body">
+            <p>When you assign an ability check to a player's attack action, keep in mind the skillset of that character—try to use skills that complement the character well. Encourage players to describe actions in the context of their character skills.</p>
+          </section>
+        </aside>
+
+        <col-break></col-break>
+
+        <h3><span class="h3__highlight">4</span>Add Challenges</h3>
+        <p>Trials are at their best when the narrative evolves with each ability check, expanding the story and encouraging a variety of abilities and skills. So if you find that players are relying on the same actions and abilities to solve a task, consider mixing things up with a <i>challenge</i>.</p>
+        <p>Describe a change in the narrative that puts one or more characters in a difficult—or perilous—situation. Use this opportunity to put the spotlight on a particular character, ability, or skillset.</p>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <p>Valiant <i>could</i> simply use Strength (Athletics) each time to <i>hold back the horde</i> with melee attacks. But to keep things interesting, the GM decides to introduce some challenges. For example:</p>
+            <ul>
+              <li>A giant shadow grabs hold of you with suprising speed, Valiant, lifting you up off the ground. You see sinister tendrils wrapping around you—what do you do?</li>
+              <li>A shadowmage calls out a piercing cry and encases you in a <i>twilight barrier</i>, Valiant. Dark sigils blind and restrain you—what do you do?</li>
+              <li>Thunder crackles ominiously as rain pours from the blackened sky. The ground beneath your feet is slick and tretcherous, Valiant—what do you do?</li>
+              <li>As you battle the horde, Valiant, one of the twilight crown sinks into your shadow. You suddenly stumble and fall prone as it tries to possess you through your own shadow—what do you do?</li>
+            </ul>
+            <p>Valiant must now describe a different action in reaction to the challenge which may require a different ability, skill, or feature.</p>
+          </section>
+        </example>
+
+        <h3><span class="h3__highlight">5</span>Ending a Trial</h3>
+        <p>No trial lasts forever. All things must end, and a trial typically concludes in one of four ways:</p>
+
+        <ul>
+          <li>
+            <p><strong>Victory:</strong> The players have rolled enough successes to complete the trial. Check the trial's list of outcomes to see what happens next—the fewer failures, the better the outcome.</p>
+          </li>
+          <li><strong>Major Defeat:</strong> When a trial gains five failures, it ends automatically in a <i>major defeat</i>.</li>
+          <li><strong>Expiration:</strong> The deadline expires. This may result in a consequence—such as a <i>critical failure</i>.</li>
+          <li><strong>Abandon:</strong> The players abandon the trial to pursue another objective. Depending on the trial, this may result in a consequence.</li>
+        </ul>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+            <p>After some tense rolls, Clanda rolls 5 successes in her trial to disarm the arcane bomb. The trial ended with 2 failures—a <i>minor victory</i>.</p>
+            <p>She disarms the bomb safely, but is unable to recover any information about who created it.</p>
+					</section>
+        </example>
+      </page>
+      <page class="page page--generic page--trials">
+        <h2>Building a Trial</h2>
+        <p>Once you have an idea for a trial, follow these six steps to start building it:</p>
+
+        <h3><span class="h3__highlight">1</span>Set the Goal & Outcomes</h3>
+        <p>Your first step is to define the overall goal of your skill challenge—what is it the players are trying to accomplish?</p>
+        <p>You must then decide on the outcomes of the trial: what happens when the players succeed or fail in their efforts? There are four outcomes to any trial:</p>
+
+        <ol>
+          <li><strong>Major Victory (0 failures):</strong> The goal is achieved with exceptional results–the players gain additional benefits.</li>
+          <li><strong>Minor Victory (1-2 failures):</strong> The goal is achieved.</li>
+          <li><strong>Minor Defeat (3-4 failures):</strong> The players fail to achieve the goal <i>or</i> achieve it but suffer a significant penalty.</li>
+          <li><strong>Major Defeat (5 failures):</strong> The players fail to achieve the goal <i>and</i> suffer a catastrophic penalty.</li>
+        </ol>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <p>The goal of Krazak, Viridian, and Crackle is to explore a sunken crypt in the <i>Umbral Deeps</i>—rumored to be the lair of the necromancer <i>Jander Skull</i>.</p>
+            <ol>
+              <li><strong>Major Victory:</strong> The party find a secret stash of treasure. They recover 1000 gp, a scroll of <i>Raise Dead</i>, and a <i>Sword of LIfe Stealing</i>.</li>
+              <li><strong>Minor Victory:</strong> The party explore the crypt. They recover 100 gp and a scroll of <i>Raise Dead</i>.</li>
+              <li><strong>Minor Defeat:</strong> The party are overwhelmed by the undead, escaping with two levels of exhaustion.</li>
+              <li><strong>Major Defeat:</strong> The party run afoul of <i>Jander Skull</i>. One party member is killed, and the others escape with two levels of exhaustion.</li>
+            </ol>
+          </section>
+        </example>
+
+        <h3><span class="h3__highlight">2</span>Difficulty & Complexity</h3>
+        <p>Next, you must choose a baseline <i>difficulty</i> and <i>complexity</i> for your trial. The higher the difficulty, the harder it will be for your players to succeed in their efforts—and the higher the complexity, the more successes your players must achieve. Choose your options from the tables below:</p>
+
+        <list class="panel panel--list">
+          <header class="panel__header">
+            <h4 class="panel__title">Trial DC</h4>
+          </header>
+          <section class="panel__body">
+            <tables class="tables tables--trial-difficulty">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Difficulty</th>
+                    <th>DC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Very Easy</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>Easy</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>Medium</td>
+                    <td>15</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Difficulty</th>
+                    <th>DC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Hard</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>Very Hard</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>Impossible</td>
+                    <td>30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </tables>
+          </section>
+        </list>
+
+        <list class="panel panel--list">
+          <header class="panel__header">
+            <h4 class="panel__title">Trial Complexity</h4>
+          </header>
+          <section class="panel__body">
+            <tables class="tables tables--trial-complexity">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Complexity</th>
+                    <th>Successes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Simple</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>Straightforward</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>Involved</td>
+                    <td>15</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Complexity</th>
+                    <th>Successes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Detailed</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>Intricate</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>Complicated</td>
+                    <td>30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </tables>
+          </section>
+        </list>
+      
+        <col-break></col-break>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+						<p>Jander Skull is rumored to be a fledgling necromancer with a tretcherous, sunken lair. The GM decides to create a <i>medium / involved</i> trial—the party must make 15 × DC 15 successes to complete the trial.</p>
+					</section>
+				</example>
+
+        <h3><span class="h3__highlight">3</span>Create some Tasks</h3>
+        <p>Now it's time to break down the goal—and the required successes—down into smaller, narrative-focused tasks.</p>
+        <p>A <i>task</i> describes a specific objective that should (or <i>must</i>) be met by the players to accomplish the goal of the trial. Use these to create a variety of small, narrative challenges for the party to overcome during the trial.</p>
+
+        <example class="panel panel--example example--creating-tasks">
+          <section class="panel__body">
+            <p>After some consideration, the GM creates the following tasks for their 15 × DC 15 trial:</p>
+            <ol type="A">
+              <li>
+                <p><strong>Enter the Crypt</strong> (2 successes)</p>
+                <p>Locate the secret entrance to the sunken crypt.</p>
+              </li>
+              <li>
+                <p><strong>Explore the Sunken Chamber:</strong> (5 successes)</p>
+                <p><i>(Requirements: A)</i> Navigate the twisting chambers of the sunken crypt.</p>
+              </li>
+              <li>
+                <p><strong>Battle the Undead:</strong> (5 successes)</p>
+                <p><i>(Requirements: A)</i> Defend yourself against the risen undead that roam the crypt.</p>
+              </li>
+              <li>
+                <p><strong>Defeat Jander Skull:</strong> (3 successes)</p>
+                <p><i>(Requirements: A, B, and C)</i> Battle the necromancer.</p>
+              </li>
+            </ol>
+          </section>
+        </example>
+
+        <h4>Requirements</h4>
+        <p>Some tasks may have requirements—sequencing, tools, skills, abilities, etc. Add requirements where necessary to a) create a variety of challenges for the party and b) strengthen the narrative theming of your trial—try to highlight multiple skillsets whenever possible.</p>
+
+        <h4>Task Themes</h4>
+        <p>As a rule of thumb, try to put the spotlight on at least <i>two</i> sets of primary skills within each trial—the more skills you support, the easier you make it for players to participate.</p>
+        <p>Use the task themes listed below as a starting point to help you allocate some skill spotlights:</p>
+
+        <list class="panel panel--list">
+          <header class="panel__header">
+            <h4 class="panel__title">Task Themes</h4>
+          </header>
+          <section class="panel__body">
+            <table class="table table--task-types">
+              <thead>
+                <tr>
+                  <th>Theme</th>
+                  <th>Primary Skills</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Academic</td>
+                  <td>History, Investigation, Medicine</td>
+                </tr>
+                <tr>
+                  <td>Battle</td>
+                  <td>Athletics, Stealth, Arcana, Religion, Nature, Perception</td>
+                </tr>
+                <tr>
+                  <td>Exploration</td>
+                  <td>Investigation, Athletics, Acrobatics, Nature, Stealth, Perception, Survival</td>
+                </tr>
+                <tr>
+                  <td>Infiltration</td>
+                  <td>Stealth, Deception, Perception</td>
+                </tr>
+                <tr>
+                  <td>Magical</td>
+                  <td>Arcana</td>
+                </tr>
+                <tr>
+                  <td>Physical</td>
+                  <td>Athletics, Acrobatics, Sleight of Hand, Stealth</td>
+                </tr>
+                <tr>
+                  <td>Primal</td>
+                  <td>Animal Handling, Nature, Survival</td>
+                </tr>
+                <tr>
+                  <td>Social</td>
+                  <td>Intimidation, Deception, Performance, Persuasion</td>
+                </tr>
+                <tr>
+                  <td>Spiritual</td>
+                  <td>Religion, Insight</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </list>
+      </page>
+      <page class="page page--generic page--trials">
+        <aside class="panel panel--aside">
+          <header class="panel__header">
+            <h4 class="panel__title">Be Flexible</h4>
+          </header>
+          <section class="panel__body">
+            <p>Try to leave some room for flexibility within your tasks—the more adaptable you make your trial, the more creative the players can be with their actions and inputs.</p>
+            <p>Update tasks—or replace them entirely—during play to help support the fiction described by your party.</p>
+          </section>
+        </aside>
+
+        <h3><span class="h3__highlight">3</span>Pacing & Deadlines</h3>
+        <p>Next, choose a pacing and a deadline for your trial. The faster the pace, the more checks the party can roll within a certain time—the longer the deadline, the more time the party has to act.</p>
+
+        <list class="panel panel--list">
+          <header class="panel__header">
+            <h4 class="panel__title">Trial Pacing</h4>
+          </header>
+          <section class="panel__body">
+            <tables class="tables tables--trial-pacing">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Pacing</th>
+                    <th>Checks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Extra-fast</td>
+                    <td>X per turn</td>
+                  </tr>
+                  <tr>
+                    <td>Fast</td>
+                    <td>X per round</td>
+                  </tr>
+                  <tr>
+                    <td>Slow</td>
+                    <td>X per hour</td>
+                  </tr>
+                  <tr>
+                    <td>Extra-slow</td>
+                    <td>X per day</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Pacing</th>
+                    <th>Checks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Weekly</td>
+                    <td>X per week</td>
+                  </tr>
+                  <tr>
+                    <td>Monthly</td>
+                    <td>X per month</td>
+                  </tr>
+                  <tr>
+                    <td>Yearly</td>
+                    <td>X per year</td>
+                  </tr>
+                  <tr>
+                    <td>Decadal</td>
+                    <td>X per decade</td>
+                  </tr>
+                </tbody>
+              </table>
+            </tables>
+          </section>
+        </list>
+
+        <list class="panel panel--list">
+          <header class="panel__header">
+            <h4 class="panel__title">Trial Deadline</h4>
+          </header>
+          <section class="panel__body">
+            <tables class="tables tables--trial-pacing">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Deadline</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>None</td>
+                    <td><span class="empty">—</span></td>
+                  </tr>
+                  <tr>
+                    <td>Turns</td>
+                    <td>X turns</td>
+                  </tr>
+                  <tr>
+                    <td>Rounds</td>
+                    <td>X rounds</td>
+                  </tr>
+                  <tr>
+                    <td>Minutes</td>
+                    <td>X minutes</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Deadline</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Hourly</td>
+                    <td>X hours</td>
+                  </tr>
+                  <tr>
+                    <td>Daily</td>
+                    <td>X days</td>
+                  </tr>
+                  <tr>
+                    <td>Weekly</td>
+                    <td>X weeks</td>
+                  </tr>
+                  <tr>
+                    <td>Yearly</td>
+                    <td>X years</td>
+                  </tr>
+                </tbody>
+              </table>
+            </tables>
+          </section>
+        </list>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+            <p>To round off their dungeon exploration trial, the GM chooses a pace and a deadline:</p>
+            <ul>
+              <li><strong>Pacing:</strong> Exploring the crypt is a <i>slow</i> process—the party can make up to <i>2 checks per hour</i>.</li>
+              <li><strong>Deadline:</strong> The party have <i>2 days</i> before the crypt sinks into the swamp.</li>
+            </ul>
+					</section>
+        </example>
+        
+        <h3><span class="h3__highlight">4</span>Failure Consequences</h3>
+        <p>Finally, you may wish to apply an <i>immediate consequence</i> to your players when they roll a failure during your trial. Choose one (or more) of the following—or create your own unique consequences:</p>
+
+        <ul>
+          <li>Lose a number of hit points.</li>
+          <li>Lose one or more hit dice.</li>
+          <li>Lose your lowest/highest unspent spell slot.</li>
+          <li>Gain a level of exhaustion.</li>
+          <li>Lose an amount of gold.</li>
+        </ul>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+            <p>The GM decides to apply a <i>consequence</i> to failed checks—a player loses one unspent hit die <i>or</i> gains a level of exhaustion if they have no hit die remaining.</p>
+					</section>
+        </example>
+
+        <col-break></col-break>
+      
+        <h3><span class="h3__highlight">5</span>Start Playing</h3>
+        <p>Your trial is now ready—see <i>Running a Trial</i> (<span class='page-detail--page-number' data-target='running-a-trial'></span>) to start putting it into play.</p>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">The Crypt of Jander Skull</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Medium / Involved</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">15</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">15</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">2 per Hour</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">2 days</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>Explore a sunken crypt in the Umbral Deeps—the lair of the necromancer <i>Jander Skull</i>.</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> The party find a secret stash of treasure. They recover 1000 gp, a scroll of <i>Raise Dead</i>, and a <i>Sword of Life Stealing</i>.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> The party explore the crypt, recovering 100 gp and a scroll of <i>Raise Dead</i>.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> The party are overwhelmed, escaping with two levels of exhaustion.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> The party run afoul of <i>Jander Skull</i>. One random party member is killed. The others escape with four levels of exhaustion.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Enter the Crypt</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Locate the secret entrance to the sunken crypt.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Explore the Sunken Chamber</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A)</i> Navigate the twisting chambers of the sunken crypt.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Battle the Undead</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A)</i> Defend yourself against the risen undead that roam the crypt.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">D</span>
+                <span class="title">Defeat Jander Skull</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A, B, and C)</i> Battle the necromancer.</p>
+                </div>
+              </div>
+						</div>
+					</section>
+        </trial>
+
+        <example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>You stand on the edge of the swamp of the <i>Umbral Deeps</i>, wherein—you suspect—hides the sunken lair of <i>Jander Skull</i>. What do you do?</span></li>
+							<li><span class="chat__speaker">Crackle:</span><span>I served a black dragon for years—I know my way around a swamp. Can I look for anything out-of-the-ordinary?</span></li>
+              <li><span class="chat__speaker">GM:</span><span>Yes—though, being a small creature, you feel that your movement and vision will be hindered by the thick swamp.</span></li>
+              <li><span class="chat__speaker">Viridian:</span><span>Jump up on my shoulders, Crackle—a little extra height might help you see better.</span></li>
+						</ul>
+					</section>
+        </example>
+      </page>
+      <page class="page page--generic page--trials">
+        <h2>Chances of Success</h2>
+        <p>When you create a trial, it's important to consider the party's chances of success—the higher you set the DC, the harder it will be for your players to pass the trial.</p>
+        <p>As a general rule of thumb, use the <i>Average Ability Bonuses</i> across the party as a starting point.</p>
+
+        <list class="panel panel--list">
+          <header class="panel__header">
+            <h4 class="panel__title">Average Ability Bonuses</h4>
+          </header>
+          <section class="panel__body">
+            <table class="table table--chances-dc">
+              <thead>
+                <tr>
+                  <th>Level</th>
+                  <th colspan="3"><span class="spacer">Average Ability Bonus</span></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Unskilled</th>
+                  <th>Skilled</th>
+                  <th>Expert</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1-4</td>
+                  <td>+0</td>
+                  <td>+3/+5</td>
+                  <td>+5/+7</td>
+                </tr>
+                <tr>
+                  <td>4-8</td>
+                  <td>+0</td>
+                  <td>+4/+7</td>
+                  <td>+7/+10</td>
+                </tr>
+                <tr>
+                  <td>9-12</td>
+                  <td>+0</td>
+                  <td>+5/+9</td>
+                  <td>+9/+13</td>
+                </tr>
+                <tr>
+                  <td>13-16</td>
+                  <td>+0</td>
+                  <td>+6/+10</td>
+                  <td>+11/+15</td>
+                </tr>
+                <tr>
+                  <td>17-20</td>
+                  <td>+0</td>
+                  <td>+7/+11</td>
+                  <td>+13/+17</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </list>
+
+        <list class="panel panel--list">
+          <header class="panel__header">
+            <h4 class="panel__title">Chances of Success</h4>
+          </header>
+          <section class="panel__body">
+            <table class="table table--chances">
+              <thead>
+                <tr>
+                  <th>Bonus</th>
+                  <th colspan=6><span class="spacer">Chance of Success (%)</span></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>DC 5</th>
+                  <th>DC 10</th>
+                  <th>DC 15</th>
+                  <th>DC 20</th>
+                  <th>DC 25</th>
+                  <th>DC 30</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>-5</td>
+                  <td>55</td>
+                  <td>30</td>
+                  <td>5</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>-4</td>
+                  <td>60</td>
+                  <td>35</td>
+                  <td>10</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>-3</td>
+                  <td>65</td>
+                  <td>40</td>
+                  <td>15</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>-2</td>
+                  <td>70</td>
+                  <td>45</td>
+                  <td>20</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>-1</td>
+                  <td>75</td>
+                  <td>50</td>
+                  <td>25</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+0</td>
+                  <td>80</td>
+                  <td>55</td>
+                  <td>30</td>
+                  <td>5</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+1</td>
+                  <td>85</td>
+                  <td>60</td>
+                  <td>35</td>
+                  <td>10</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+2</td>
+                  <td>90</td>
+                  <td>65</td>
+                  <td>40</td>
+                  <td>15</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+3</td>
+                  <td>95</td>
+                  <td>70</td>
+                  <td>45</td>
+                  <td>20</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+4</td>
+                  <td>100</td>
+                  <td>75</td>
+                  <td>50</td>
+                  <td>25</td>
+                  <td><span class="empty">—</span></td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+5</td>
+                  <td>100</td>
+                  <td>80</td>
+                  <td>55</td>
+                  <td>30</td>
+                  <td>5</td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+6</td>
+                  <td>100</td>
+                  <td>85</td>
+                  <td>60</td>
+                  <td>35</td>
+                  <td>10</td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+7</td>
+                  <td>100</td>
+                  <td>90</td>
+                  <td>65</td>
+                  <td>40</td>
+                  <td>15</td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+8</td>
+                  <td>100</td>
+                  <td>95</td>
+                  <td>70</td>
+                  <td>45</td>
+                  <td>20</td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+9</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>75</td>
+                  <td>50</td>
+                  <td>25</td>
+                  <td><span class="empty">—</span></td>
+                </tr>
+                <tr>
+                  <td>+10</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>80</td>
+                  <td>55</td>
+                  <td>30</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>+11</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>85</td>
+                  <td>60</td>
+                  <td>35</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>+12</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>90</td>
+                  <td>65</td>
+                  <td>40</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>+13</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>95</td>
+                  <td>70</td>
+                  <td>45</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>+14</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>75</td>
+                  <td>50</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>+15</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>80</td>
+                  <td>55</td>
+                  <td>30</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </list>
+
+        <h3>Improving your Chances</h3>
+        <p>A low ability bonus isn't the end of the world—there's (almost) always a way to improve your odds and help out in a trial. To boost your chances, consider the following:</p>
+
+        <ul>
+          <li><strong>Help/Assist:</strong> Spend your action to <i>help</i> another character with their ability check, granting them advantage in their efforts.</li>
+          <li><strong>Spells & Features:</strong> Use special magics and character features to gain ability bonuses, advantages, or—depending on the situation—automatic successes.</li>
+          <li><strong>Tools:</strong> Use tools creatively to bypass tasks.</li>
+          <li><strong>Creative Thinking:</strong> Think outside the box and use your talents in creative ways within the scenario.</li>
+        </ul>
+
+        <col-break></col-break>
+
+        <h2>Variant Dials</h2>
+        <p>If you want to customize <i>Trials</i> for your game, consider the following variant dials.</p>
+
+        <h3><span class="h3__highlight">A</span>Task DCs</h3>
+        <p>Use <i>Task DCs</i> if you want to run a more <i>granular</i> trial with a variety of DC modifiers.</p>
+        <p>When you create a task for a trial that you think is notably easier or harder than normal, apply a relative DC modifier to it: easiest (-4), easier (-2), normal (+0), harder (+2), or hardest (+4).</p>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <p>The GM wants to use <i>Task DCs</i> with the <i>Crypt of Jander Skull</i> trial (DC 15). They apply the following modifiers:</p>
+            <ul>
+              <li><strong>Enter the Crypt:</strong> Easiest (DC 11)</li>
+              <li><strong>Explore the Sunken Chamber:</strong> Normal (DC 15)</li>
+              <li><strong>Battle the Undead:</strong> Normal (DC 15)</li>
+              <li><strong>Defeat Jander Skull:</strong> Harder (DC 17)</li>
+            </ul>
+          </section>
+        </example>
+
+        <h3><span class="h3__highlight">B</span>Spellpower Successes</h3>
+        <p>If you want a more <i>precise</i> method for determining which spells can trigger automatic successes, use this <i>Spellpower Successes</i> variant.</p>
+        <p>To gain advantage or automatic successes on an ability check during a trial, a spell must be of a minimum level relative to the DC—as shown in the table below.</p>
+
+        <list class="panel panel--list">
+          <header class="panel__header">
+            <h4 class="panel__title">Spellpower Successes</h4>
+          </header>
+          <section class="panel__body">
+            <table class="table table--spellpower">
+              <thead>
+                <tr>
+                  <th>DC</th>
+                  <th colspan=3><span class="spacer">Minimum Spell Level</span></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Advantage</th>
+                  <th>1 Success</th>
+                  <th>2 Successes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0-4</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>5-9</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>10-14</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>15-19</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>20-24</td>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>25+</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </list>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <ul class="chat">
+              <li><span class="chat__speaker">GM:</span>In the dank crypt, the risen undead groan and stumble out of the gloom towards you. What do you do, Crackle?</li>
+              <li><span class="chat__speaker">Crackle:</span>Easy! They're no match for my 2nd-level <i>Dragon's Breath</i>... uh, I mean, I hope not. Are they?</li>
+              <li><span class="chat__speaker">GM:</span>Let's find out. You breathe draconic fire at the advancing zombies—roll DC 15 Intelligence (Arcana) with advantage.</li>
+              <li><span class="chat__speaker">Crackle:</span>Please work, pretty please... <span class="chat__action">(rolls 16)</span> ...hah!</li>
+            </ul>
+          </section>
+        </example>
+
+        <h4>A Perfect Fit</h4>
+        <p>If a spell is a perfect match for a situation, act as if it is +2 spell levels higher to determine if it should grant advantage or a success.</p>
+      </page>
+      <page class="page page--generic page--trials">
+        <h2>Trial Templates</h2>
+        <p>To get you started with trials, here are some example templates you can use in your games. Use these templates as a starting point—adjust the difficulties, pacing, deadlines, and apply your own theming where appropriate.</p>
+
+        <h3><span class="h3__highlight">A</span>Chase</h3>
+        <p>In a chase, the party are in hot pursuit. A monster running through a dark forest, a thief fleeing across crowded city rooftops, a pirate ship escaping across a stormy sea—when the party need to need to catch up with an evasive opponent, use this template.</p>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">Chase</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Easy / Straightforward</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">1 per Turn</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">10 rounds</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>You are chasing after someone—or something—across some tricky terrain. Can you reach the target in time?</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> You catch up with your target and gain a bonus.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> You catch up with your target.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> You catch up with your target—but at a significant cost.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> You lose track of your target.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Track Target</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Keep the target in your sights.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Overcome Environment</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Overcome a hazard caused by the environment.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Close the Gap</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Close the distance between you and the target.</p>
+                </div>
+              </div>
+					</section>
+        </trial>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <ul class="chat">
+              <li><span class="chat__speaker">GM:</span>The flashbomb suddenly explodes—when your vision clears, you catch a glimpse of the assassin escaping into the crowded city. What do you do?</li>
+              <li><span class="chat__speaker">Viridian:</span>We chase—right guys?</li>
+              <li><span class="chat__speaker">Krazak:</span>Damn right we chase! No hesitation, I charge into the crowds after the assassin.</li>
+              <li><span class="chat__speaker">GM:</span>Excellent—the chase begins! Krazak, make a DC 10 Strength (Athletics) check to force your way through the immediate crowds.</li>
+            </ul>
+          </section>
+        </example>
+
+        <col-break></col-break>
+
+        <h3><span class="h3__highlight">B</span>Craft</h3>
+        <p>In a crafting trial, the party are being creative. Building a suit of armor, reforging the broken sword of kings, brewing a lethal poison—when the party are trying to create something, use this template.</p>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">Craft</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Easy / Straightforward</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">1 per Hour</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">None</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>You are trying to craft an item. Gather recipies, materials, and tools to put your creativity to the test.</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> You craft the item perfectly, gaining a bonus.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> You craft the item.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> You craft the item—but it has a significant defect.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> You failed to craft the item and wasted the materials in the process.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Prepare Materials</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Process the materials you need for your crafting.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Craft the Item</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Turn the materials into your desired item.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Apply some Finishing Touches</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A and B)</i> Apply some finishing touches and flourishes to the item.</p>
+                </div>
+              </div>
+					</section>
+        </trial>
+
+         <example class="panel panel--example">
+          <section class="panel__body">
+            <ul class="chat">
+              <li><span class="chat__speaker">Valiant:</span>We've got the campfire burning hot, Chansi.</li>
+              <li><span class="chat__speaker">Chansi:</span>Great. Lets cook up a batch of my family's special <i>phoenix stew</i>—that'll clear up all our exhaustion. I'll start cutting up the carrots.</li>
+              <li><span class="chat__speaker">GM:</span>Excellent—the cooking begins! Chansi, make a DC 10 Wisdom (Survival) check as you prepare the ingredients. You're proficient with cook's utensils, so you also have advantage.</li>
+            </ul>
+          </section>
+        </example>
+
+        <aside class="panel panel--aside">
+          <header class="panel__header">
+            <h4 class="panel__title">Active Crafting</h4>
+          </header>
+          <section class="panel__body">
+            <p>For additional crafting features—such as materials and recipes—see <i>Active Crafting</i> (<span class='page-detail--page-number' data-target='active-crafting'></span>). Allow your players to gather special materials, collect rare recipes, and forge items with crafting trials.</p>
+          </section>
+        </aside>
+      </page>
+      <page class="page page--generic page--trials">
+        <h3><span class="h3__highlight">C</span>Escape</h3>
+        <p>In a escape, the party are trying to lose a pursuer. Breaking free from an eldritch prison, running across desecrated ground patrolled by soul-devouring wraiths, hiding in the mountains from a raging red dragon—when the party need to keep their distance from a foe, use this template.</p>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">Escape</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Easy / Straightforward</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">1 per Turn</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">10 rounds</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>You are being pursed. Can you hide your tracks and open up enough distance to lose the hunter?</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> You escape your pursuers and gain a bonus.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> You escape your pursuers.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> You escape your pursuers—but at a significant cost.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> Your pursuers catch up.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Cover Tracks</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Cover your tracks as you make your escape.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Overcome the Environment</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Overcome a hazard caused by the environment.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Get some Distance</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Open up some distance between you and your pursuers.</p>
+                </div>
+              </div>
+					</section>
+        </trial>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <ul class="chat">
+              <li><span class="chat__speaker">GM:</span>The guard sneers at you from outside the cell, Viridian, throwing a ring of heavy keys casually in the air. "Enjoy your last night, hero—Lord Erasius likes his executions nice and early."</li>
+              <li><span class="chat__speaker">Viridian:</span>I rather like my head where it is... I have to escape. I'll fake an illness to get the guard into my cell—then knock her out and steal the keys.</li>
+              <li><span class="chat__speaker">GM:</span>Excellent—the escape begins. Viridian, make a DC 10 Charisma (Deception) check to fake a painful illness. As an actor, you have advantage on this roll.</li>
+              <li><span class="chat__speaker">Viridian:</span>Perfect—I roll... <span class="chat__action">(rolls 14)</span> ...a success! As the guard leans over me, I throw a punch and grab the keys as she falls unconcious.</li>
+              <li><span class="chat__speaker">GM:</span>You now have the keys to your cell, and one unconcious guard. No alarms are sounding—<i>yet</i>.</li>
+              <li><span class="chat__speaker">Viridian:</span>I'd better hide this guard to cover my tracks...</li>
+            </ul>
+          </section>
+        </example>
+
+        <col-break></col-break>
+
+        <h3><span class="h3__highlight">D</span>Heist</h3>
+        <p>In a heist, the party are trying to take something from a location <i>in secret</i>. Stealing a diamond from a bank vault, rescuing an emperor from draconic kidnappers, taking a phylactory from a lich's lair—when the party are trying to acquire something without detection, use this template.</p>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <ul class="chat">
+              <li><span class="chat__speaker">Krazak:</span> Bah I say we storm the temple, punch out the priests, and steal the idol. It's for a good cause.</li>
+              <li><span class="chat__speaker">Clanda:</span> Good cause or not, if the Church of Ilmater find out we stormed their temple we'll be in <i>serious</i> trouble. Is there another way, Zane?</li>
+              <li><span class="chat__speaker">Zane:</span> There's <i>always</i> another way. A big temple has big shadows—we sneak, we steal, we <i>survive</i>.</li>
+              <li><span class="chat__speaker">Clanda:</span> You think we can do a heist?</li>
+              <li><span class="chat__speaker">Zane:</span>I could heist this in my sleep—<i>if</i> Krazak can get me the temple blueprints.</li>
+              <li><span class="chat__speaker">Krazak:</span>I think I know a guy... Lemme have a drink with him, call in a favor.</li>
+              <li><span class="chat__speaker">GM:</span> Excellent—the heist begins. Krazak, make a DC 10 Constitution (Persuasion) check while you drink.</li>
+            </ul>
+          </section>
+        </example>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">Heist</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Easy / Involved</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">15</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">1 per Hour</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">1 week</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>You are trying to pull off a heist. Can you get in, grab the loot, and get out without raising the alarm?</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> You escape with the item and gain a bonus.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> You escape with the item.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> You escape with the item—but at a significant cost.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> You were discovered during the heist—bad things are about to happen.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Make a Plan</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Put your team together, gather information, and acquire the tools/resources you need.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Execute the Heist</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A)</i> Infiltrate, locate, and acquire.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Escape Unnoticed</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A and B)</i> Get back out without raising the alarm.</p>
+                </div>
+              </div>
+					</section>
+        </trial>
+      </page>
+      <page class="page page--generic page--trials">
+        <h3><span class="h3__highlight">E</span>Investigate</h3>
+        <p>In an investigation, the party are trying to learn something. Investigating a murder scene, uncovering the lair of a mythical beast, learning the secret handshake of an underground cult—when the party need to discover some information, use this template.</p>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">Investigate</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Easy / Straightforward</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">1 per Hour</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">None</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>You are gathering information. Can you turn clues and rumors into a solid conclusion?</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> You gathered some information and a bonus.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> You gathered information.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> You gathered some information—but at a significant cost.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> You didn't gather any useful information—and something bad will happen.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Gather Clues</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Search a location and gather clues.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Ask Around</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Talk to people and collect information.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Make a Conclusion</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A and B)</i> Assemble your scraps of information into a conclusion.</p>
+                </div>
+              </div>
+					</section>
+        </trial>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <ul class="chat">
+              <li><span class="chat__speaker">Truth:</span><span>You think Sister Sedeena was <i>murdered</i>?</span></li>
+              <li><span class="chat__speaker">Valiant:</span><span>If not, it's one hell of a coincidence. Sedeena wanted to tell us something—all of a sudden, the shrine catches fine whilst she's trapped inside? By <i>accident</i>? I don't buy it.</span></li>
+              <li><span class="chat__speaker">Krazak:</span><span>Must be those damn Zhentarim again.</span></li>
+              <li><span class="chat__speaker">Zane:</span><span>No, this is too sloppy for Zhentarim. No serious assassin trusts fire—a knife is <i>much</i> more reliable.</span></li>
+              <li><span class="chat__speaker">Truth:</span><span>Then we need to find out who, and why. Valiant and Zane, see what leads you can find in town—Krazak and I will investigate the shrine. I'll start by asking the acolyte—Darcy Brin—what he remembers of that night...</span></li>
+              <li><span class="chat__speaker">GM:</span><span>Excellent—the investigation begins! Truth, make a DC 10 Charisma (Investigation) check.</span></li>
+            </ul>
+          </section>
+        </example>
+
+        <col-break></col-break>
+
+        <h3><span class="h3__highlight">F</span>Persuade</h3>
+        <p>In a persuasion, the party are trying to get someone to do something. Turn against their master, release some prisoners, give up some vital information—when the party are trying to change an NPC's mind, use this template.</p>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <ul class="chat">
+              <li><span class="chat__speaker">GM:</span><span>The gnoll snarls at you, Viridian, as he presses a black knife to Clanda's throat. "Back off, devilspawn, or I'll slice her from ear to ear!"</span></li>
+              <li><span class="chat__speaker">Clanda:</span><span>Better do as he says, Viridian—this wretch killed Vemi in cold blood.</span></li>
+              <li><span class="chat__speaker">GM:</span><span>"I killed Vemi because she was a <i>butcher</i>," spits the gnoll, "and I'll kill you too if you don't shut your lying elven mouth." He's watching you closely with crazed eyes, Viridian—what do you do?</span></li>
+              <li><span class="chat__speaker">Viridian:</span><span>I want to convince him to let Clanda go—I'm a talker, not a fighter. I'll try to calm his temper, tell him I'm only here to talk.</span></li>
+              <li><span class="chat__speaker">GM:</span><span>Excellent—the persuasion begins! Viridian, make a DC 10 Wisdom (Persuasion) check to begin.</span></li>
+            </ul>
+          </section>
+        </example>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">Persuade</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Easy / Involved</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">1 per Turn</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">10 rounds</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>You are trying to change someone's mind. Can you do it without turning them against you?</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> You persuade the target and gain a bonus.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> You persuade the target.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> You persuade the target—but at a significant cost.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> You were unable to persuade the target—something bad is about to happen.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Make your Case</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Put forward your case and make arguments about <i>why</i> your position is right.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Counteract</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Counteract your opponents arguments and prove them wrong.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Soothe and Enflame</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Manage the emotional state of your opponent through charm, intimidation, and insight.</p>
+                </div>
+              </div>
+					</section>
+        </trial>
+      </page>
+      <page class="page page--generic page--trials">
+        <h3><span class="h3__highlight">G</span>Quest</h3>
+        <p>In an quest, the party are trying to achieve something grand. Recovering a treasure from a sunken lair, hunting a dangerous necromancer, gathering the four elemental crystals—when the party need to undertake an adventure, use this template.</p>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">Quest</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Easy / Involved</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">15</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">1 per Hour</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">None</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>You are on a quest. Can you reach the end and complete your adventure before misfortune strikes?</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> You complete the quest and gain a bonus.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> You complete the quest.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> You complete the quest—but at a significant cost.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> You failed the quest, and something bad is about to happen.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Embark</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Travel to the location of the quest.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Explore your Surroundings</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A)</i> Explore the environment and solve any puzzles or obstacles that block your path.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Battle Enemies</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A)</i> Defeat those who would oppose you.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">D</span>
+                <span class="title">Defeat the Boss</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A and B)</i> Defeat (or otherwise overcome) the big boss.</p>
+                </div>
+              </div>
+					</section>
+        </trial>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <ul class="chat">
+              <li><span class="chat__speaker">GM:</span><span>What do you do in your downtime, Valiant?</span></li>
+              <li><span class="chat__speaker">Valiant:</span><span>Well my temple has asked me to cleanse the Darkwood Shrine—is that something I can accomplish in a week?</span></li>
+              <li><span class="chat__speaker">GM:</span> It's a ways north, but you think it's achievable.</li>
+              <li><span class="chat__speaker">Valiant:</span><span>Perfect—I'll do that while everyone else is resting in town. I'll take one of the acolytes with me—they've been to the shrine before.</span></li>
+              <li><span class="chat__speaker">GM:</span><span>Excellent—the quest begins! Valiant, make a DC 10 Wisdom (Survival) check as you embark. The acolyte remembers the path—you have advantage.</span></li>
+            </ul>
+          </section>
+        </example>
+
+        <col-break></col-break>
+
+        <h3><span class="h3__highlight">H</span>Unlock</h3>
+        <p>In a unlock trial, the party are trying to open or disarm something. Cracking open a secret vault in an artificer's workshop, opening a set of locked diamond doors, breaking through a sealed fey portal—when the party are trying to bypass something, use this template.</p>
+
+        <example class="panel panel--example">
+          <section class="panel__body">
+            <ul class="chat">
+              <li><span class="chat__speaker">GM:</span><span>As the battle wages on, the eldritch portal crackles with purple lightning. You hear a gibbering roar as another four mouthers crawl through the aberrant vortex and into our world.</span></li>
+              <li><span class="chat__speaker">Truth:</span><span>Damn, there's too many mouthers—we'll be overwhelmed if they keep pouring through! Clanda, can you shut down that portal?</span></li>
+              <li><span class="chat__speaker">Clanda:</span><span>Sure—<i>if</i> you can keep them off my back.</span></li>
+              <li><span class="chat__speaker">Truth:</span><span>You heard her, Krazak—let's clear a path.</span></li>
+              <li><span class="chat__speaker">Clanda:</span><span>Alright, let's see what we're dealing with... I'll try to make sense of the sigils on the portal stone.</span></li>
+              <li><span class="chat__speaker">GM:</span><span>Exellent—the unlocking begins! Clanda, make a DC 10 Intelligence (Arcana) check to gather information about the portal. Because you don't understand deep speech, however, you have disadvantage on your roll.</li>
+            </ul>
+          </section>
+        </example>
+
+        <trial class="panel panel--trial">
+					<header class="panel__header">
+						<h4 class="panel__title">Unlock</h4>
+						<ul class="panel__tags">
+							<li>Trial</li>
+							<li>Easy / Simple</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+            <div class="trial__details">
+              <div class="trial__detail">
+                <span class="trial__detail__name">DC</span>
+                <span class="trial__detail__modifier">10</span>
+              </div>
+              <div class="trial__detail">
+                <span class="trial__detail__name">Successes</span>
+                <span class="trial__detail__modifier">5</span>
+              </div>
+              <div class="trial__detail trial__detail--failures">
+                <span class="trial__detail__name">Failures</span>
+                <div class="trial__detail__modifier">
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                  <span class="failure"></span>
+                </div>
+              </div>
+              <div class="trial__detail trial__detail--pacing">
+                <span class="trial__detail__name">Pace</span>
+                <div class="trial__detail__modifier">1 per Round</div>
+              </div>
+              <div class="trial__detail trial__detail--deadline">
+                <span class="trial__detail__name">Deadline</span>
+                <div class="trial__detail__modifier">None</div>
+              </div>
+            </div>
+            <div class="trial__goal">
+              <p>You are trying to unlock or disarm something. Can you bypass the restraints before something bad happens?</p>
+              <table class="table trial__outcomes">
+                <thead>
+                  <tr>
+                    <th>Failures</th>
+                    <th>Outcome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0</td>
+                    <td><strong>Major Victory:</strong> You unlock the target and gain a bonus.</td>
+                  </tr>
+                  <tr>
+                    <td>1-2</td>
+                    <td><strong>Minor Victory:</strong> You unlock the target.</td>
+                  </tr>
+                  <tr>
+                    <td>3-4</td>
+                    <td><strong>Minor Defeat:</strong> You unlock the target—but at a significant cost.</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Major Defeat:</strong> You were unable to unlock the target—something bad is about to happen.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="trial__tasks">
+              <div class="trial__task">
+                <span class="icon">A</span>
+                <span class="title">Gather Information</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Gather information about the locks.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">B</span>
+                <span class="title">Test the Defences</span>
+                <span class="successes">
+                  <span class="success"></span>
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p>Test the defences with some initial advances.</p>
+                </div>
+              </div>
+              <div class="trial__task">
+                <span class="icon">C</span>
+                <span class="title">Unlock</span>
+                <span class="successes">
+                  <span class="success"></span>
+                </span>
+                <div class="description">
+                  <p><i>(Requirements: A and B)</i> Attempt to unlock the target.</p>
+                </div>
+              </div>
+					</section>
+        </trial>
+      </page>
+    </book>
+  </body>
+</html>

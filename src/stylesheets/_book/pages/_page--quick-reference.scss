@@ -1,0 +1,60 @@
+// Styles for quick-reference chapters.
+
+.page--quick-reference {
+
+  .table--item-sizes {
+    @include table-column-align(3, center);
+  }
+
+  .table--item-fragility {
+    @include table-column-align(3, center);
+  }
+
+  .table--tempering {
+    @include table-nowrap(1);
+  }
+
+  .table--resale {
+    @include table-column-align(2, right);
+  }
+
+  .table--restoration {
+    @include table-column-align(2, right);
+  }
+
+  .tables--experience .table {
+    @include table-column-align(2, center);
+  }
+
+  .table--miscasting-consequences {
+    @include table-nowrap(1);
+  }
+
+  .table--afflictions {
+    @include table-nowrap(1);
+  }
+
+  .table--affliction-removal {
+    @include table-nowrap(1);
+  }
+
+  .tables--affliction-costs {
+    grid-template-columns: repeat(3, 1fr);
+    
+    .table {
+      @include table-column-align(2, right);
+    }
+  }
+
+  .tables--training .table {
+    @include table-column-align(2, center);
+    @include table-column-align(3, right);
+  }
+
+  .table--conditions {
+    @include table-column-width(1, 25%);
+    @include table-column-width(2, 35%);
+    @include table-column-width(3, 25%);
+    @include table-column-width(4, 15%);
+  }
+}

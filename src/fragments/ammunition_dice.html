@@ -1,0 +1,163 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--ammunition-dice" data-header-icon="bow">
+				<h1 id="ammunition-dice">Ammunition Dice</h1>
+				<p>Some items require ammunition—arrows, bolts, bullets, charges, etc. But in the heat of battle, it's not always clear how much ammo you have left in your quiver.</p>
+				<p>This chapter introduces <i>ammunition dice</i> as a means of tracking your ammunition supplies.</p>
+
+				<h2>The Ammunition Die</h2>
+				<p>Instead of tracking each individual shot, take a d12—this is your <i>Ammunition die</i>. Roll it whenever you take a shot: if you roll a 1 or 2, the die gets one size smaller.</p>
+				<p>If you're down to one piece of ammunition and you use it, that's it—it's all gone! Remove it from your inventory.</p>
+
+				<mechanic class="panel panel--mechanic">
+					<header class="panel__header">
+						<h4 class="panel__title">Ammunition Die</h4>
+					</header>
+					<section class="panel__body">
+						<p>d12 → d10 → d8 → d6 → d4 → 1</p>
+					</section>
+				</mechanic>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>The ghoul grabs hold of you tight, Viridian, moaning as it prepares to bite. What do you do?</span></li>
+							<li><span class="chat__speaker">Viridian:</span><span>Uh Chansi, need a little help here!</span></li>
+							<li><span class="chat__speaker">Chansi:</span><span>Yea see the thing is, I'm kinda running low on arrows. Ammunition die is down to a d4—</span></li>
+							<li><span class="chat__speaker">Viridian:</span><span>TAKE THE DAMN SHOT, CHANSI!</span></li>
+							<li><span class="chat__speaker">Chansi:</span><span><i>Fine</i>. That's... <span class="chat__action">(rolls 15)</span> ...15 to hit, and... <span class="chat__action">(rolls 1)</span> ...damn, a 1 for ammunition. Last arrow.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Special Ammo</h4>
+					</header>
+					<section class="panel__body">
+						<p>If your ammunition is rare or has limited uses—fire arrows, magic bolts, lighting bullets, etc—don't use an ammunition die. Track each individual shot as you use them.</p>
+					</section>
+				</aside>
+
+				<col-break></col-break>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Average Uses per Die Size</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--ammunition-dice-uses">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Die Size</th>
+										<th>Remaining</br>Uses (Average)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>d20</td>
+										<td>30</td>
+									</tr>
+									<tr>
+										<td>d12</td>
+										<td>20</td>
+									</tr>
+									<tr>
+										<td>d10</td>
+										<td>14</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Die Size</th>
+										<th>Remaining</br>Uses (Average)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>d8</td>
+										<td>9</td>
+									</tr>
+									<tr>
+										<td>d6</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>d4</td>
+										<td>2</td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<h3>Ammunition Stacks</h3>
+				<p>Most ammunition types will start with (and have a maximum size of) a d12 <i>ammunition die</i>—this represents a full stack of arrows/bolts/bullets/etc. Some special items, however, may have their own unique limitations—such as a wand with d8 maximum charges.</p>
+				<p><strong>Multiple Stacks:</strong> If you're carrying multiple stacks of any one type of ammunition, prioritize the smallest stack. Always roll the smallest ammunition die per ammo type.</p>
+
+				<h3>Replenishing Ammunition</h3>
+				<p>To increase your <i>ammunition die</i> you can recover ammo from the environment, buy a new stack, or pay a small percentage of the total cost to increase your die by one step based on the <i>maximum</i> die size for that ammo type</p>
+				<p>To replenish a stack of arrows (max size d12) from d8 to d10 would cost 20 cp (20% of 1 gp).</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Replenishing Ammunition</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--replenishing-ammunition">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Maximum Die</th>
+										<th>Cost per Size Increase</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>d20</td>
+										<td>16%</td>
+									</tr>
+									<tr>
+										<td>d12</td>
+										<td>20%</td>
+									</tr>
+									<tr>
+										<td>d10</td>
+										<td>25%</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Maximum Die</th>
+										<th>Cost per Size Increase</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>d8</td>
+										<td>33%</td>
+									</tr>
+									<tr>
+										<td>d6</td>
+										<td>50%</td>
+									</tr>
+									<tr>
+										<td>d4</td>
+										<td>100%</td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+			</page>
+		</book>
+	</body>
+</html>

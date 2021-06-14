@@ -1,0 +1,67 @@
+// Styles for class changes pages.
+
+.page--class-changes {
+
+	.tables--second-wind .table {
+		@include table-column(1, center, 25%);
+	}
+
+	.tables--rally .table {
+		@include table-column(1, center, 25%);
+	}
+
+	.tables--oaths .table {
+		@include table-column(1, center, 30%);
+	}
+
+	.table--sorcerer-spells {
+		@include table-column(1, center, 15%);
+	}
+
+	.table--class-paladin-smites {
+		@include table-column(1, center, 14%);
+		@include table-column(2, left, 66%);
+		@include table-column(3, center, 20%);
+	}
+
+	.table--class-monk-spells {
+		@include table-column(1, left, 49%);
+		@include table-column(2, left, 43%);
+		@include table-column(3, center, 8%);
+
+		&--level-3 {
+			@include table-column(1, left, 52%);
+			@include table-column(2, left, 40%);
+		}
+
+		&--level-6 {
+			@include table-column(1, left, 45%);
+			@include table-column(2, left, 47%);
+
+			td:nth-of-type(1),
+			td:nth-of-type(2) {
+				padding-right: 0;
+			}
+		}
+
+		&--level-11 {
+			@include table-column(1, left, 50%);
+			@include table-column(2, left, 42%);
+
+			td:nth-of-type(1),
+			td:nth-of-type(2) {
+				padding-right: 0;
+			}
+		}
+	}
+
+	.table--class-ranger-favored {
+		@include table-column(1, left, 30%);
+		@include table-column(2, left, 70%);
+	}
+
+	.table--class-oathbreaking {
+		@include table-column(1, center, 25%);
+		@include table-column(2, center, 75%);
+	}
+}

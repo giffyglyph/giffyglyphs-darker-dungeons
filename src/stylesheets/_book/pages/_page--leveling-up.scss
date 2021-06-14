@@ -1,0 +1,15 @@
+// Styles for leveling-up pages.
+
+.page--leveling-up {
+
+	.tables--training .table {
+		@include table-column(1, center, 33%);
+		@include table-column(2, center, 33%);
+		@include table-column(3, center, 34%);
+	}
+
+	.table--mentor-responses {
+		@include table-column(1, center, 14%);
+		@include table-column(2, left, 86%);
+	}
+}

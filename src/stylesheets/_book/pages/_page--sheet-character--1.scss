@@ -1,0 +1,444 @@
+// Styles for the character sheet (page 1).
+
+.page--character-sheet--1 {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-rows: auto ($sheet-spacing * 25) ($sheet-spacing * 25) 1fr;
+		grid-template-columns: ($sheet-spacing * 25) 1fr 1fr;
+		grid-template-areas:
+			"header header header"
+			"attributes health-and-defense trackers"
+			"attributes actions-and-attacks actions-and-attacks"
+			"attributes features features";
+		grid-column-gap: $sheet-spacing;
+		grid-row-gap: $sheet-spacing;
+	}
+	
+	.character-name {
+		grid-area: header;
+	}
+
+	.attributes-and-skills {
+		grid-area: attributes;
+
+		> .box__body {
+			display: grid;
+			grid-template-columns: ($sheet-spacing * 7) auto;
+			grid-template-rows: ($sheet-spacing * 3) ($sheet-spacing * 14) ($sheet-spacing * 38) auto ($sheet-spacing * 7);
+			grid-template-areas:
+				"attributes proficiency-bonus"
+				"attributes saving-throws"
+				"attributes skills"
+				"proficiencies proficiencies"
+				"passive-perception senses";
+			grid-column-gap: $sheet-spacing;
+			grid-row-gap: $sheet-spacing;
+		}
+
+		.attributes {
+			grid-area: attributes;
+			display: grid;
+			grid-template-rows: repeat(6, 1fr);
+			grid-row-gap: $sheet-spacing;
+		}
+
+		.saving-throws {
+
+			.dot {
+				margin-right: 5px;
+				align-self: center;
+				margin-bottom: 1px;
+			}
+
+			ul {
+				line-height: 15px;
+
+				li {
+					display: flex;
+				}
+
+				.label {
+					flex-grow: 1;
+					text-align: left;
+				}
+			}
+
+			.input-before {
+
+				&::before {
+					content: '';
+					display: inline-block;
+					border-bottom: 1px solid $box-subheading-color;
+					width: 20px;
+					margin-right: 5px;
+					margin-bottom: -2px;
+				}
+			}
+		}
+
+		.skills {
+			grid-area: skills;
+
+			.dot {
+				margin-right: 5px;
+				align-self: center;
+				margin-bottom: 1px;
+			}
+
+			ul {
+				line-height: 15px;
+
+				li {
+					display: flex;
+				}
+
+				.label {
+					flex-grow: 1;
+					text-align: left;
+				}
+			}
+
+			.input-before {
+
+				&::before {
+					content: '';
+					display: inline-block;
+					border-bottom: 1px solid $box-subheading-color;
+					width: 20px;
+					margin-right: 5px;
+					margin-bottom: -2px;
+				}
+			}
+
+			.dot-after {
+
+				&::after {
+					content: '';
+					display: inline-block;
+					border: 1px solid $box-subheading-color;
+					width: 6px;
+					float: right;
+					height: 6px;
+					border-radius: 100%;
+					margin-top: 3px;
+				}
+			}
+		}
+
+		.proficiencies {
+			grid-area: proficiencies;
+
+			.armor-and-weapons {
+				text-align: left;
+				margin: 0;
+				line-height: 15px;
+
+				.dot {
+					margin-bottom: -2px;
+					margin-right: 2px;
+				}
+
+				.title,
+				.item {
+					display: inline-block;
+					width: 20%;
+					box-sizing: border-box;
+				}
+
+				.title {
+					width: 19%;
+				}
+
+				.item:nth-of-type(4) {
+					padding-left: 5px;
+					width: 21%;
+				}
+			}
+		}
+
+		.passive-perception {
+			grid-area: passive-perception;
+		}
+
+		.senses {
+			grid-area: senses;
+		}
+	}
+
+	.health-and-defense {
+		grid-area: health-and-defense;
+
+		> .box__body {
+			display: grid;
+			grid-template-columns: 1.1fr 0.8fr 1.1fr;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-areas:
+				"ac resistances resistances"
+				"hp-max hp-current hp-current"
+				"hit-dice hit-dice death";
+			grid-column-gap: $sheet-spacing;
+			grid-row-gap: $sheet-spacing;
+		}
+
+		.ac {
+			grid-area: ac;
+		}
+
+		.resistances {
+			grid-area: resistances;
+		}
+
+		.hp-max {
+			grid-area: hp-max;
+		}
+
+		.hp-current {
+			grid-area: hp-current;
+
+			> section {
+				padding-top: 4px;
+			}
+
+			p {
+				margin: 0;
+				color: $sheet-bg-color;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: smaller;
+			}
+		}
+
+		.hit-dice {
+			grid-area: hit-dice;
+
+			> .box__body {
+				padding: 0 5px;
+			}
+
+
+			.hit-dice-list {
+				display: flex;
+				padding-top: 4px;
+
+				.heading {
+					padding-top: 4px;
+				}
+
+				p {
+					margin: 0;
+					color: $box-subheading-color;
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: smaller;
+				}
+
+				> div:nth-of-type(1) {
+					display: inline-block;
+					width: 30%;
+				}
+
+				> div:nth-of-type(2) {
+					display: inline-block;
+					width: 40%;
+
+					p {
+						margin-bottom: 3px;
+					}
+
+					ul {
+						margin: 0;
+					}
+
+					li {
+						line-height: 20px;
+					}
+				}
+
+				> div:nth-of-type(3) {
+					display: inline-block;
+					width: 30%;
+				}
+
+				.box__lines > li {
+					line-height: 17px;
+				}
+			}
+		}
+
+		.death {
+			grid-area: death;
+
+			> section {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding-top: 4px;
+			}
+
+			.dots {
+				padding: 0;
+
+				.dot:nth-of-type(2) {
+					margin-top: 4px;
+				}
+			}
+		}
+	}
+
+	.trackers {
+		grid-area: trackers;
+
+		> .box__body {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			grid-template-rows: 1fr repeat(4, 30px);
+			grid-template-areas:
+				"initiative speed"
+				"experience experience"
+				"training training"
+				"empty fate"
+				"empty inspiration";
+			grid-column-gap: $sheet-spacing;
+			grid-row-gap: $sheet-spacing;
+		}
+
+		.initiative {
+			grid-area: initiative;
+		}
+
+		.speed {
+			grid-area: speed;
+
+			> section {
+				padding-top: 4px;
+			}
+
+			p {
+				margin: 0;
+				color: $box-subheading-color;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: smaller;
+			}
+		}
+
+		.perception {
+			grid-area: perception;
+		}
+
+		.experience {
+			grid-area: experience;
+
+			> .box__body {
+				width: 140px;
+				box-sizing: border-box;
+			}
+		}
+
+		.training {
+			grid-area: training;
+		}
+
+		.experience,
+		.training {
+
+			.box__header {
+				width: 50px;
+				flex-shrink: 0;
+			}
+		}
+
+		.fate {
+			grid-area: fate;
+		}
+
+		.inspiration {
+			grid-area: inspiration;
+		}
+
+		.fate,
+		.inspiration {
+
+			.box__header {
+				width: 50px;
+				flex-shrink: 0;
+			}
+		}
+
+		.empty {
+			grid-area: empty;
+			padding-left: 4px;
+			padding-right: 4px;
+		}
+	}
+
+	.actions-and-attacks {
+		grid-area: actions-and-attacks;
+
+		> .box__body {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows: ($sheet-spacing * 6.5) auto;
+			grid-template-areas:
+				"spell-ability spell-dc spell-attack resource-1 resource-2 resource-3"
+				"actions actions attacks attacks attacks attacks";
+			grid-column-gap: $sheet-spacing;
+			grid-row-gap: $sheet-spacing;
+		}
+
+		.spell-ability {
+			grid-area: spell-ability;
+		}
+
+		.spell-dc {
+			grid-area: spell-dc;
+		}
+
+		.spell-attacks {
+			grid-area: spell-attacks;
+		}
+
+		.resource-1 {
+			grid-area: resource-1;
+		}
+
+		.resource-2 {
+			grid-area: resource-2;
+		}
+
+		.resource-3 {
+			grid-area: resource-3;
+		}
+
+		.actions {
+			grid-area: actions;
+
+			.table {
+				@include sheet-table-column(1, left, 75%, 0);
+				@include sheet-table-column(2, center, 25%, 0);
+			}
+		}
+
+		.attacks {
+			grid-area: attacks;
+
+			.table {
+				@include sheet-table-column(1, left, 50%, 0);
+				@include sheet-table-column(2, center, 15%, 0);
+				@include sheet-table-column(3, left, 35%, 5px);
+			}
+		}
+	}
+
+	.features {
+		grid-area: features;
+
+		.table {
+			@include sheet-table-column(1, center, 7%, 0);
+			@include sheet-table-column(2, left, 28%, 5px);
+			@include sheet-table-column(3, left, 65%, 5px);
+		}
+	}
+}

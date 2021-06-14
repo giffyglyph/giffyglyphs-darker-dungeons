@@ -1,0 +1,187 @@
+// Styles for the equipment sheet.
+
+.page--equipment-grid--3 {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-columns: auto 300px;
+		grid-column-gap: 10px;
+	}
+
+	.grid-boxes {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+
+		.box::after {
+			position: absolute;
+			top: 4px;
+			right: 8px;
+			background: #dcdcdc;
+			height: 1rem;
+			width: 1rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 1cm;
+		}
+
+
+		.row-1 {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			box {
+				height: 100px;
+				width: 100px;
+
+				&::after {
+					content: '1';
+				}
+			}
+		}
+
+		.row-2 {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			box {
+				height: 200px;
+				width: 100px;
+
+				&::after {
+					content: '2';
+				}
+			}
+		}
+
+		.row-3 {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			box {
+				height: 300px;
+				width: 100px;
+
+				&::after {
+					content: '3';
+				}
+			}
+		}
+
+		.row-3-h {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			width: 100%;
+
+			box {
+				height: 100px;
+				width: 300px;
+
+				&::after {
+					content: '3';
+				}
+			}
+		}
+
+		.row-4 {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			box {
+				height: 200px;
+				width: 200px;
+
+				&::after {
+					content: '4';
+				}
+
+				&:nth-of-type(1),
+				&:nth-of-type(2) {
+					height: 200px;
+					width: 100px;
+
+					&::after {
+						content: '2';
+					}
+				}
+			}
+		}
+
+		.row-4-v {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			box {
+				height: 400px;
+				width: 100px;
+
+				&::after {
+					content: '4';
+				}
+			}
+		}
+
+		.row-6 {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			box {
+				height: 200px;
+				width: 300px;
+
+				&::after {
+					content: '6';
+				}
+			}
+		}
+
+		.row-6-h {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			box {
+				height: 300px;
+				width: 200px;
+
+				&::after {
+					content: '6';
+				}
+
+				&:nth-of-type(1),
+				&:nth-of-type(2) {
+					height: 300px;
+					width: 100px;
+
+					&::after {
+						content: '3';
+					}
+				}
+			}
+		}
+
+		.row-9 {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			box {
+				height: 300px;
+				width: 300px;
+
+				&::after {
+					content: '9';
+				}
+			}
+		}
+	}
+}

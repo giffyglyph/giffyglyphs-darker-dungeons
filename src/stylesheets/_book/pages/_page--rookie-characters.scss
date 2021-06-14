@@ -1,0 +1,24 @@
+// Styles for rookie characters pages.
+
+.page--rookie-characters {
+
+	.table--level-0 {
+		@include table-column(1, left, 14%);
+		@include table-column(2, center, 11%);
+		@include table-column(3, center, 8%);
+		@include table-column(4, center, 11%);
+		@include table-column(5, left, 17%);
+		@include table-column(6, left, 17%);
+		@include table-column(7, left, 22%);
+	}
+
+	.table--rookie-saves {
+		@include table-column(1, center, 25px);
+		@include table-column-align(2, left);
+	}
+
+	.table--rookie-adventure-seeds {
+		@include table-column(1, center, 20%);
+		@include table-column(2, left, 80%);
+	}
+}

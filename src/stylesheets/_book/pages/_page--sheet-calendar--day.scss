@@ -1,0 +1,62 @@
+// Styles for the calendar sheet (day).
+
+.page--calendar--day {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-rows: ($sheet-spacing * 10) auto;
+		grid-template-areas:
+			"header"
+			"day";
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.calendar-days > .box__body {
+		display: grid;
+		height: 100%;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+			"day-1"
+			"day-2";
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.date {
+		border-bottom: 1px solid $sheet-bg-color;
+		text-align: left;
+		padding-left: 5px;
+		margin: 0;
+		line-height: 22px;
+	}
+
+	.table {
+
+		.phase {
+			width: 7%;
+			text-align: left;
+			padding-left: 5px;
+
+			&.no-border {
+				border-bottom: 0;
+			}
+		}
+
+		.hour {
+			width: 6%;
+			text-align: center;
+		}
+
+		.event {
+			width: 67%;
+			text-align: left;
+			padding-left: 5px;
+		}
+
+		.xp {
+			width: 20%;
+			text-align: left;
+			padding-left: 5px;
+		}
+	}
+}

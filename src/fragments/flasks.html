@@ -1,0 +1,421 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--flasks" data-header-icon="potion">
+				<h1 id="flasks">Flasks</h1>
+				<p>Potions are an adventurer's best friend, but it's not always sensible—or realistic—to carry several dozen potions at once. When you need to carry a lot of potion in a little container, use a flask.</p>
+				<p>This chapter introduces <i>potion flasks</i> and rules on how to use them in your campaign.</p>
+
+				<h2>Magical Flasks</h2>
+				<p>A flask is a small, magically-infused bottle (or other container) that can safely hold a large—but <i>uncertain</i>—amount of consumable potion (or other liquid).</p>
+				<p>Unlike potions, which typically come in single-use vials, it's always hard to tell <i>exactly</i> how much liquid remains inside a flask—you never quite know how many uses you'll get before it's all gone.</p>
+				<p>Flasks can vary in appearance based on who crafted it, what it is made from, etc. To see what your flask looks like, roll on the <i>Flask Appearance</i> table below.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Flask Appearance</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--flask-appearance">
+							<thead>
+								<tr>
+									<th>d12</th>
+									<th>Material</th>
+									<th>Color</th>
+									<th>Style/Design</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Fragile Glass</td>
+									<td>Blue</td>
+									<td>Human</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Reinforced Glass</td>
+									<td>Red</td>
+									<td>Dwarven</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Wood</td>
+									<td>Yellow</td>
+									<td>Elven</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Ceramic</td>
+									<td>Silver</td>
+									<td>Orcish</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Bone</td>
+									<td>Gold</td>
+									<td>Draconic</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Wood</td>
+									<td>Purple</td>
+									<td>Undead</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Leather</td>
+									<td>Orange</td>
+									<td>Celestial</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>Stone</td>
+									<td>Green</td>
+									<td>Aberrant</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>Resin</td>
+									<td>Brown</td>
+									<td>Elemental</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>Metal</td>
+									<td>Black</td>
+									<td>Fiendish</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>Dragonscale</td>
+									<td>White</td>
+									<td>Gnomish</td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>Plant</td>
+									<td>Teal</td>
+									<td>Monstrous</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<col-break></col-break>
+
+				<h3>The Flask Die</h3>
+				<p>Instead of tracking individual drinks, flask quantity is measured with a die—d8, d10, d12, etc. This is your <i>Flask</i> die—roll it whenever you take a drink from the flask: if you roll a 1 or 2, the die gets one size smaller:</p>
+				<p>If you roll a 1 or 2 on a d4, that's it—the flask is now completely empty until you can find a way to refill it.</p>
+
+				<mechanic class="panel panel--mechanic">
+					<header class="panel__header">
+						<h4 class="panel__title">Flask Die</h4>
+					</header>
+					<section class="panel__body">
+						<p>d20 → d12 → d10 → d8 → d6 → d4 → 0</p>
+					</section>
+				</mechanic>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>The orc's greatsword hits you for 11 points of damage, Clanda. What do you do?</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Damn, I'm bloodied now. Can't risk another hit like that—I'll take a drink from my <i>flask of lesser healing</i> as a bonus action and get... 7 hit points back.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>Great, now roll your flask die.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Flask quantity is d4, so I roll a d4 and get... <span class="chat__action">(rolls 1)</span> ...ah rats—that was the last of it. Ok, so no more healing—that means it's <i>Burning Hands</i> time...</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Average Uses & Costs</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--average-uses">
+							<thead>
+								<tr>
+									<th>Quantity</th>
+									<th>Average Uses</th>
+									<th>Cost to Buy</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>d20</td>
+									<td>30</td>
+									<td>22 x base potion cost</td>
+								</tr>
+								<tr>
+									<td>d12</td>
+									<td>20</td>
+									<td>15 × base potion cost</td>
+								</tr>
+								<tr>
+									<td>d10</td>
+									<td>14</td>
+									<td>10 × base potion cost</td>
+								</tr>
+								<tr>
+									<td>d8</td>
+									<td>9</td>
+									<td>6 × base potion cost</td>
+								</tr>
+								<tr>
+									<td>d6</td>
+									<td>5</td>
+									<td>3 × base potion cost</td>
+								</tr>
+								<tr>
+									<td>d4</td>
+									<td>2</td>
+									<td>1 × base potion cost</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+			</page>
+			<page class="page page--generic page--flasks">
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Splitting a Flask</h4>
+					</header>
+					<section class="panel__body">
+						<p>Magic fades quickly from any liquid leaving a flask. If you pour the contents of a flask into another container—such as a potion vial, a cup, or a different flask—the magic fades within one round if not consumed or otherwise applied.</p>
+					</section>
+				</aside>
+
+				<h2>Getting a Flask</h2>
+				<p>There are three common ways to gain a flask: find one on your adventures, buy one from a merchant, or—if you have the right tools and training—create one yourself.</p>
+
+				<h3><span class="h3__highlight">A</span>Treasure & Rewards</h3>
+				<p>You may find a magical flask on your adventures—in the ruins of a wizard's tower, on the corpse of a dead explorer, in the locked chest of a rich merchant—or be awarded one as a reward for some heroic deed.</p>
+
+				<h3><span class="h3__highlight">B</span>Buy a Flask</h3>
+				<p>Flasks are a rare item that—depending on your setting—may hard to find. But if you can find a vendor selling flasks, an empty flask is a small item that costs 5 gp.</p>
+				<p>The cost of a partially-filled flask will depend on its quantity and contents—see the <i>Average Uses & Costs</i> table for an exact breakdown.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Valiant wants to buy a <i>flask of lesser healing</i> with d6 quantity. One <i>potion of lesser healing</i> costs 50 gp, so the flask will cost him 150 gp (3 x 50).</p>
+					</section>
+				</example>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Flask of Lesser Healing</h4>
+						<ul class="panel__tags">
+							<li>Flask</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This flask contains d6 drinks of <i>potion of lesser healing</i>. When you take a drink, roll a flask die—if you roll a 1 or 2, the flask quantity gets one size smaller.</p>
+					</section>
+				</item>
+
+				<h3><span class="h3__highlight">C</span>Create a Flask</h3>
+				<p>If you are able to craft magic items, you may craft your own flask—if you can find the right materials.</p>
+
+				<recipe class="panel panel--recipe">
+					<header class="panel__header">
+						<h4 class="panel__title">Recipe: Magic Flask</h4>
+						<ul class="panel__tags">
+							<li>Recipe</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<ul class="recipe__details">
+							<li><strong>Reward</strong> 1 × Magic Flask</li>
+							<li><strong>Crafting Time</strong> 1 day</li>
+							<li><strong>Requirements</strong> 3 gp, Arcana, Artisan's tools</li>
+						</ul>
+						<div class="panel__table-wrapper">
+							<table class="table table--recipe-flask">
+								<thead>
+									<tr>
+										<th>Qty</th>
+										<th>Material</th>
+										<th>Properties</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2</td>
+										<td>Spellsealed glass</td>
+										<td>Rare, glass, force</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Elderspiral wood</td>
+										<td>Uncommon, wood, force</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</recipe>
+
+				<col-break></col-break>
+
+				<h2>Filling your Flask</h2>
+				<p>If you have an empty flask and are proficient with an alchemist's kit, you can fill an empty flask yourself by combining together potions of the same type and pouring them safely into the flask. This can be done during a short or long rest.</p>
+				<p>If you don't have the requisite tools or experience, you'll need to find a trained alchemist to perform this service—pouring any ill-prepared potions into a flask will spoil the mixture, nullifying any magical properties.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Flask Refill</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--flask-refill">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Potions Used</th>
+										<th>Flask Quantity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>d4</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>d6</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>d8</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Potions Used</th>
+										<th>Flask Quantity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>10</td>
+										<td>d10</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td>d12</td>
+									</tr>
+									<tr>
+										<td>22</td>
+										<td>d20</td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<h3>Refilling your Flask</h3>
+				<p>Potions are volatile and don't like to be mixed. If you pour any potion—even one of the same kind—into a partially-filled flask, the contents immediately spoil and lose all magical properties.</p>
+
+				<h4>Variant: Mixing Potions</h4>
+				<p>If you want to allow players to mix potions in flasks but with some <i>volatility</i>, roll a d20 on the table below whenever potions are mixed in a flask. This roll should be done in secret—the player does not notice any change without first making a successful identifying action.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Mixing Potions</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--flask-mixing">
+							<thead>
+								<tr>
+									<th>d20</th>
+									<th>Effect</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1-5</td>
+									<td>The contents lose their original properties and become a <i>potion of poison</i>.</td>
+								</tr>
+								<tr>
+									<td>6-16</td>
+									<td>The contents are spoiled and lose all magical properties.</td>
+								</tr>
+								<tr>
+									<td>17-19</td>
+									<td>No change in the contents.</td>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td>The contents lose their original properties and gain the effect of the newly-added liquid.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h4>Variant: Topping Up</h4>
+				<p>If you are proficient with an alchemist's kit, you can top-up a partially-filled flask during a short or long rest if you have enough potions. As a proficient alchemist, this does not risk spoiling the contents of the flask.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Topping Up</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--flask-topup">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Flask Quantity</th>
+										<th>Potions Needed</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>d4 → d6</td>
+										<td>+2</td>
+									</tr>
+									<tr>
+										<td>d6 → d8</td>
+										<td>+3</td>
+									</tr>
+									<tr>
+										<td>d8 → d10</td>
+										<td>+4</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Flask Quantity</th>
+										<th>Potions Needed</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>d10 → d12</td>
+										<td>+5</td>
+									</tr>
+									<tr>
+										<td>d12 → d20</td>
+										<td>+7</td>
+									</tr>
+									<tr class="empty">
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+			</page>
+		</book>
+	</body>
+</html>

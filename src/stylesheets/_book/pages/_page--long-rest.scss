@@ -1,0 +1,19 @@
+// Styles for long rest chapters.
+
+.page--long-rest {
+
+	.table--lifestyle {
+		@include table-column(1, left, 13%);
+		@include table-column(2, center, 14%);
+		@include table-column(3, center, 14%);
+		@include table-column(4, center, 14%);
+		@include table-column(5, center, 15%);
+		@include table-column(6, center, 15%);
+		@include table-column(7, center, 15%);
+	}
+
+	.table-appendix {
+		@include table-column(1, center, 14%);
+		@include table-column(2, left, 86%);
+	}
+}

@@ -1,0 +1,58 @@
+// Styles for light and shadow chapters.
+
+.page--light-and-shadow {
+
+	.table--light-levels {
+		@include table-column(1, center, 12%);
+		@include table-column(2, left, 20%);
+		@include table-column(3, left, 70%);
+
+		th,
+		td {
+
+			&:nth-child(1) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+
+	.table--light-level-conditions {
+		@include table-column(1, center, 25%);
+		@include table-column(2, center, 25%);
+		@include table-column(3, center, 25%);
+		@include table-column(4, center, 25%);
+	}
+
+	.table--light-sources {
+		@include table-column(1, left, 23%);
+		@include table-column(2, center, 15%);
+		@include table-column(3, left, 62%);
+	}
+
+	.table--light-spells {
+		@include table-column(1, left, 19%);
+		@include table-column(2, center, 10%);
+		@include table-column(3, center, 8%);
+		@include table-column(4, center, 10%);
+		@include table-column(5, center, 7%);
+		@include table-column(6, left, 46%);
+	}
+
+	.table--light-room-sizes {
+		@include table-column(1, left, 25%);
+		@include table-column(2, center, 20%);
+		@include table-column(3, center, 11%);
+		@include table-column(4, center, 11%);
+		@include table-column(5, center, 11%);
+		@include table-column(6, center, 11%);
+		@include table-column(7, center, 11%);
+	}
+
+	.table--potion-cats-eye {
+		@include table-column(1, left, 25%);
+		@include table-column(2, left, 25%);
+		@include table-column(3, left, 25%);
+		@include table-column(4, right, 25%);
+	}
+}

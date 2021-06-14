@@ -1,0 +1,444 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--wear-and-tear" data-header-icon="axe">
+				<h1 id="wear-and-tear">Wear & Tear</h1>
+				<p>Everything decays, given enough time. It's hard to keep your gear in good shape out in the wilds—swords chip, staves break, and armor dents. Nothing stays in perfect condition forever—especially given the rigors of day-to-day adventuring. Keep a good whetstone in your pack and a sharp sword in your hand to survive the dangers ahead.</p>
+				<p>This chapter introduces rules to help track wear and tear on your items with <i>notches</i>, how damage degrades your gear, and how to repair and temper your equipment to prevent future damage.</p>
+
+				<h2>Item Degradation</h2>
+				<p>Items degrade with use, losing condition until they become useless. This is measured with <i>notches</i>—the more notches an item has, the more it has degraded.</p>
+				<p>Items gain notches through damage, consequences, and critical failures, and must be repaired or otherwise restored using the correct skills, tools, and expertise to function properly again.</p>
+
+				<h3>Damaging Items</h3>
+				<p>Any object that can suffer damage can become notched, reducing its functionality and quality—through scratches, chips, dents, and cracks.</p>
+				<p>Objects generally fall into one of four categories: weapons, armor, magic foci, and miscellaneous items.</p>
+
+				<h4 class="h4--option">Armor</h4>
+				<p>If you are critically hit by an attack, your armor gains a notch of damage. Each notch reduces your total AC by 1.</p>
+				<p><strong>Unarmored:</strong> If you're not wearing any armor and are critically hit by an attack, select a random item in your inventory—that item gains a new notch instead.</p>
+
+				<col-break></col-break>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>The gnoll's heavy maul hit Truth with a fierce crunch, denting the drow's fine plate armor. It grinned at the weak point now exposed in Truth's defences...</p>
+					</section>
+				</example>
+
+				<h4 class="h4--option">Weapons</h4>
+				<p>Weapons—both melee and ranged—gain a notch when you critically fail an attack (or other relevant action) with them.</p>
+				<p>Each weapon notch reduces by one step the damage die you roll with that weapon (to a minimum of 1).</p>
+				<p><strong>Multiple Dice:</strong> Some weapons roll multiple die for their damage (greatswords, for example, rolling 2d6). In these cases, one notch reduces the size of the <i>largest</i> die by one size category (see <i>Type B</i>).</p>
+				<p><strong>Sustained Damage:</strong> A weapon's damage can't go below 1, but it can still gain additional notches. These notches must be repaired with relevant tools (whetstones, smith's tools, etc) to restore the weapon's damage dice.</p>
+
+				<mechanic class="panel panel--mechanic">
+					<header class="panel__header">
+						<h4 class="panel__title">Weapon Damage Degradation</h4>
+					</header>
+					<section class="panel__body">
+						<p><strong>Type A:</strong> 1d12 → 1d10 → 1d8 → 1d6 → 1d4 → 1</p>
+						<p><strong>Type B:</strong> 2d6 → 1d6 + 1d4 → 2d4 → 1d4 + 1 → 2 → 1</p>
+					</section>
+				</mechanic>
+
+				<h4 class="h4--option">Spellcasting Focus</h4>
+				<p>A spellcasting focus (a bard's instrument, a wizard's staff, a cleric's holy symbol, etc) gains a notch whenever you critically fail a spellcasting action whilst holding it.</p>
+				<p>Each notch reduces your total spellcasting ability by 1 for any action which involves that focus.</p>
+				<p><strong>Magical Mishaps:</strong> If you roll a critical fail while spellcasting and are <i>not</i> holding a spellcasting focus at the time, the power strikes out and hits a random item in your inventory—that item gains a notch of damage.</p>
+			</page>
+			<page class="page page--generic page--wear-and-tear">
+				<h4 class="h4--option">Miscellaneous Items</h4>
+				<p>All other items gain a notch whenever appropriate—often when they take direct damage or are used in a failed skill check (such as rolling a natural 1 to disarm a trap with a set of thieves tools).</p>
+				<p>Each notch reduces the item's efficacy by 1, adding a cumulative −1 penalty to any roll made using that item. Using a lockpick with one notch, for example, will apply a −1 penalty to your lockpicking attempts.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>The door to the basement is locked, Viridian. A heart is etched under the key hole.</span></li>
+							<li><span class="chat__speaker">Viridian:</span><span>Locked? Against a bard and his lock picks? I don't think so... <span class="chat__action">(rolls 1)</span> ...oh <i>come on</i>!</span></li>
+							<li><span class="chat__speaker">GM:</span><span>You feel one of the tools bend awkwardly in your hand. Your lockpicks take a notch of damage.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h3>Shattered Gear</h3>
+				<p>If your items suffer too much damage, they can break irreparably into useless scrap.</p>
+				<p>Objects are grouped into three categories of toughness based on their overall construction: delicate, sturdy, and indestructible. Most objects are <i>sturdy</i> enough to withstand a fair amount of punishment (up to 10 notches), but <i>delicate</i> items can shatter after just two notches.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Item Fragility</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--item-fragility">
+							<thead>
+								<tr>
+									<th>Fragility</th>
+									<th>Description</th>
+									<th>Maximum<br/>Notches</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Delicate</td>
+									<td>Thin glass, ceramics, complicated or tiny machinery</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Sturdy</td>
+									<td>Wood, metal, well-made goods</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Indestructible</td>
+									<td>Thick stone, strong metals</td>
+									<td>100+</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>That's a critical failure on your spell attack, Clanda. Take a notch of damage.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Damn, I'm not holding my focus. That means my... <span class="chat__action">(rolls for a random item)</span> <i>delicate</i> potion of healing takes a second notch. Oh dear.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>Oh dear indeed. Your arcane power hits the already-chipped glass potion bottle—it shatters inside your bag, spilling the liquid everywhere.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h4>Sacrificing Weapons and Armor</h4>
+				<p>When you hit a target with an attack, you can choose to sacrifice your weapon to roll its original un-notched damage die. Decide this before you roll your damage.</p>
+				<p>Likewise, when you are hit by an attack you can choose to sacrifice your armor and reduce the damage taken by 3d4 for light armor, 3d8 for medium armor, and 3d12 for heavy armor. You can decide this after damage is dealt.</p>
+				<p><strong>Irreparably Destroyed:</strong> When you sacrifice a weapon or armor in this way, it is irreparably destroyed—you can't repair it nor restore the item with simple magic (such as the <i>Mending</i> cantrip).</p>
+
+				<col-break></col-break>
+
+				<h3>Repairing Items</h3>
+				<p>Items can be repaired by an appropriate craftsman, costing 10% of the item price per notch. Depending on the item, this may require rare or expensive components.</p>
+				<p>Characters can also perform basic repairs on their gear with relevant tools—a whetstone to smooth out a notch, a sewing kit to patch up a robe, a hammer to tap out a dent, etc. To repair one notch, you must spend one hour using a set of tools and make an Intelligence (Tool) ability check. If you succeed, you repair one notch of damage. If you critically fail, however, you create a new notch.</p>
+				<p><strong>Repair DC:</strong> The GM will decide the DC of your repair based on the relative ability of your tools and the overall state (or rarity) of your item: very easy (5), easy (10), medium (15), hard (20), very hard (25), or impossible (30).</p>
+
+				<h4>Mending</h4>
+				<p>The <i>Mending</i> cantrip repairs broken items—a broken key, a punctured waterskin, a split bow, a torn page, etc. Notches, however, represent only minor or superficial damage to an item—not a complete break—and can't be removed with <i>Mending</i>.</p>
+				<p>You can, however, use <i>Mending</i> to restore an item that has <i>shattered</i> from too many notches. A restored item is usable again, but has the maximum number of notches—without repairs, it will break again with one more notch.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">Clanda:</span><span>Ok, that's my bag <i>finally</i> dried out. I'll scoop together the remains of the bottle and cast <i>Mending</i>.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>Your magic fuses the glass fragments back together into a useable, delicate bottle—it's cracked with 1 notch, but it'll hold liquid again.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h2>Tempering Gear</h2>
+				<p>With the right skills and the right materials, you can make your gear more resistant to wear and tear. This is called <i>tempering</i> and it reduces the number of notches your equipment takes from critical failures.</p>
+
+				<h3>Temper Qualities</h3>
+				<p>When you temper an item, you strengthen the material so that it can withstand more punishment and remain effective for longer—a tempered sword becomes harder to chip, and tempered armor harder to crack. The better the temper, the stronger your equipment.</p>
+				<p>There are three grades of temper, each more exclusive and expensive than the last: pure, royal, and astral.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Tempering Gear</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--tempering">
+							<thead>
+								<tr>
+									<th>Quality</th>
+									<th>Rarity</th>
+									<th>Critical Failure</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><span class="empty">—</span></td>
+									<td>Common</td>
+									<td>Gains 1 notch</td>
+								</tr>
+								<tr>
+									<td>Pure Temper</td>
+									<td>Uncommon</td>
+									<td>Gains &#189; (0.5) notch</td>
+								</tr>
+								<tr>
+									<td>Royal Temper</td>
+									<td>Rare</td>
+									<td>Gains &#188; (0.25) notch</td>
+								</tr>
+								<tr>
+									<td>Astral Temper</td>
+									<td>Mythic</td>
+									<td>Gains &#8539; (0.125) notch</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+			</page>
+			<page class="page page--generic page--wear-and-tear">
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Why Temper Gear?</h4>
+					</header>
+					<section class="panel__body">
+						<p>At higher levels, martial classes can make multiple attacks per round—this means an increased likelihood of rolling a 1 and gaining a notch on their weapons.</p>
+						<p>Tempering allows characters to improve their equipment so that—even though they may roll more 1s on average—notches are less damaging to their equipment.</p>
+					</section>
+				</aside>
+
+				<h4>Tempered Protection</h4>
+				<p>A tempered piece of equipment is less vulnerable to the effects of wear and tear. When you would gain 1 notch from a critical failure (such as when attacking or defending), you instead gain only a <i>fraction</i> of a notch—a half, a quarter, or an eighth, depending on the quality.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>The troll lumbers towards you with a loud roar, Krazak. What do you do?</span></li>
+							<li><span class="chat__speaker">Krazak:</span><span>Hah, a dwarf fears no troll. I swing my greataxe in a wide arc... <span class="chat__action">(rolls 1)</span> ...and miss. Great.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>Your axe cuts deep into the adjacent stone wall with a loud crack. It gains a notch of damage.</span></li>
+							<li><span class="chat__speaker">Krazak:</span><span>Lucky I had this beauty <i>tempered</i> back in town, she only gains &#189; notch.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h3>Applying a Temper</h3>
+				<p>To temper a piece of equipment, you need four things: time, facilities, materials, and skill. You won't usually be able to temper gear yourself—such work requires special training—so keep an eye out for trained craftsmen.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Tempering Costs</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--tempering-costs">
+							<thead>
+								<tr>
+									<th>Quality</th>
+									<th>Cost</th>
+									<th>Time</th>
+									<th>Tempered Value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Pure</td>
+									<td>Base value × 2</td>
+									<td>3 days</td>
+									<td>Base value × 3</td>
+								</tr>
+								<tr>
+									<td>Royal</td>
+									<td>Base value × 4</td>
+									<td>1 week</td>
+									<td>Base value × 6</td>
+								</tr>
+								<tr>
+									<td>Astral</td>
+									<td>Base value × 8</td>
+									<td>2 weeks</td>
+									<td>Base value × 12</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h4>Craftsmen</h4>
+				<p>It's relatively straightforward to find someone who can apply a pure temper—for a price, of course. However, royal and astral tempering is <i>extremely</i> rare—you'll need to search far and wide for such legendary craftsmen.</p>
+
+				<h4>Rare Materials</h4>
+				<p>Especially rare and unique equipment may require special materials for tempering—ore from ancient mines, red dragon scales, a gem from a slaad's brain, etc. Recovering these components may be an adventure in itself.</p>
+
+				<h3>Repairing Tempered Gear</h3>
+				<p>When you temper an item, its inherent value increases (as shown in the <i>Tempered Value</i> column of the Tempering Costs table). This also means that it becomes more expensive to repair notches on your tempered item—so make sure you have enough coin to look after your gear.</p>
+
+				<col-break></col-break>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>In the mines of Kazadorn, Krazak has his greataxe <i>Vengeance</i> tempered. Applying a pure temper costs 60 gp (30 × 2) and takes 3 days. After the temper is applied, the weapon is worth 90 gp (30 × 3) and any notches will cost 9 gp (10% of 90) to repair.</p>
+					</section>
+				</example>
+
+				<h2>Item Quality</h2>
+				<p>The quality of an item affects how people treat it. Lower quality items are more likely to have visual defects—such as dents and scratches—that mark how it's been used.</p>
+				<p>This doesn't affect the item's effectiveness, but it may change how NPCs react—for example, a merchant will offer much less for damaged goods and a noble may be offended to receive anything that appears second-hand. There may be times, however, when you want your gear to have a few good scratches—a fighter who wears pristine armor may look like they've never been in battle, drawing scorn and derision.</p>
+				<p>There are four grades of item quality:</p>
+
+				<ul>
+					<li><strong>Pristine:</strong> Never been notched. This item looks, feels, and smells brand new.</li>
+					<li><strong>Worn:</strong> Has had only one notch at a time. This item has one main defect that indicates use.</li>
+					<li><strong>Well-Worn:</strong> Has had two or three notches at one time. This item shows heavy signs of use.</li>
+					<li><strong>Scarred:</strong> Has had four or more notches at one time. This item looks shabby and in poor condition.</li>
+				</ul>
+
+				<h3>Resale Value</h3>
+				<p>The quality of an item impacts how much a merchant may offer you for it—lower quality means lower prices.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Resale Value</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--resale-value">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Quality</th>
+										<th>Resale Value</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Pristine</td>
+										<td>75%</td>
+									</tr>
+									<tr>
+										<td>Worn</td>
+										<td>50%</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Quality</th>
+										<th>Resale Value</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Well-Worn</td>
+										<td>25%</td>
+									</tr>
+									<tr>
+										<td>Scarred</td>
+										<td>10%</td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<h3>Restoring Items</h3>
+				<p>Item quality can be restored by an appropriate craftsman. This requires 1 week per grade—though rare or delicate items may take longer.</p>
+				<p>Magic items are significantly more difficult to restore than mundane items. You may need to find an elite artisan or some rare materials to restore the appearance of your magical gear.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Item Restoration</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--item-restoration">
+							<thead>
+								<tr>
+									<th>Quality</th>
+									<th>Cost</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Worn to Pristine</td>
+									<td>50%</td>
+								</tr>
+								<tr>
+									<td>Well-Worn to Worn</td>
+									<td>30%</td>
+								</tr>
+								<tr>
+									<td>Scarred to Well-Worn</td>
+									<td>10%</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+			</page>
+			<page class="page page--generic page--wear-and-tear">
+				<h2>Variant Dials</h2>
+				<p><i>Wear & Tear</i> is a flexible game mechanic that can be adjusted to suit a variety of settings and gameplay styles. If you want to customize the experience, consider using some of these variant dials.</p>
+
+				<h3><span class="h3__highlight">A</span>Basic Wear & Tear</h3>
+				<p>If you want to include a simplified version of item decay in your game, use <i>object conditions</i>. These lightweight conditions replace notches, tempering, and qualities.</p>
+
+				<h4>Object Conditions</h4>
+				<p>Any object that can suffer damage (such as weapons, armor, magic foci, and other items) may track its state with three <i>object conditions</i>: fine, damaged, and broken.</p>
+
+				<ul>
+					<li><strong>Fine:</strong> This object works as intended.</li>
+					<li><strong>Damaged:</strong> This object has taken some noticeable damage—a crack, a bend, a tear, etc—but can still be used without penalty.</li>
+					<li><strong>Broken:</strong> This object has been broken and can't be used again until it is properly repaired.</li>
+				</ul>
+
+				<p>Unlike notches, object conditions don't affect the utility of your gear until they are broken—a damaged sword still cuts well, but a broken sword must be repaired.</p>
+
+				<h4>Damaging Objects</h4>
+				<p>Objects take damage whenever they are mishandled or otherwise treated poorly—such as by being critical hit or fumbled with.</p>
+				<p><strong>Critically Hit:</strong> If you are critically hit by an attack, one of your items must take damage. You may choose either your armor or an object you are holding—if you're not wearing armor or holding anything, a random item in your inventory takes a level of damage instead.</p>
+				<p><strong>Fumbled:</strong> If you critically fail with an object during an ability check, you fumble and the object takes a level of damage. Attack rolls and saving throws don't cause a fumble, even if you roll a natural 1.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>The orc swings a sword at you, Valiant. It's.. <span class="chat__action">(rolls 20)</span> ...a critical hit, 20 points of slashing damage.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>Ouch! Looks like my gear is taking some damage from that. I'll choose... my shield—I tried to block the attack with it and the sword cut deep, tearing a large crack in the shield. It's <i>damaged</i> now.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h4>Repairing Objects</h4>
+				<p>You can repair an object if you have the appropriate tools and knowledge. Repairs generally require an hour, tools, and an Intelligence (Tool) ability check—if you succeed, you improve the condition of the object by 1 tier.</p>
+				<p><strong>Mending:</strong> You can use <i>Mending</i> to repair a broken object (if you have enough pieces). An object mended in this way is restored to a <i>damaged</i> condition. Mending has no effect on damaged objects.</p>
+
+				<col-break></col-break>
+
+				<h4>Variant: Thicker Armor</h4>
+				<p>If you want to add more durability to your armored characters, add more conditions to heavier armor types:</p>
+
+				<mechanic class="panel panel--mechanic">
+					<header class="panel__header">
+						<h4 class="panel__title">Thicker Armor</h4>
+					</header>
+					<section class="panel__body" class="center">
+						<p><strong>Medium Armor:</strong> Fine, Damaged (1/2), Broken.</p>
+						<p><strong>Heavy Armor:</strong> Fine, Damaged (1/2/3), Broken.</p>
+					</section>
+				</mechanic>
+
+				<h3><span class="h3__highlight">B</span>Temperless Notches</h3>
+				<p>If you want to use notches in your game but without the need for tempers, consider this <i>temperless notches</i> variant.</p>
+
+				<h4>Critical Hits</h4>
+				<p>If you are critically hit by an attack, one of your items must gain a notch. Apply a notch to either your armor or an item you are holding (such as a weapon, shield, or spellcasting foci)—you may choose the object.</p>
+				<p>If you're not wearing armor or holding anything, a random item in your inventory gains a notch instead.</p>
+
+				<h4>Fumbles</h4>
+				<p>If you critically fail with an object during an ability check, you fumble and the object gains a notch. Attack rolls and saving throws don't cause you to fumble.</p>
+
+				<h3><span class="h3__highlight">C</span>Destructive Attacks</h3>
+				<p>To add some variety to your monster actions, consider giving them destructive attacks that specifically damage equipment in addition to—or in place of—hit points.</p>
+
+				<monster data-name="Red Orc" data-description="Medium humanoid (orc)" data-level=4 data-role="Striker" data-priorities="STR|CON|DEX|WIS|CHA|INT">
+					<div class="monster__actions">
+						<div class="monster__action">
+							<p class="monster__action__title"><strong>Beserker Punch</strong> <i>(common)</i></p>
+							<p class="monster__action__description"><i>Melee 5 ft:</i> [attack] vs AC. <i>Hit:</i> [damage] bludgeoning damage.</p>
+						</div>
+						<div class="monster__action monster__action--limited">
+							<p class="monster__action__title"><strong>Sunder</strong> <i>(recharge 5/6)</i></p>
+							<p class="monster__action__description"><i>Melee 5 ft:</i> [attack] vs AC. <i>Hit:</i> [damage] slashing damage and the target's armor suffers 1 notch.</p>
+						</div>
+					</div>
+				</monster>
+
+				<h4>Giffyglyph's Monster Maker</h4>
+				<p>For more ideas about monsters and monstrous attacks, try <i>Giffyglyph's Monster Maker</i>—a supplement full of guides and templates to help build dangerous monsters.</p>
+			</page>
+		</book>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+// Styles for wear and tear chapters.
+
+.page--wear-and-tear {
+
+	.table--item-fragility {
+		@include table-column(1, left, 26%);
+		@include table-column(2, left, 54%);
+		@include table-column(3, center, 20%);
+	}
+
+	.table--tempering {
+		@include table-column(1, left, 30%);
+		@include table-column(2, left, 29%);
+		@include table-column(3, left, 41%);
+	}
+
+	.table--tempering-costs {
+		@include table-column(1, left, 17%);
+		@include table-column(2, left, 30%);
+		@include table-column(3, left, 19%);
+		@include table-column(4, left, 34%);
+	}
+
+	.tables--resale-value .table {
+		@include table-column(1, left, 50%);
+		@include table-column(2, center, 50%);
+	}
+
+	.table--item-restoration {
+		@include table-column(1, left, 85%);
+		@include table-column(2, center, 15%);
+	}
+}

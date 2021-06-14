@@ -1,0 +1,14 @@
+// Styles for short rest chapters.
+
+.page--short-rest {
+
+	.table--camping-dc {
+		@include table-column(1, center, 13%);
+		@include table-column(2, left, 87%);
+	}
+
+	.table--camping-results {
+		@include table-column(1, center, 20%);
+		@include table-column(2, left, 80%);
+	}
+}

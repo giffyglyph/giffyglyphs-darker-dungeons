@@ -1,0 +1,71 @@
+// Styles for the journey sheet.
+
+.page--journey {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-rows: ($sheet-spacing * 10) 1fr 1fr 1fr 1fr auto;
+		grid-template-areas:
+			"header"
+			"journey";
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.journey-from,
+	.journey-to {
+
+		section {
+			width: 75%;
+		}
+	}
+
+	.journey-time,
+	.journey-dc-guide,
+	.journey-dc-forage {
+
+		section {
+			width: 45%;
+		}
+	}
+
+	.journey > .box__body {
+		display: grid;
+		grid-template-columns: 1.9fr 1.9fr 1fr 1fr 1fr;
+		grid-template-rows: ($sheet-spacing * 3) auto;
+		grid-template-areas:
+			"from to time guide forage"
+			"tracker tracker tracker tracker tracker";
+		grid-row-gap: $sheet-spacing;
+		grid-column-gap: $sheet-spacing;
+	}
+
+	.journey-day {
+		grid-area: tracker;
+
+		> .box__body {
+			padding-top: 9px;
+		}
+
+		.table {
+			@include sheet-table-column(1, left, 7%, 5px);
+			@include sheet-table-column(2, center, 5%, 0);
+			@include sheet-table-column(3, center, 5%, 0);
+			@include sheet-table-column(4, left, 20%, 5px);
+			@include sheet-table-column(5, left, 19%, 5px);
+			@include sheet-table-column(6, center, 7%, 0);
+			@include sheet-table-column(7, center, 7%, 0);
+			@include sheet-table-column(8, center, 7%, 0);
+			@include sheet-table-column(9, center, 7%, 0);
+			@include sheet-table-column(10, left, 16%, 5px);
+		}
+	}
+
+	.layout--columns--2 {
+		column-rule-color: $box-line-color;
+	}
+
+	.notes .box__header {
+		margin-top: 5px;
+	}
+}

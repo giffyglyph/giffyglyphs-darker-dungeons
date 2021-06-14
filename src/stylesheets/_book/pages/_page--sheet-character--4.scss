@@ -1,0 +1,102 @@
+// Styles for the character sheet (page 4).
+
+.page--character-sheet--4 {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 200px 1fr;
+		grid-template-areas:
+			"magic magic resources"
+			"magic-groups magic-groups magic-groups";
+		grid-column-gap: $sheet-spacing;
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.magic {
+		grid-area: magic;
+
+		table {
+			@include sheet-table-column(1, left, 25%, 0);
+			@include sheet-table-column(2, left, 75%, 5px);
+		}
+	}
+
+	.resources {
+		grid-area: resources;
+		
+		> .box__body {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 30px;
+			grid-template-areas:
+				"spell-ability spell-dc spell-attack"
+				"resource-1 resource-2 resource-3"
+				"burnout burnout burnout";
+			grid-column-gap: $sheet-spacing;
+			grid-row-gap: $sheet-spacing;
+		}
+
+		.spell-ability {
+			grid-area: spell-ability;
+		}
+
+		.spell-dc {
+			grid-area: spell-dc;
+		}
+
+		.spell-attack {
+			grid-area: spell-attack;
+		}
+
+		.resource-1 {
+			grid-area: resource-1;
+		}
+
+		.resource-2 {
+			grid-area: resource-2;
+		}
+
+		.resource-3 {
+			grid-area: resource-3;
+		}
+
+		.burnout {
+			grid-area: burnout;
+		}
+	}
+
+	.magic-groups {
+		grid-area: magic-groups;
+
+		> .box__body {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-column-gap: $sheet-spacing * 2;
+			grid-row-gap: $sheet-spacing;
+		}
+	}
+
+	.magic-group-1 {
+		display: grid;
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.magic-group-2 {
+		display: grid;
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.magic-group-3 {
+		display: grid;
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.magic-0 .description {
+		font-weight: bold;
+		font-size: 14px;
+		padding-right: 10px;
+		text-align: center;
+	}
+}

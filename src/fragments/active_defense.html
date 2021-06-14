@@ -1,0 +1,159 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--active-defense" data-header-icon="slashed-shield">
+				<h1 id="active-defense">Active Defense</h1>
+				<p>When battle begins, apt adventurers don't wait to be hit by the enemy—they take defense into their own hands by dodging, blocking, and parrying.</p>
+				<p>This chapter introduces <i>defense rolls</i> and <i>saving attacks</i>, putting defense back into player control.</p>
+
+				<h2>Defense Rolls</h2>
+				<p>Whenever the GM would normally make an attack roll against a player character, that player may instead make a <i>defense roll</i> to see if they can avoid the attack—dodge, duck, dip, dive, and dodge your way to success.</p>
+				<p>Roll a d20 and add your AC—this your defense roll. The opposing DC is 22 plus the attacker's attack bonus.</p>
+
+				<mechanic class="panel panel--mechanic">
+					<header class="panel__header">
+						<h4 class="panel__title">Defense Rolls</h4>
+					</header>
+					<section class="panel__body">
+						<p><strong>Defense Roll:</strong> d20 + your AC</p>
+						<p><strong>DC:</strong> 22 + attacker's attack bonus</p>
+					</section>
+				</mechanic>
+
+				<p>If your defense roll equals or beats the DC, you avoid the attack. If you fail, however, the attack hits you.</p>
+				<p><strong>Advantage:</strong> If your attacker would have advantage on their attack, apply disadvantage to your defense roll—and vice versa if your attacker would have disadvantage.</p>
+
+				<h3>Critical Hits & Misses</h3>
+				<p>If your defense roll comes up as a natural 1, it's a critical fail—you are critically hit by the attack. If you roll a natural 20, it's a critical success—you defend with style.</p>
+				<p><strong>Critical Ranges:</strong> If your attacker would normally score a critical hit on a roll of 19 <i>or</i> 20, then their attack is a critical hit on a 1 <i>or</i> 2, and so forth.</p>
+
+				<col-break></col-break>
+
+				<h3>Example of Play</h3>
+				<p>Here we see Valiant, Sarien, and Clanda being attacked by three orcs. Where the GM would normally be rolling attack rolls for the monster, the players instead make defense rolls to avoid the incoming attacks.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>The three orcs rush forward, rage in their eyes. Two of them swing wildly at you with their greataxes, Valiant, while the third stabs at Sarien with a javelin.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>I'll raise my shield to block. What's the DC?</span></li>
+							<li><span class="chat__speaker">GM:</span><span>The DC is 27 <span class="chat__action">(22 + orc attack bonus [+5])</span>.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>Here goes... <span class="chat__action">(rolls 30 [13 + AC 17])</span> ...Ok I bash the first attack aside with my shield, and... <span class="chat__action">(rolls 22)</span> ...damn, I get caught by the second.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>The second axe catches your arm painfully—take 9 points of damage.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>That hurts—a bad cut.</span></li>
+							<li><span class="chat__speaker">Sarien:</span><span>I've got your back, Valiant. Let me just dodge this javelin first... <span class="chat__action">(rolls a natural 1)</span> ...oh that's bad.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>You stumble unceremoniously into the path of the javelin, Sarien, and it stabs you right in the shoulder. Take 12 points of damage.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span><i>Great</i> job, Sarien, <i>brilliant</i> dodging there.</span></li>
+							<li><span class="chat__speaker">Sarien:</span><span>...Ok on my next turn, I'll be throttling Valiant.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Static Damage</h4>
+					</header>
+					<section class="panel__body">
+						<p>Anything controlled by the GM—NPCs, monsters, traps, environmental effects—may choose to deal <i>static damage</i> instead of making a roll for random damage.</p>
+						<p>Use the static, average damage value for your attack whenever appropriate. If the attack is a critical hit, double the static damage.</p>
+					</section>
+				</aside>
+			</page>
+			<page class="page page--generic page--active-defense">
+				<h3>Divination: Portent</h3>
+				<p>If you are a divination wizard, it's easy to use your <i>Portent</i> ability with <i>Active Defense</i>.</p>
+				<p>When you give a portent result to someone making a <i>defense roll</i>, they may use either the normal value or the d20-inverse value (calculated as 21 - portent value).</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Emwyn, a divination wizard, has a portent result of 3 remaining. When attacked, Emwyn must make a defense roll. He chooses to use his portent instead of rolling, and takes the <i>inverse</i> value of 18 (21 − 3)—Emwyn's defense result is 18 + his AC.</p>
+					</section>
+				</example>
+
+				<h2>Saving Attacks</h2>
+				<p>Whenever the GM would normally make a saving throw, the player instead rolls a <i>saving attack</i> to see if they can beat the target's defenses.</p>
+				<p>When you make a saving attack, roll a d20 and add your normal spell save DC. The opposing DC is 22 plus the target's saving throw bonus. If the spell would affect multiple targets, make a separate attack roll for each—but roll the damage only once for all targets.</p>
+
+				<mechanic class="panel panel--mechanic">
+					<header class="panel__header">
+						<h4 class="panel__title">Saving Attacks</h4>
+					</header>
+					<section class="panel__body">
+						<p><strong>Saving Attack Roll:</strong> d20 + your spell save DC</p>
+						<p><strong>DC:</strong> 22 + target's saving throw bonus</p>
+					</section>
+				</mechanic>
+
+				<p>If your saving attack roll equals or beats the DC, you successfully land your attack.</p>
+				<p><strong>Advantage:</strong> If your target would have advantage on their saving throw, apply disadvantage to your saving attack—and vice versa if your target would have disadvantage.</p>
+
+				<h3>Critical Hits & Misses</h3>
+				<p>By default, <i>saving attack</i> spells can't critically hit or miss.</p>
+
+				<h4>Variant: Massive Damage</h4>
+				<p>To add the potential for <i>massive</i> damage spikes to your game, allow <i>saving attack</i> spells to deal critical damage.</p>
+				<p>On a critical hit, roll all of the attack's damage dice twice. On a critical fail, however, the spell has no effect at all—even if it would normally cause an effect on a miss.</p>
+				<p><strong>Both Sides:</strong> When using <i>Massive Damage</i>, apply the rule to both players and monsters for fairness—if players can crit more often, so too can the monsters.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">Clanda:</span><span>Ok myconid, let's see how you like this <i>fireball</i>.</li>
+							<li><span class="chat__speaker">GM:</span><span>Ok Clanda, roll your saving attack.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Piece of cake... <span class="chat__action">(rolls a natural 20)</span> ...oh you <i>poor</i> myconid—critically hit with a 3rd-level fireball? That'll be 16d6, please. I <i>love</i> my job.</li>
+						</ul>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<h3>Example of Play</h3>
+				<p>At the end of the GM's turn, it's Clanda's time to shine. Where the GM would normally make saving throws to avoid her <i>Acid Splash</i>, Clanda instead makes a <i>saving attack</i> against each orc.</p>
+				<p>She rolls her spell damage only once, no matter the number of targets, unless she lands a critical hit as per the <i>Massive Damage</i> variant rule—in which case Clanda rolls extra damage for the affected target.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>Ok Clanda, it's your turn next. Valiant's under attack from the orcs and Sarien's stumbling about with a shoulder wound—what do you do?</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Ugh, I hate orcs. It's time to even the odds. I cast <i>Acid Splash</i> at the two orcs attacking Valiant.</li>
+							<li><span class="chat__speaker">Valiant:</span><span>You're throwing <i>acid</i> at me?</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Not <i>at</i> you, Valiant, just <i>around</i> you—a big difference. Now hush, I need focus. What's the DC?</span></li>
+							<li><span class="chat__speaker">GM:</span><span>The DC is 23 <span class="chat__action">(22 + orc's DEX saving throw [+1])</span>.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Ok, I hurl this orb of acid... <span class="chat__action">(rolls 23 [10 + SDC 13])</span> ...and it barely hits the first orc. It scorches her for... <span class="chat__action">(rolls 2)</span> ...hmm, 2 points of acid. Not much.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>The orc snarls with irritation as a few drops of acid catch on her thick leather armor.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>The second... <span class="chat__action">(rolls a natural 20)</span> ...is a critical hit! Excellent. Acid splashes on the orc's face, dealing... <span class="chat__action">(rolls 6 extra critical damage)</span> ...8 total points of sizzling acid damage!</span></li>
+							<li><span class="chat__speaker">GM:</span><span>That's lethal damage. The orc roars in pain and falls to the ground, clutching at his face as the flesh bubbles and melts away.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>Ew, gross.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Do I hear a thank you? Manners, Valiant...</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h2>Variant: Small Defense</h2>
+				<p>If you want to use smaller modifiers while playing with <i>Active Defense</i>, try this <i>Small Defense</i> variant.</p>
+				<p><strong>Defense Rolls:</strong> When you make a defense roll, roll a d20 and add your AC minus 10. The opposing DC is 12 plus the attacker's normal attack bonus.</p>
+				<p><strong>Saving Attacks:</strong> When you make a saving attack, roll a d20 and add your normal spell save DC minus 8. The opposing DC is 14 plus the target's saving throw bonus.</p>
+
+				<mechanic class="panel panel--mechanic">
+					<header class="panel__header">
+						<h4 class="panel__title">Small Defense Rolls</h4>
+					</header>
+					<section class="panel__body">
+						<p><strong>Defense Roll:</strong> d20 + (your AC − 10)</p>
+						<p><strong>DC:</strong> 12 + attacker's attack bonus</p>
+					</section>
+				</mechanic>
+
+				<mechanic class="panel panel--mechanic">
+					<header class="panel__header">
+						<h4 class="panel__title">Small Saving Attacks</h4>
+					</header>
+					<section class="panel__body">
+						<p><strong>Saving Attack Roll:</strong> d20 + (your spell save DC − 8)</p>
+						<p><strong>DC:</strong> 14 + target's saving throw bonus</p>
+					</section>
+				</mechanic>
+			</page>
+		</book>
+	</body>
+</html>

@@ -1,0 +1,695 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--dangerous-magic" data-header-icon="flame">
+				<h1 id="dangerous-magic">Dangerous Magic</h1>
+				<p>Magic is a powerful force that can rewrite the laws of reality—turn ice into fire, restore life to the dead, travel great distances in a heartbeat. Magic can grant unimaginable power, but it is not without risk—channeling raw energies can be deadly to the unprepared.</p>
+				<p>This chapter introduces rules to make magic a little more dangerous and unpredictable for spellcasters.</p>
+
+				<h2>Magical Burnout</h2>
+				<p>Sometimes, the flow of magic turns against you. It's hard to shape, it's too chaotic, it's too powerful—whatever the reason, some magic energy lashes out during your spellcasting attempt and causes you some harm.</p>
+				<p>This is called <i>burnout</i> and it can happen to any caster, whether arcane or divine. Magic is dangerous work, and the slightest distraction can be catastrophic.</p>
+
+				<h3>Triggering Burnout</h3>
+				<p>If you are a spellcaster, take a d12—this is your <i>Burnout</i> die. Whenever you attempt to cast a magic spell, roll the Burnout die. On a 1 or 2, the power is overwhelming and you trigger a burnout event—two things happen to you:</p>
+
+				<h4>1. Your Burnout Die gets Smaller</h4>
+				<p>Your burnout die starts as a d12, but each time you suffer burnout the die becomes one size smaller.</p>
+				<p>As your die shrinks it becomes increasingly more likely that you will trigger further burnout in future—so be careful with your die.</p>
+
+				<mechanic class="panel panel--mechanic">
+					<header class="panel__header">
+						<h4 class="panel__title">Burnout Die</h4>
+					</header>
+					<section class="panel__body">
+						<p>1d12 → 1d10 → 1d8 → 1d6 → 1d4</p>
+					</section>
+				</mechanic>
+
+				<col-break></col-break>
+
+				<h4>2. You Suffer a Consequence</h4>
+				<p>If your spell is 1st-level or higher, roll a d100 and check the <i>Burnout Consequences</i> table to see what effect your burnout has. Consequences become increasingly more severe the higher your spell level, so beware.</p>
+				<p>If a consequence doesn't fully apply to you, or doesn't make sense for the situation, pick one that does. Alternatively, the GM may pick a consequence for you.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Burnout Consequences</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--miscasting-consequences">
+							<thead>
+								<tr>
+									<th>d100</th>
+									<th>Consequence</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>01-05</td>
+									<td><strong>Drained:</strong> Lose (spell level) hit dice.</td>
+								</tr>
+								<tr>
+									<td>06-15</td>
+									<td><strong>Reduced:</strong> Lose (spell level / 2) hit dice.</td>
+								</tr>
+								<tr>
+									<td>16-40</td>
+									<td><strong>Shocked:</strong> Lose (spell level x 4) hit points.</td>
+								</tr>
+								<tr>
+									<td>41-88</td>
+									<td><strong>Hurt:</strong> Lose (spell level x 2) hit points.</td>
+								</tr>
+								<tr>
+									<td>89-93</td>
+									<td><strong>Blackout:</strong> You have disadvantage when casting spells for (spell level) rounds.</td>
+								</tr>
+								<tr>
+									<td>94</td>
+									<td><strong>Immolated:</strong> Shrink the burnout die to d4.</td>
+								</tr>
+								<tr>
+									<td>95</td>
+									<td><strong>Gifted:</strong> Regain this spell slot.</td>
+								</tr>
+								<tr>
+									<td>96</td>
+									<td><strong>Renewed:</strong> Regain (spell level) hit dice.</td>
+								</tr>
+								<tr>
+									<td>97</td>
+									<td><strong>Healed:</strong> Gain (spell level x 4) hit points.</td>
+								</tr>
+								<tr>
+									<td>98</td>
+									<td><strong>Protected:</strong> Gain (spell level x 4) temporary hit points.</td>
+								</tr>
+								<tr>
+									<td>99</td>
+									<td><strong>Energized:</strong> You have advantage when casting spells for (spell level) rounds.</td>
+								</tr>
+								<tr>
+									<td>100</td>
+									<td><strong>Restored:</strong> Reset the burnout die to d12.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Burnout is not a Failure</h4>
+					</header>
+					<section class="panel__body">
+						<p>Suffering burnout doesn't mean your spellcasting failed—it just means that you were hurt somehow during the attempt. Roll to attack as per normal, resolve any hits or misses, and apply any burnout consequences only after you've finished resolving your spellcasting effects.</p>
+					</section>
+				</aside>
+			</page>
+			<page class="page page--generic page--dangerous-magic">
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">Clanda:</span><span>Ok, these myconids are <i>really</i> starting to annoy me now. Good thing I've been saving this <i>Fireball</i> for a special occasion...</span></li>
+							<li><span class="chat__speaker">GM:</span><span>As you channel your arcane power, you feel the weave pulling away. Roll your burnout die, Clanda.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Easy, still on a fresh d12... <span class="chat__action">(rolls 1)</span> ...or not, damn. So that's a 3rd-level burnout with a... <span class="chat__action">(rolls 46)</span> ...<i>hurt</i> consequence, ouch.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>Some of the raw arcane energy arcs lances out from your spell. Shrink your burnout die one step to d10 and take 6 hit points of damage.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Fine. I'll channel that anger back into the spell—these myconids are going to <i>burn</i>.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h3>Recovering from Burnout</h3>
+				<p>Once a burnout die shrinks, it remains that size until you take a recovery action. There are four primary means of recovering from burnout:</p>
+
+				<ol>
+					<li><strong>Spend a hit die:</strong> You can spend a hit die during a short rest to grow your burnout die by one step. You don't gain any healing from hit die spent in this way.</li>
+					<li><strong>Get a good sleep:</strong> If you get a good night's sleep, your burnout die grows by one step. Sleeping in a place of magical power (such as a leyline or divine temple) may increase your die by larger amounts.</li>
+					<li><strong>Take a long rest:</strong> Once you complete a long rest, your burnout die is fully restored to d12.</li>
+					<li><strong>Consume a restorative:</strong> Some special consumables—magic, crafted, or otherwise—may help restore your burnout die when ingested.</li>
+				</ol>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">Clanda:</span><span><i>Finally</i>, that's the myconids burnt to a crisp. Great job, me. Ok let's take a short rest, I need to recover some burnout. Chansi, have you got any of that arcane tea left?</span></li>
+							<li><span class="chat__speaker">Chansi:</span><span>No, you finished that all yesterday.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>How about your mageblood potion.</span></li>
+							<li><span class="chat__speaker">Chansi:</span><span>What, the potion you drank two days ago?</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span><i>Fine</i>. I'll spend a hit die to channel some power and get this d10 back up to d12.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h3>Your Burnout Risk</h3>
+				<p>The likelihood of experiencing burnout depends on the size of your die—the larger the die, the safer you are. Try to keep your die as large as possible for the best chance at avoiding burnout consequences.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Burnout Risk</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--burnout-risk">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Die Size</th>
+										<th>Risk of Burnout</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>d12</td>
+										<td>16%</td>
+									</tr>
+									<tr>
+										<td>d10</td>
+										<td>20%</td>
+									</tr>
+									<tr>
+										<td>d8</td>
+										<td>25%</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Die Size</th>
+										<th>Risk of Burnout</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>d6</td>
+										<td>33%</td>
+									</tr>
+									<tr>
+										<td>d4</td>
+										<td>50%</td>
+									</tr>
+									<tr class="empty">
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<col-break></col-break>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Roll Once per Spell</h4>
+					</header>
+					<section class="panel__body">
+						<p>You only roll the <i>Burnout</i> die once per spell, regardless of the number of spell targets. Burnout is also unaffected by any advantage/disadvantage you may have on your action.</p>
+					</section>
+				</aside>
+
+				<h3>Safe Magic</h3>
+				<p>Not all magical abilities put your body at harm's risk. Some forms of magic are innate, controlled, or otherwise rendered harmless—these <i>safe magics</i> don't require a burnout roll when used:</p>
+				<ul>
+					<li><strong>Class Features</strong>: Effects gained through class features—such as <i>Channel Divinity</i> or <i>Lay on Hands</i>.</li>
+					<li><strong>Racial Features:</strong> Spells gained through a racial ability—such as the tiefling's <i>Infernal Legacy</i>.</li>
+					<li><strong>Magic Items:</strong> Magic items—such as wands and weapons—channel their own arcane energies.</li>
+					<li><strong>Rituals:</strong> A ritual safely controls the flow of magical energy with complicated sigils and glyphs.</li>
+				</ul>
+
+				<h3>Why Did I Burn Out?</h3>
+				<p>Magic is a fickle thing, even in the hands of the well-trained. If you want an explanation for your burnout, roll a d20 and check the <i>Burnout Reasons</i> table below—or choose your own reason if you prefer.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Burnout Reasons</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--burnout-reasons">
+							<thead>
+								<tr>
+									<th>d20</th>
+									<th>Reason</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>You mispronounced a key syllable.</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>You said the words in the wrong order.</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>You sneezed.</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>You wrote a glyph incorrectly.</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>You used a low quality spell component.</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>You didn't move your hands in the proper motion.</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>You got distracted by a sudden movement.</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>The weave is wild and unpredictable.</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>Your god is angry with you.</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>Your god gave you too much power at once.</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>Your god is busy with celestial matters.</td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>An opposing god is interfering with the power.</td>
+								</tr>
+								<tr>
+									<td>13</td>
+									<td>A nearby ley-line is warping the flow of magic.</td>
+								</tr>
+								<tr>
+									<td>14</td>
+									<td>Another caster is disrupting your control.</td>
+								</tr>
+								<tr>
+									<td>15</td>
+									<td>Your patron is testing you.</td>
+								</tr>
+								<tr>
+									<td>16</td>
+									<td>Your patron wants your attention.</td>
+								</tr>
+								<tr>
+									<td>17</td>
+									<td>Your patron doesn't understand your mortal frailty.</td>
+								</tr>
+								<tr>
+									<td>18</td>
+									<td>The winds of magic are against you.</td>
+								</tr>
+								<tr>
+									<td>19</td>
+									<td>A magic item you are wearing reacts badly.</td>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td>Magical energy is scarce in this region.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>As he rolls to cast <i>Silence</i>, Viridian triggers an instance of magical burnout. The player decides that Viridian accidentally sneezed as he was speaking the spell's verbal component—the resultant shock of interruped arcane power stripped the tiefling of one hit die.</p>
+					</section>
+				</example>
+			</page>
+			<page class="page page--generic page--dangerous-magic">
+				<h2>Regional Magic</h2>
+				<p>Magical power is not equal in all places. Perhaps you're in a temple or a wizard's tower, where the flow of magic has been tamed? Or you're near an arcane vortex or an elemental gate, where magic is wild and hard to control?</p>
+				<p>These environmental effects can impact your ability to cast spells and change how likely you are to suffer from magical burnout.</p>
+				<p>At the GM's discretion, add a regional modifier (-3 to +3) to the size of your normal burnout die. Grow the die to prevent burnout, and shrink it to encourage burnout.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Regional Modifiers</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--miscast-modifiers">
+							<thead>
+								<tr>
+									<th>Modifier</th>
+									<th>Severity</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>+3</td>
+									<td>Serene</td>
+									<td>The flow of magic is abundant, predicable, and easy to harness.</td>
+								</tr>
+								<tr>
+									<td>+2</td>
+									<td>Calm</td>
+									<td>The flow of magic is rich.</td>
+								</tr>
+								<tr>
+									<td>+1</td>
+									<td>Stable</td>
+									<td>The flow of magic is reliable.</td>
+								</tr>
+								<tr>
+									<td>+0</td>
+									<td>Normal</td>
+									<td><span class="empty">—</span></td>
+								</tr>
+								<tr>
+									<td>-1</td>
+									<td>Unstable</td>
+									<td>The flow of magic is erratic.</td>
+								</tr>
+								<tr>
+									<td>-2</td>
+									<td>Wild</td>
+									<td>The flow of magic is intense and hard to control or shape.</td>
+								</tr>
+								<tr>
+									<td>-3</td>
+									<td>Chaotic</td>
+									<td>The flow of magic is raw, unpredictable, and dangerous.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<p>Here we see Clanda approach a vortex of wild magic, making her more likely to burnout when spellcasting.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>As you approach the arcane portal, Clanda, you can feel raw magical energies pouring through it. The sensation is almost overwhelming as waves of <i>chaotic</i> energy rush past you.</li>
+							<li><span class="chat__speaker">Clanda:</span><span>I don't like the look of this... I'll try casting <i>Dispel Magic</i> on that portal.</li>
+							<li><span class="chat__speaker">Chansi:</span><span>How close are you to burning out?</li>
+							<li><span class="chat__speaker">Clanda:</span><span>Should be rolling d10, but all this chaotic magic pushes it down three sizes to d4. 50% chance to burnout—could <i>hurt</i>...</li>
+						</ul>
+					</section>
+				</example>
+
+				<h3>Regional Sizes</h3>
+				<p>Regional effects can be as small or as large as you like—a few feet, a room, a building, a few miles, a kingdom, or even a whole continent. Use sizes that are appropriate for your adventure or setting.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>Through the forest, you see a stone building with a ruined spire in the distance. You feel the <i>calming</i> power of holy ground even from this distance.</li>
+							<li><span class="chat__speaker">Valiant:</span><span>Finally, Unity Spire. I'll let Viridian know I've found it with a <i>Sending</i> spell.</li>
+							<li><span class="chat__speaker">GM:</span><span>Ok, make your burnout check.</li>
+							<li><span class="chat__speaker">Valiant:</span><span>No problem—this calm power pushes my d8 burnout die up two sizes to d12.</li>
+						</ul>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Burnout Die Size Limits</h4>
+					</header>
+					<section class="panel__body">
+						<p>Your burnout die can't grow larger than your maximum limit (a d12 by default) or smaller than a d4—regardless of modifiers, effects, or consumables.</p>
+					</section>
+				</aside>
+
+				<h3>Themed Locations</h3>
+				<p>You can limit a regional burnout modifier to a specific type of magic. Perhaps the wizard's tower grants a +1 modifier to only arcane magic, while the abyssal temple grants a -2 modifier to only divine magic?</p>
+				<p>Use modifiers to add some flavor to key or iconic locations, but try not to go overboard—regional modifiers should be uncommon, and casters should generally have a chance to research this information.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>As you enter the school, Clanda, you feel an immediate shift in the weave. Many decades of teaching <i>Evocation</i> magic here has warped and shaped the flow of power unnaturally.</li>
+							<li><span class="chat__speaker">Clanda:</span><span>Making it easier to cast Evocation spells?</li>
+							<li><span class="chat__speaker">GM:</span><span>Exactly. The flow is <i>serene</i> (+3) for Evocation magic, but <i>wild</i> (-2) for all other magic types.</li>
+						</ul>
+					</section>
+				</example>
+
+				<h2>Consumables</h2>
+				<p>If your campaign setting allows it, you may be able to find, buy, craft, and consume a variety of potions, elixirs, foods, and drinks to help manage your magical burnout.</p>
+				<p>Below are listed two example consumables: mageblood potions and elixirs of inner peace.</p>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Mageblood Potion</h4>
+						<ul class="panel__tags">
+							<li>Item</li>
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This blue potion glows with a faint light when shaken. It tastes of iron and spoils quickly once exposed to air.</p>
+						<p>You recover a small portion of magical burnout when you drink this potion—the better the quality, the more burnout you recover.</p>
+						<div class="panel__table-wrapper">
+							<table class="table table--item-mana-potion">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Rarity</th>
+										<th>Recovery</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lesser</td>
+										<td>Common</td>
+										<td>+1 size</td>
+										<td>25 gp</td>
+									</tr>
+									<tr>
+										<td>Greater</td>
+										<td>Uncommon</td>
+										<td>+2 size</td>
+										<td>75 gp</td>
+									</tr>
+									<tr>
+										<td>Superior</td>
+										<td>Rare</td>
+										<td>+3 size</td>
+										<td>225 gp</td>
+									</tr>
+									<tr>
+										<td>Supreme</td>
+										<td>Very rare</td>
+										<td>+4 size</td>
+										<td>675 gp</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</item>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Elixir of Inner Peace</h4>
+						<ul class="panel__tags">
+							<li>Item</li>
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This pink elixir feels strangely warm to the touch. It tastes of cherry and rose water.</p>
+						<p>When you drink this potion, you may roll your burnout die with advantage for one hour.</p>
+					</section>
+				</item>
+			</page>
+			<page class="page page--generic page--dangerous-magic">
+				<h2>Variant Dials</h2>
+				<p><i>Magical Burnout</i> is a flexible game mechanic that can be adjusted to suit a variety of settings. But if you want to customize the experience to better suit your own adventure and/or campaign setting, consider the following variant dials.</p>
+
+				<h3><span class="h3__highlight">A</span>Safe Cantrips</h3>
+				<p>If you want characters to be able to cast cantrips without any risk, then consider this <i>Safe Cantrips</i> variant.</p>
+				<p>Reduce your maximum burnout die size one step (from d12 to d10, by default). Cantrips are now classed as <i>safe</i> magic—you only roll your burnout die when you cast a spell of 1st-level or higher.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">Clanda:</span><span>That's one excellent <i>Acid Splash</i>, if I do say so myself. Now let's see if it triggered any burnout.</li>
+							<li><span class="chat__speaker">GM:</span><span>No need—as a 0th-level spell, your safe cantrip doesn't strain your body with wild magic power.</li>
+							<li><span class="chat__speaker">Clanda:</span><span><i>Even better.</i></li>
+						</ul>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">B</span>Wild Zones</h3>
+				<p>You may want to use <i>Magical Burnout</i> for just a short time in your campaign—to add theming to one particular region or adventuring site, for example. This can be accomplished with <i>wild zones</i>.</p>
+
+				<h4>Creating a Wild Zone</h4>
+				<p>Burnout is only active in certain areas—called <i>wild zones</i>. Outside of these zones, magic functions as per normal and burnout is not a threat to magic casters.</p>
+				<p>A wild zone can be anything—a room, a dungeon, a kingdom, etc—so add them to your game as best suits your setting. Use them to add memorable features to your dungeons and adventure hubs.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Krazak and Clanda approach the <i>Void Sanctum</i>, an ancient dungeon protected with anti-magic seals and sigils. The Void Sanctum is a <i>wild zone</i>—within its walls, characters are at risk of magical burnout.</p>
+					</section>
+				</example>
+
+				<h4>Leaving a Wild Zone</h4>
+				<p>If you leave a wild zone, your burnout remains—your die doesn't reset until you complete a long rest (or perform another form of recovery action, such as spending hit dice or acquiring consumables).</p>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Getting Started with Burnout</h4>
+					</header>
+					<section class="panel__body">
+						<p>If you want to try using magical burnout in your games—or slowly introduce it to your spellcasting players—<i>safe cantrips</i> and <i>wild zones</i> are a good way to test the rules without drastically overhauling the tone of your campaign.</p>
+					</section>
+				</aside>
+
+				<col-break></col-break>
+
+				<h3><span class="h3__highlight">C</span>Spellcaster Ranks</h3>
+				<p>Spellcasters vary in their dedication to the magical arts, coming in three basic ranks—full casters, half casters, and third casters. The more dedicated the spellcaster, the more burnout they can endure.</p>
+				<p>Your maximum burnout die now depends on your spellcasting rank—check the <i>Spellcasting Ranks</i> table below to see what your new maximum is.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Spellcaster Ranks</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--spellcaster-ranks">
+							<thead>
+								<tr>
+									<th>Spellcasting Rank</th>
+									<th>Examples</th>
+									<th>Maximum Burnout</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Full Caster</td>
+									<td>Bard, Cleric, Druid, Sorcerer, Wizard.</td>
+									<td>d12</td>
+								</tr>
+								<tr>
+									<td>Half Caster</td>
+									<td>Ranger, Paladin.</td>
+									<td>d10</td>
+								</tr>
+								<tr>
+									<td>Third Caster</td>
+									<td>Eldritch Knight, Arcane Trickster.</td>
+									<td>d8</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<p>Note that for the purposes of spellcasting ranks and burnout, warlocks count as a full caster.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Clanda, a high elf sorceress, is a full caster—her maximum burnout die is a d12. Truth, a drow paladin, is a half caster—his maximum burnout die is a d10.</p>
+					</section>
+				</example>
+
+				<h4>Multiclassed Characters</h4>
+				<p>If you are multiclassed, use the maximum burnout die of whichever caster class you have the most levels in. In the case of a tie, use the largest.</p>
+
+				<h3><span class="h3__highlight">D</span>Custom Consequences</h3>
+				<p>Burnout consequences can come in many different forms. Depending on your game and campaign setting, you may wish to customize the <i>Burnout Consequences</i> table to make burnout more severe or less punishing.</p>
+				<p>For example, if your game features <i>Stress</i>, <i>Survival Conditions</i>, and <i>Wear & Tear</i>, consider the variant table below to put a much larger focus on stress, equipment, and supplies—the more powerful the spell, the bigger the damage inflicted during burnout.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Custom Consequences</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--columns-1 tables--miscasting-consequences-variant">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>d100</th>
+										<th>Minor (SL 1-2)</th>
+										<th>Moderate (SL 3-4)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>01-45</td>
+										<td>Gain minor Stress</td>
+										<td>Gain moderate Stress</td>
+									</tr>
+									<tr>
+										<td>46-70</td>
+										<td>An item gains 1 notch</td>
+										<td>An item gains 2 notches</td>
+									</tr>
+									<tr>
+										<td>71-80</td>
+										<td>Gain 1 hunger</td>
+										<td>Gain 2 hunger</td>
+									</tr>
+									<tr>
+										<td>81-90</td>
+										<td>Gain 1 thirst</td>
+										<td>Gain 2 thirst</td>
+									</tr>
+									<tr>
+										<td>91-00</td>
+										<td>Gain 1 fatigue</td>
+										<td>Gain 2 fatigue</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>d100</th>
+										<th>Major (SL 5-6)</th>
+										<th>Monstrous (SL 7-9)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>01-45</td>
+										<td>Gain major Stress</td>
+										<td>Gain monstrous Stress</td>
+									</tr>
+									<tr>
+										<td>46-70</td>
+										<td>An item gains 4 notches</td>
+										<td>An item gains 8 notches</td>
+									</tr>
+									<tr>
+										<td>71-80</td>
+										<td>Gain 4 hunger</td>
+										<td>Gain 6 hunger</td>
+									</tr>
+									<tr>
+										<td>81-90</td>
+										<td>Gain 4 thirst</td>
+										<td>Gain 6 thirst</td>
+									</tr>
+									<tr>
+										<td>91-00</td>
+										<td>Gain 4 fatigue</td>
+										<td>Gain 6 fatigue</td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+			</page>
+		</book>
+	</body>
+</html>

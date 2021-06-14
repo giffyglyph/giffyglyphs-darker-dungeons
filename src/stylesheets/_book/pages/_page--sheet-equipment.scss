@@ -1,0 +1,172 @@
+// Styles for the equipment sheet.
+
+.page--equipment {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-rows: ($sheet-spacing * 10) auto 200px;
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			"header header"
+			"equipment equipment"
+			"magic-items holdings";
+		grid-row-gap: $sheet-spacing;
+		grid-column-gap: $sheet-spacing;
+	}
+
+	.character-name {
+		grid-area: header;
+	}
+
+	.equipment {
+		grid-area: equipment;
+
+		> .box__body {
+			display: grid;
+			grid-template-columns: 1fr 1fr 160px 120px;
+			grid-template-rows: 30px 30px 30px auto;
+			grid-template-areas:
+				"tracking usage rations cp"
+				"tracking usage waterskin sp"
+				"tracking usage slots gp"
+				"carried carried carried carried";
+			grid-column-gap: $sheet-spacing;
+			grid-row-gap: $sheet-spacing;
+		}
+
+		.rations {
+			grid-area: rations;
+		}
+
+		.waterskin {
+			grid-area: waterskin;
+		}
+
+		.coin-cp {
+			grid-area: cp;
+		}
+
+		.coin-sp {
+			grid-area: sp;
+		}
+
+		.coin-gp {
+			grid-area: gp;
+		}
+
+		.slots {
+			grid-area: slots;
+		}
+
+		.rations,
+		.waterskin {
+
+			.box__header {
+				width: 42px;
+				flex-shrink: 0;
+			}
+		}
+
+		.coin-cp,
+		.coin-sp,
+		.coin-gp {
+
+			.box__header {
+				width: 35px;
+				flex-shrink: 0;
+			}
+		}
+
+		.coin-cp,
+		.coin-sp,
+		.coin-gp,
+		.coin-other,
+		.slots {
+
+			section {
+				width: 70px;
+			}
+		}
+
+		.tracking,
+		.usage-die {
+			grid-area: tracking;
+
+			table {
+				@include sheet-table-column(1, left, 65%, 0);
+				@include sheet-table-column(2, center, 35%, 0);
+
+				th span {
+					display: inline-block;
+					width: 10px;
+					text-align: center;
+
+					+ span {
+						margin-left: 2px;
+					}
+				}
+
+				.dots {
+					padding: 0;
+					justify-content: center;
+				}
+			}
+		}
+
+		.usage-die {
+			grid-area: usage;
+
+			table {
+				@include sheet-table-column(1, left, 52%, 0);
+				@include sheet-table-column(2, center, 48%, 0);
+			}
+		}
+
+		.carried-gear {
+			grid-area: carried;
+
+			> section {
+				display: flex;
+				flex-grow: 1;
+
+				table {
+					@include sheet-table-column(1, left, 30%, 5px);
+					@include sheet-table-column(2, left, 40%, 5px);
+					@include sheet-table-column(3, center, 10%, 0);
+					@include sheet-table-column(4, center, 10%, 0);
+					@include sheet-table-column(5, center, 10%, 0);
+				}
+			}
+		}
+	}
+
+	.magic-items {
+		grid-area: magic-items;
+
+		> .box__body {
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
+			grid-row-gap: $sheet-spacing;
+			grid-column-gap: $sheet-spacing;
+		}
+
+		.magic-item {
+
+			> .box__body {
+				text-align: left;
+				padding-top: 3px;
+
+				.dot {
+					float: right;
+					margin: 2px 0 -2px;
+				}
+			}
+		}
+	}
+
+	.holdings {
+		grid-area: holdings;
+	}
+}

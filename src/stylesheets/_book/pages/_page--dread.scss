@@ -1,0 +1,44 @@
+// Styles for dread chapters.
+
+.page--dread {
+
+	.table--malevolent-forces {
+		@include table-column(1, center, 13%);
+		@include table-column(2, left, 87%);
+	}
+
+	.tables--dread .table {
+		@include table-column(1, left, 56%);
+		@include table-column(2, center, 44%);
+	}
+
+	.table-appendix {
+		@include table-column(1, center, 15%);
+		@include table-column(2, left, 85%);
+	}
+
+	.table--consequence-types {
+		@include table-column(1, left, 25%);
+		@include table-column(2, left, 75%);
+	}
+
+	.table--edict-templates {
+		@include table-column(1, center, 7%);
+		@include table-column(2, left, 17%);
+		@include table-column(3, left, 76%);
+
+		.header td {
+			width: 100%;
+		}
+
+		td:nth-of-type(2) {
+			font-weight: 600;
+		}
+	}
+
+	.table--anchor-strength {
+		@include table-column(1, left, 30%);
+		@include table-column(2, center, 35%);
+		@include table-column(3, center, 35%);
+	}
+}

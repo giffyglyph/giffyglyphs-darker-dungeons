@@ -1,0 +1,902 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--light-and-shadow" data-header-icon="lantern">
+				<h1 id="light-and-shadow">Light & Shadow</h1>
+				<p>Danger hides in darkness. A monster, lurking in the night, pounces as you stumble in the dark. A trap, hidden in the gloom of an unlit dungeon, clicks underfoot ominously. A way out of a deadly maze goes unseen in shadow. A seasoned adventurer soon learns not to travel without a set of dry torches—or a precious lantern—close to hand.</p>
+				<p>This chapter introduces <i>light levels</i> and rules to help you track light more easily in your campaign.</p>
+
+				<h2>Using Light</h2>
+				<p>If you want to make players afraid of the dark—but don't want the overhead of tracking distances—use <i>light levels</i> to help determine what your party can and can't see.</p>
+				<p>To start using lighting and light levels in your games, simply follow these three steps:</p>
+				<ol>
+					<li><strong>Pick a lighting level:</strong> When the players enter a distinct area—such as a room, dungeon, or overworld—describe the initial level of available light. Is it darkest, dark, dim, bright, or brightest?</li>
+					<li><strong>Add light sources:</strong> Add up any light bonuses from torches, lanterns, and any other equipment or effects that might be creating light in the area.</li>
+					<li><strong>Apply light conditions:</strong> Once you know the total level of light in the area, apply any lighting conditions to your affected characters.</li>
+				</ol>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Valiant and Clanda are travelling through a cramped, <i>dark</i> dungeon. Valiant is carrying a torch (small, +1 light), while Clanda is casting a <i>Light</i> (small, +1 light) spell. With two small light sources, the <i>dark</i> chamber is now bathed in <i>bright</i> light.</p>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<h3>Types of Vision</h3>
+				<p>To help instill a fear of the dark, it's important that characters don't have easy access to <i>Darkvision</i>. To that effect, these rules recommend the following changes:</p>
+
+				<ul>
+					<li><strong>Low-light Vision:</strong> If you have the <i>Darkvision</i> racial trait, replace it with <i>Low-light Vision</i>.</li>
+					<li><strong>Darkvision:</strong> If you have the <i>Superior Darkvision</i> racial trait, replace it with <i>Darkvision</i>.</li>
+					<li><strong>Brightvision:</strong> If you have neither low-light vision nor darkvision, you are assumed to have <i>Brightvision</i>.</li>
+				</ul>
+
+				<p>Darkvision gained from other sources—such as items, spells, effects, etc—remains unchanged.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Clanda, a high elf sorceress, replaces her <i>Darkvision</i> elf racial trait with low-light vision. She can see in twilight, but has trouble in darkness or with overly-bright light.</p>
+						<p>Truth, a drow elf paladin of Sune, replaces his <i>Superior Darkvision</i> with darkvision. He can see in the dark—unless it is total darkness—but is easily blinded by brightest light. Drow eyes are not fond of the sun.</p>
+						<p>Valiant, however—a human cleric of Kelemvor—has brightvision and needs bright light to see clearly.</p>
+					</section>
+				</example>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Abstract vs Simulation</h4>
+					</header>
+					<section class="panel__body">
+						<p>For simplicity and speed, these rules track light with abstract terms to keep things moving during play.</p>
+						<p>However, if distance is particularly relevant in your story—or you're using automated tools to track vision—you may find the original 5e rules for lighting more suitable.</p>
+					</section>
+				</aside>
+			</page>
+			<page class="page page--generic page--light-and-shadow">
+				<h2>Lighting Levels</h2>
+				<p>Light can be measured—and described—with five basic categories of increasing intensity: darkest, dark, dim, bright, and brightest.</p>
+				<p>When your players enter a notable region—such as a room, dungeon, or overworld—describe the level of light in their environment. Don't worry too much about precise distances at this point—simply apply the same level of lighting to the entire area of interest for simplicity.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Light Levels</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--light-levels">
+							<thead>
+								<tr>
+									<th>Level</th>
+									<th>Light</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0</td>
+									<td>Darkest</td>
+									<td>No light at all—total darkness, a windowless room, an unlit dungeon.</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Dark</td>
+									<td>Very faint light—moonlight and starlight, outdoors at midnight, a small candelabra in a room.</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Dim</td>
+									<td>Fading light—thick stormcloud, heavy fog, a room with weak lights.</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Bright</td>
+									<td>Clear and visible—a cloudy or overcast day, a room with many lights.</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Brightest</td>
+									<td>Excessive light—clear light all around, a sunny day, a noble's ballroom party.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h3><span class="h3__highlight">0</span>Darkest Light</h3>
+				<p>In places where there is no light whatsoever, it is <i>darkest</i>—total darkness, a sealed and windowless room, an unlit underground dungeon, a zone of magical darkness, etc.</p>
+				<p>While the lighting is darkest, you gain the <i>Blinded</i> condition as described below—even if you have darkvision (there is no light for your eyes to reflect and magnify).</p>
+
+				<trait class="panel panel--trait">
+					<header class="panel__header">
+						<h4 class="panel__title">Blinded</h4>
+						<ul class="panel__tags">
+							<li>Condition</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<ul>
+							<li>You can't see.</li>
+							<li>You automatically fail ability checks that require sight.</li>
+							<li>Attack rolls against you have advantage <i>if</i> your opponent can see you.</li>
+							<li>Your attack rolls have disadvantage.</li>
+							<li>You can't cast spells or use effects that require you to see the target.</li>
+							<li>You can't actively target creatures that have hidden from you (such as with a <i>Hide</i> action).</li>
+							<li>Your speed is halved.</li>
+						</ul>
+					</section>
+				</trait>
+
+				<col-break></col-break>
+
+				<h3><span class="h3__highlight">1</span>Dark Light</h3>
+				<p>In places where there is a faint glimmer of light, it is <i>dark</i>—a graveyard at midnight, a dungeon with faintly glowing lichen, a room lit by a rusted candelabra.</p>
+				<p>While the lighting is dark, you are <i>Blinded</i>—unless you have darkvision, in which case you are the <i>Partially Blinded</i> condition instead.</p>
+
+				<h3><span class="h3__highlight">2</span>Dim Light</h3>
+				<p>In places where the light is faded or murky, it is <i>dim</i>—a misty forest, the twilight after a setting sun, a volcanic lair with glowing lava, a burning fireplace in a room, etc.</p>
+				<p>While the lighting is dim, you gain the <i>Partially Blinded</i> condition—unless you have darkvision or low-light vision, in which case you can see normally.</p>
+
+				<trait class="panel panel--trait">
+					<header class="panel__header">
+						<h4 class="panel__title">Partially Blinded</h4>
+						<ul class="panel__tags">
+							<li>Condition</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>You have disadvantage on Wisdom (Perception) checks that rely on sight.</p>
+					</section>
+				</trait>
+
+				<h3><span class="h3__highlight">3</span>Bright Light</h3>
+				<p>In places where the light is abundant and visible, it is <i>bright</i>—a clear day, a properly-lit room, a sinister tomb with two huge and flaming braziers.</p>
+				<p>When the lighting is bright, you can see normally.</p>
+
+				<h3><span class="h3__highlight">4</span>Brightest Light</h3>
+				<p>In places where the light is excessive and practically dazzling, it is <i>brightest</i>—a clear and sunny day, the solar room of a sun god's temple, a dungeon illuminated by a raging, white-hot fire elemental, etc.</p>
+				<p>When the lighting is brightest, you can see normally.</p>
+
+				<h4>Variant: Dazzlingly Bright</h4>
+				<p>If you want to add some more flavor to darkvision and low-light, consider this <i>Dazzlingly Bright</i> variant rule.</p>
+				<p>If you have low-light vision or darkvision, you find it uncomfortable to be in brightest light. If you have low-light vision, you gain the <i>Partially Blinded</i> condition—if you have darkvision, you are <i>Blinded</i> instead.</p>
+				<p>Some items, potions, and gear may help you to better control your eyesight and visibility—for example, tinted glasses crafted by an artisan may help you to block out brightest light.</p>
+
+				<div class="layout--col-wide layout--fixed-bottom">
+					<list class="panel panel--list" data-resize=15>
+						<header class="panel__header">
+							<h4 class="panel__title">Lighting Level Conditions</h4>
+						</header>
+						<section class="panel__body">
+							<table class="table table--light-level-conditions">
+								<thead>
+									<tr>
+										<th>Lighting Level</th>
+										<th>Brightvision</th>
+										<th>Low-light Vision</th>
+										<th>Darkvision</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Darkest</td>
+										<td>Blinded</td>
+										<td>Blinded</td>
+										<td>Blinded</td>
+									</tr>
+									<tr>
+										<td>Dark</td>
+										<td>Blinded</td>
+										<td>Blinded</td>
+										<td>Partially Blinded</td>
+									</tr>
+									<tr>
+										<td>Dim</td>
+										<td>Partially Blinded</td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Bright</td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Brightest</td>
+										<td><span class="empty">—</span></td>
+										<td>(Variant) Partially Blinded</td>
+										<td>(Variant) Blinded</td>
+									</tr>
+							</table>
+						</section>
+					</list>
+				</div>
+			</page>
+			<page class="page page--generic page--light-and-shadow">
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Revising Blinded</h4>
+					</header>
+					<section class="panel__body">
+						<p>These rules introduce minor updates to the "Blinded" condition (such as halving speed) to make it a more significant—and dangerous—threat to characters.</p>
+						<p>However, you can continue to use the original rules for "Blinded" if you prefer—it might make the darkness a little less threatening, but it won't break <i>Light & Shadow</i>.</p>
+					</section>
+				</aside>
+
+				<h2>Light Sources</h2>
+				<p>Light sources come in many forms—candles, torches, magical spells, fire elementals, etc. Each source has a power category to reflect the amount of light it produces—tiny, small, medium, large, huge, and gargantuan.</p>
+				<p>Typically, the bigger the source the more light it can put out—though power and intensity are also a factor. Use the <i>Light Sources</i> table below to determine how much light a particular item (or creature) should emit.</p>
+				<p><strong>Total Light:</strong> Once you know the strength of each significant light source in an area, add them to the lighting level to find out just how bright it is.</p>
+
+				<list class="panel panel--list" data-resize=15>
+					<header class="panel__header">
+						<h4 class="panel__title">Light Sources</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--light-sources">
+							<thead>
+								<tr>
+									<th>Power</th>
+									<th>Light</th>
+									<th>Examples</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Tiny</td>
+									<td>+0.2</td>
+									<td>Candle.</td>
+								</tr>
+								<tr>
+									<td>Small</td>
+									<td>+1</td>
+									<td>Torch, Lantern (hood down), Flare.</td>
+								</tr>
+								<tr>
+									<td>Medium</td>
+									<td>+2</td>
+									<td>Lantern (hood up), Fireplace.</td>
+								</tr>
+								<tr>
+									<td>Large</td>
+									<td>+4</td>
+									<td>Brazier, Glass chandelier.</td>
+								</tr>
+								<tr>
+									<td>Huge</td>
+									<td>+8</td>
+									<td>Raging fire elemental.</td>
+								</tr>
+								<tr>
+									<td>Gargantuan</td>
+									<td>+16</td>
+									<td>Burning building.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h3><span class="h3__highlight">A</span>Common Equipment</h3>
+				<p>A seasoned adventurer knows that there are three common, everyday ways to create a light in the dark: candles, torches, and lanterns.</p>
+				<p>Most of the lighting equipment used by adventurers will fall into one of these three categories—for other bespoke items, use the <i>Light Sources</i> table as a guide.</p>
+
+				<h4 class="h4--option">Candles</h4>
+				<p>Candles produce very little light on their own, but they are cheap and easy to make. They produce little smoke and so can be used comfortably indoors.</p>
+
+				<h4 class="h4--option">Torches</h4>
+				<p>Torches produce a small amount of light. Like candles, torches are cheap and relatively easy to make—but they produce a lot of smoke and ash as they burn. Avoid using a torch in an enclosed space whenever possible.</p>
+
+				<h4 class="h4--option">Lantern</h4>
+				<p>Lanterns burn brighter than the average torch, and—with the right fuel—for much longer. They produce little smoke and can be used comfortably indoors, but can be very fragile—take care not to drop a lantern.</p>
+
+				<col-break></col-break>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Candle</h4>
+						<ul class="panel__tags">
+							<li>Light (Tiny)</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This candle emits a <i>tiny</i> (+0.2) amount of light for up to 1 hour. You can snuff out a burning candle with an object interaction—each time it is snuffed out, deduct 15 minutes from the remaining burn time.</p>
+						<ul class="features">
+							<li><strong class="feature__title">Residue</strong> This common candle produces wax and a noticeable smell as it burns.</li>
+							<li>
+								<p><strong class="feature__title">Dropped</strong> If the candle is carelessly dropped, thrown, or knocked over, roll a d6:</p>
+								<ul>
+									<li><strong>1-3:</strong> The candle breaks and can't be used again.</li>
+									<li><strong>4-5:</strong> The candle is snuffed out.</li>
+									<li><strong>6:</strong> The candle remains lit.</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</item>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Torch</h4>
+						<ul class="panel__tags">
+							<li>Light (Small)</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This torch emits a <i>small</i> (+1) amount of light for up to 1 hour. You can extinguish a burning torch with a bonus action—each time it is extinguished, deduct 15 minutes from the remaining burn time.</p>
+						<p>You can spend an action to plant a torch in soft ground without extinguishing it.</p>
+						<ul class="features">
+							<li><strong class="feature__title">Residue</strong> This common torch produces smoke, ash, and a noticeable smell as it burns.</li>
+							<li>
+								<p><strong class="feature__title">Dropped</strong> If the torch is carelessly dropped, thrown, or knocked over, roll a d6:</p>
+								<ul>
+									<li><strong>1:</strong> The torch breaks and can't be used again.</li>
+									<li><strong>2-3:</strong> The torch is extinguished.</li>
+									<li><strong>4-6:</strong> The torch remains lit.</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</item>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Lantern</h4>
+						<ul class="panel__tags">
+							<li>Light (Medium)</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This lantern emits a <i>medium</i> (+2) amount of light for up to 6 hours. You can extinguish a burning lantern with an action—each time it is extinguished, deduct 15 minutes from the remaining burn time.</p>
+						<p>You can spent an action to place a lantern carefully on the ground without extinguishing it.</p>
+						<ul class="features">
+							<li><strong class="feature__title">Fuel</strong> This common lantern requires oil as fuel.</li>
+							<li><strong class="feature__title">Hooded</strong> If your lantern has a hood, you can close it to reduce the light emitted to small (+1) or none (+0).</li>
+							<li>
+								<p><strong class="feature__title">Dropped</strong> If the lantern is carelessly dropped, thrown, or knocked over, roll a d6:</p>
+								<ul>
+									<li><strong>1-2:</strong> The lantern goes out and loses d3 hours of fuel.</li>
+									<li><strong>3-4:</strong> The lantern is extinguished.</li>
+									<li><strong>5-6:</strong> The lantern remains lit.</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</item>
+			</page>
+			<page class="page page--generic page--light-and-shadow">
+				<div class="layout--col-wide layout--fixed-top">
+					<list class="panel panel--list" data-resize=45>
+						<header class="panel__header">
+							<h4 class="panel__title">Lighting Spells</h4>
+						</header>
+						<section class="panel__body">
+							<table class="table table--light-spells">
+								<thead>
+									<tr>
+										<th>Spell</th>
+										<th>Level</th>
+										<th>Source</th>
+										<th>Power</th>
+										<th>Light</th>
+										<th>Other Changes</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Continual Flame</td>
+										<td>2nd</td>
+										<td>PHB</td>
+										<td>Small</td>
+										<td>+1</td>
+										<td>Now has a maximum duration of 8 hours.</td>
+									</tr>
+									<tr>
+										<td>Control Flames</td>
+										<td>Cantrip</td>
+										<td>XGtE</td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+										<td>Now requires <i>Concentration</i>.</td>
+									</tr>
+									<tr>
+										<td>Create Bonfire</td>
+										<td>Cantrip</td>
+										<td>XGtE</td>
+										<td>Small</td>
+										<td>+1</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Dancing Lights</td>
+										<td>Cantrip</td>
+										<td>PHB</td>
+										<td>Small</td>
+										<td>+1</td>
+										<td>You can create up to 5 tiny (candle-like) lights or 1 small (torch-like) light.</td>
+									</tr>
+									<tr>
+										<td>Dawn</td>
+										<td>5th</td>
+										<td>XGtE</td>
+										<td>Large</td>
+										<td>+4</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Daylight</td>
+										<td>3rd</td>
+										<td>PHB</td>
+										<td>Medium</td>
+										<td>+2</td>
+										<td>Now requires <i>Concentration</i>.</td>
+									</tr>
+									<tr>
+										<td>Faerie Fire</td>
+										<td>1st</td>
+										<td>PHB</td>
+										<td>Small</td>
+										<td>+1</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Flame Blade</td>
+										<td>2nd</td>
+										<td>PHB</td>
+										<td>Small</td>
+										<td>+1</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Flame Shield</td>
+										<td>4th</td>
+										<td>PHB</td>
+										<td>Medium</td>
+										<td>+2</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Flaming Sphere</td>
+										<td>2nd</td>
+										<td>PHB</td>
+										<td>Small</td>
+										<td>+1</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Investiture of Flame</td>
+										<td>6th</td>
+										<td>XGtE</td>
+										<td>Large</td>
+										<td>+4</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Light</td>
+										<td>Cantrip</td>
+										<td>PHB</td>
+										<td>Small</td>
+										<td>+1</td>
+										<td>Now requires <i>Concentration</i>.</td>
+									</tr>
+									<tr>
+										<td>Produce Flame</td>
+										<td>Cantrip</td>
+										<td>PHB</td>
+										<td>Small</td>
+										<td>+1</td>
+										<td>Now requires <i>Concentration</i>.</td>
+									</tr>
+									<tr>
+										<td>Wall of Fire</td>
+										<td>4th</td>
+										<td>PHB</td>
+										<td>Medium</td>
+										<td>+2</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>Wall of Light</td>
+										<td>5th</td>
+										<td>XGtE</td>
+										<td>Large</td>
+										<td>+4</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+							</table>
+						</section>
+					</list>
+				</div>
+
+				<h3><span class="h3__highlight">B</span>Spells & Effects</h3>
+				<p>Some magical spells and effects are known to create light—whether intentionally or as a side-effect. Use the <i>Light Sources</i> table as a guide to assign light values to these effects as appropriate.</p>
+
+				<h4>Common Spells</h4>
+				<p>The <i>Lighting Spells</i> table (shown above) lists some of the most common spells and their associated lighting effects.</p>
+				<p>Some spells have also been adjusted for balance purposes—use these changes to help ensure that lighting equipment (candles, torches, and lanterns) remains an important part of adventuring in your games.</p>
+
+				<h3><span class="h3__highlight">C</span>Environmental Light</h3>
+				<p>Some environmental features can emit light—lava, glowing crystals, spectral cave moss, etc. You can account for these light sources separately (using the <i>Light Sources</i> table to determine their strength) or fold them into the base lighting level for the area.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>As you step into the <i>Ashen Crown</i>, searing heat threatens to overwhelm you. Glowing lava (+2 light) fills the chamber with a warm, <i>dim</i> light.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Dim light? Hmm, so with my <i>Light</i> spell (+1 light) and Valiant's torch (+1 light), that should get us up to <i>brightest</i> light?<span></li>
+							<li><span class="chat__speaker">GM:</span><span>Yes, the chamber is brightly illuminated right now—you can see clearly across the lava pool.<span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Excellent. I'll stop casting <i>Light</i> then if you're good to keep holding that torch, Valiant?</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>Actually I—</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span><i>Great</i>, I knew you wouldn't mind.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>...</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Spell Revisions</h4>
+					</header>
+					<section class="panel__body">
+						<p>These rules introduce minor changes to certain spells (such as by adding <i>Concentration</i>) so that they require more effort from your spellcasters—if <i>Light</i> has no significant cost then candles/torches/lanterns quickly become redundant.</p>
+						<p>However, you can continue to use the original spells if you prefer—it will de-emphasize the need for players to carry lighting equipment, but it won't break the game.</p>
+					</section>
+				</aside>
+
+				<h3><span class="h3__highlight">D</span>Creatures</h3>
+				<p>Some creatures, whether as part of their nature or through ongoing effects, can act as light sources—burning fire elementals, radiant clerics of a sun god, undead skeletons covered in necrotic darkflame.</p>
+				<p>Assign these particular creatures a light value to track how they affect their surroundings.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>The nightdrake roars, scratching angrily at the ground. With a hiss, it's black scales start to absorb daylight (-2 light), turning the bright grove <i>dark</i>...</p>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">E</span>Items and Gear</h3>
+				<p>Some equipment, often magical in nature, can act as a light source—a shining sunblade, a suit of gleaming starsprite armor, a gemstone headlamp, etc.</p>
+				<p>Assign these items a light value as appropriate to track how they affect their surroundings.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>You feel the sunblade hum in your hand as it starts to glow, casting a <i>small</i> light around you (+1 light).</p>
+					</section>
+				</example>
+			</page>
+			<page class="page page--generic page--light-and-shadow">
+				<h2>Room Scales</h2>
+				<p>Not all rooms are the same size, and a larger room naturally requires more light to fill it—a single torch won't make a dent in a gargantuan cavern</p>
+				<p>A <i>room scale</i> changes the amount of light you need to move up one lighting level. In a <i>medium</i> sized room you need +1 light to go from dark to dim light—but in a <i>huge</i> room you need +4 light to make the same change.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Room Scales</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--light-room-sizes">
+							<thead>
+								<tr>
+									<th>Room Scale</th>
+									<th>Light Needed per Level</th>
+									<th>Da</th>
+									<th>D</th>
+									<th>Di</th>
+									<th>B</th>
+									<th>Br</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Tiny</td>
+									<td>x 0.25</td>
+									<td>0</td>
+									<td>0.25</td>
+									<td>0.5</td>
+									<td>0.75</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Small</td>
+									<td>x 0.5</td>
+									<td>0</td>
+									<td>0.5</td>
+									<td>1</td>
+									<td>1.5</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Medium</td>
+									<td>x 1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>Large</td>
+									<td>x 2</td>
+									<td>0</td>
+									<td>2</td>
+									<td>4</td>
+									<td>6</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td>Huge</td>
+									<td>x 4</td>
+									<td>0</td>
+									<td>4</td>
+									<td>8</td>
+									<td>12</td>
+									<td>16</td>
+								</tr>
+								<tr>
+									<td>Gargantuan</td>
+									<td>x 8</td>
+									<td>0</td>
+									<td>8</td>
+									<td>16</td>
+									<td>24</td>
+									<td>32</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<p>Room scales are a good way to add some variety to your regions and encourage the use of large/huge/gargantuan lights during adventures.</p>
+				<p>It can be difficult for players to fill huge/gargantuan spaces with enough light using just candles, torches, and lanterns—especially if they are caught off guard—so try to make sure there are some fun, environmental lighting features that players can interact with.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>As you push it, Valiant, the door slowly opens with a grinding creak. Beyond, you notice the walls spreading out into a <i>large</i>, dark room.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>What can I see in the room?<span></li>
+							<li><span class="chat__speaker">GM:</span><span>Your torch (+1 light) isn't strong enough to fill the large space—you'll need another light source if you want to fill the dark room with dim light.<span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h3>The Twilight Reliquary</h3>
+				<p>To demonstrate how you can use light levels and room scales in your adventures, this section will lay out an example dungeon—the <i>Twilight Reliquary</i>.</p>
+
+				<h4>Default Rooms</h4>
+				<p>The <i>Twilight Reliquary</i> is an underground dungeon constructed long ago to house the bones of an ancient shadow dragon—Despair. It creates a permanent gloom over the land above. Many adventurers have tried to brave its dark depths, but few—if any—have returned.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>By default, the Reliquary is in total darkness (0 light) with medium room sizes (1 light needed per level). Adventurers need to create at least +2 light to get visibility up from darkest to dim light.</p>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<h4>The Bonewall</h4>
+				<p>In a <i>small</i> room, stone shelves hold rows of human bones. Looking carefully, you can see veins of black necrotic energy running throughout the bones—you think that it might be a bad idea to disturb them.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>The Bonewall is a small room (0.5 light needed per level) in darkest light (0 light). Adventurers need only +1 light to get visibility from darkest to dim light.</p>
+					</section>
+				</example>
+
+				<h4>The Seat of Prayer</h4>
+				<p>One <i>large</i> room appears to have been dedicated to prayer of some kind—carvings in the stone walls indicate humans worshipping a gargantuan shadow dragon.</p>
+				<p>Two candelabra stand either side of a stone lectern, upon which rests a black leather book. Black candles burn with a sinister, purple light (+1 light each) in this large, dark room.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>The Seat of Prayer is a large room (2 light needed per level) in dark light (2 light from the candelabra). Adventurers need to create another +2 light to get visibility up from dark to dim light.</p>
+					</section>
+				</example>
+
+				<h4>The Shadow Throne</h4>
+				<p>At the heart of the Reliquary lies the <i>Shadow Throne</i>, the final resting place of Despair. This is a <i>huge</i> room. At one end, Despair's gargantuan skeleton lies curled around a huge, darkstone throne.</p>
+				<p>Two braziers stand on either side of the room's entrance. They are currently unlit, but a perceptive adventurer may deduce that they will each emit a huge amount of light (+4 light each) when set ablaze.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>The Shadow Throne is a huge room (4 light needed per level) in total darkness (0 light). Adventurers need to create at least +8 light to get visibility up from darkest to dim light.</p>
+					</section>
+				</example>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Darklight Brazier</h4>
+						<ul class="panel__tags">
+							<li>Light (Huge)</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This black metal brazier is filled with some kind of dark wood. When set ablaze, it burns with a large purple flame (+4 light) that is cold to touch.</p>
+					</section>
+				</item>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Keep Things Simple</h4>
+					</header>
+					<section class="panel__body">
+						<p>It can be tempting to use room scales often in your dungeons, but try not to overcomplicate things for your players—or yourself.</p>
+						<p>Establish a baseline lighting condition for your region, and reserve room modifiers for your major centerpieces and named rooms.</p>
+					</section>
+				</aside>
+			</page>
+			<page class="page page--generic page--light-and-shadow">
+				<h2>Items & Consumables</h2>
+				<p>During your adventures, you may be able to buy, craft, or loot special items that can influence how your character reacts to certain lighting levels—special lanterns, tinted glasses to diminish light, potions to see in the dark, etc.</p>
+				<p>When delving into the dark places of the world, make sure equip to yourself with adequate lighting supplies for your journey—to be stuck underground with no light and darksighted monsters all around is a surefire recipe for death and disaster.</p>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Flare</h4>
+						<ul class="panel__tags">
+							<li>Light (Medium)</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This flare emits a <i>medium</i> (+2) amount of light for up to 1 hour. Once lit, a flare can't be extinguished unless it is doused in water—at which point, the flare is ruined and can't be lit again.</p>
+						<ul class="features">
+							<li><strong class="feature__title">Launch</strong> When you activate a flare, you can launch it up to 120 ft away.</li>
+						</ul>
+					</section>
+				</item>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Darksight Goggles</h4>
+						<ul class="panel__tags">
+							<li>Wearable</li>
+							<li>Rare</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>These magical goggles—set with delicate crystal lenses and arcane sigils—amplify light and help you to see in the dark.</p>
+						<ul class="features">
+							<li><strong class="feature__title">Sight Beyond Sight</strong> When you wear these goggles, you gain darkvision.</li>
+							<li><strong class="feature__title">Fragile</strong> These goggles are fragile and easily cracked—be careful not to drop or injure them.</li>
+						</ul>
+					</section>
+				</item>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Darkstone Shard</h4>
+						<ul class="panel__tags">
+							<li>Rare</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>A shard of darkstone taken from the Shadowfell. This small, bloodthirsty stone absorbs light from the surroundings and creates pockets of darkness. Thieves and rogues are known to prize these shards.</p>
+						<ul class="features">
+							<li><strong class="feature__title">Light Devourer</strong> Once per long rest, you can spend a bonus action to activate the darkstone with a drop of blood. For 1 hour, the stone absorbs light and darkens the surrounding area (-1 light).</li>
+							<li><strong class="feature__title">Overeater</strong> If left exposed to bright light for longer than 1 hour, the darkstone cracks and turns to dust.</li>
+						</ul>
+					</section>
+				</item>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Hellfire Torch</h4>
+						<ul class="panel__tags">
+							<li>Light (medium)</li>
+							<li>Uncommon</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This specially-treated torch burns twice as bright and twice as hot as normal, producing a <i>medium</i> (+2) amount of light for 30 minutes before it turns to ash.</p>
+					</section>
+				</item>
+
+				<col-break></col-break>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Lesser Sunblade</h4>
+						<ul class="panel__tags">
+							<li>Weapon (Longsword)</li>
+							<li>Rare</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This magical sword, crafted by the elves of Sindoril, hums with radiant energy. A favored weapon of dungeon delvers—when commanded, it glows with radiant light.</p>
+						<ul class="features">
+							<li><strong class="feature__title">Radiant Power</strong> This blade has 6 charges of power, and it regains 1d3 expended charges at dawn.</li>
+							<li><strong class="feature__title">Radiant Strike</strong> When you hit a creature with an attack using this sword, you can spend 1 charge to deal an extra 1d4 radiant damage.</li>
+							<li>
+								<p><strong class="feature__title">A Light in the Dark</strong> While holding this sword, you can spend a bonus action and one charge to speak a command word and emit a glowing white light (+1 light) from the blade.</p>
+								<p>The glow persists until a) it is dismissed as a bonus action, b) you let go of the sword, or c) 1 hour passes.</p>
+							</li>
+						</ul>
+					</section>
+				</item>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Potion of Cats Eye</h4>
+						<ul class="panel__tags">
+							<li>Potion</li>
+							<li>Consumable</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>This white potion turns clear for a few seconds when you shake it. It tastes of smoke and lemons.</p>
+						<p>You gain darkvision when you drink this potion—the better the quality, the longer this ability lasts for.</p>
+						<div class="panel__table-wrapper">
+							<table class="table table--potion-cats-eye">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>Rarity</th>
+										<th>Duration</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lesser</td>
+										<td>Common</td>
+										<td>1 hour</td>
+										<td>50 gp</td>
+									</tr>
+									<tr>
+										<td>Greater</td>
+										<td>Uncommon</td>
+										<td>2 hours</td>
+										<td>150 gp</td>
+									</tr>
+									<tr>
+										<td>Superior</td>
+										<td>Rare</td>
+										<td>4 hours</td>
+										<td>450 gp</td>
+									</tr>
+									<tr>
+										<td>Supreme</td>
+										<td>Very rare</td>
+										<td>8 hours</td>
+										<td>1,350 gp</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</item>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Solar Lantern</h4>
+						<ul class="panel__tags">
+							<li>Light (large)</li>
+							<li>Rare</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>Crafted by the dwarves of Kadrun Volk for use in the undermines, solar lanterns burn with blue fire.</p>
+						<ul class="features">
+							<li><strong class="feature__title">Solar Beam</strong> This solar lantern burns through oil three times as fast as normal, but produces a <i>large</i> (+4) amount of light.</li>
+						</ul>
+					</section>
+				</item>
+
+				<item class="panel panel--item">
+					<header class="panel__header">
+						<h4 class="panel__title">Tinted Glasses</h4>
+						<ul class="panel__tags">
+							<li>Wearable</li>
+							<li>Uncommon</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<p>These tinted glasses of gnomish design make everything look a little less bright—perfect if you have darkvision and need some protection against the glare of intense daylight.</p>
+						<ul class="features">
+							<li><strong class="feature__title">Looking Good</strong> You gain the <i>Partially Blinded</i> condition and can reduce your effective light level by 1.</li>
+							<li><strong class="feature__title">Fragile</strong> These glasses are fragile and easily cracked, so be careful not to drop or injure them.</li>
+						</ul>
+					</section>
+				</item>
+			</page>
+		</book>
+	</body>
+</html>

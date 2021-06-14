@@ -1,0 +1,38 @@
+// Styles for flasks chapters.
+
+.page--flasks {
+
+	.table--flask-appearance {
+		@include table-column(1, center, 13%);
+		@include table-column(2, center, 32%);
+		@include table-column(3, center, 26%);
+		@include table-column(4, center, 29%);
+	}
+
+	.table--average-uses {
+		@include table-column(1, center, 25%);
+		@include table-column(2, center, 25%);
+		@include table-column(3, left, 50%);
+	}
+
+	.table--recipe-flask {
+		@include table-column(1, center, 12%);
+		@include table-column(2, left, 37%);
+		@include table-column(3, left, 51%);
+	}
+
+	.tables--flask-refill .table {
+		@include table-column(1, center, 55%);
+		@include table-column(2, center, 45%);
+	}
+
+	.table--flask-mixing {
+		@include table-column(1, center, 15%);
+		@include table-column(2, left, 85%);
+	}
+
+	.tables--flask-topup .table {
+		@include table-column(1, center, 55%);
+		@include table-column(2, center, 45%);
+	}
+}

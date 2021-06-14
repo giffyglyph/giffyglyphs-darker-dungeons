@@ -1,0 +1,48 @@
+$panel--item__header--bg: #5490a4;
+
+.theme--pf {
+
+	.page--character-creation .panel--character-creation-viridian .abilities .ability {
+		background: #e4e4e4;
+	}
+
+	.page--active-inventory .panel--mechanic-slots .panel__body h5 {
+		background: rgba(grayscale(#96acb6),0.2);
+		color: grayscale(#7693a0);
+	}
+
+	.panel--item--oil-recipe {
+
+		h5 {
+			background: rgba(grayscale($panel--item__header--bg), 0.75);
+			color: white;
+
+			strong {
+				background: grayscale($panel--item__header--bg);
+			}
+
+			&::before {
+				background: white;
+				color: grayscale($panel--item__header--bg);
+			}
+		}
+
+		* + h5::after {
+			border-top-color: rgba(grayscale($panel--item__header--bg), 0.2);
+		}
+
+		&--top {
+
+			.panel__body {
+				border-bottom-color: lighten(grayscale($panel--item__header--bg), 30%);
+			}
+		}
+
+		&--bottom {
+
+			.panel__body {
+				border-top-color: lighten(grayscale($panel--item__header--bg), 30%);
+			}
+		}
+	}
+}

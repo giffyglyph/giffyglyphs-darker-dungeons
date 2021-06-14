@@ -1,0 +1,2320 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--active-inventory" data-header-icon="backpack">
+				<h1 id="active-inventory">Active Inventory</h1>
+				<p>The right gear at the right time can make all the difference between life and death. But how do you keep track of what you're carrying?</p>
+				<p>This chapter introduces <i>inventory slots</i>, <i>object bulk</i>, and new systems to help you manage your inventory.</p>
+
+				<mechanic class="panel panel--mechanic panel--mechanic-slots">
+					<header class="panel__header">
+						<h4 class="panel__title">Slots & Bulk</h4>
+					</header>
+					<section class="panel__body">
+						<p>An active inventory manages items using inventory slots (storage capacity) and object bulk (carrying effort).</p>
+
+						<h5>Inventory Slots</h5>
+						<p>Inventory slots describe <i>storage</i> capacity—how much can a thing carry without being overwhelmed? One slot holds one small object—a potion bottle, a dagger, a loaf of bread, etc.</p>
+						<p>Anything that can hold, carry, or contain objects can make use of inventory slots—for example:</p>
+
+						<ul>
+							<li><strong>Creatures</strong> use slots to describe how much they can carry before they're encumbered.</li>
+							<li><strong>Containers</strong> use slots to describe how much they can store before they're full.</li>
+							<li><strong>Buildings</strong> use slots to describe how much free space they have in their rooms.</li>
+							<li><strong>Vehicles</strong> use slots to describe how much they can transport before they can't move.</li>
+						</ul>
+
+						<h5>Bulk</h5>
+						<p>Objects use <i>bulk</i> to describe how many inventory slots they fill—the bulkier the object, the more slots occupied.</p>
+						<p>Bulk represents the <i>effort</i> needed by a medium-sized creature to carry an object based on its size, weight, and shape—the more awkward or uncomfortable it is to hold an object, the higher its bulk.</p>
+					</section>
+				</mechanic>
+
+				<col-break></col-break>
+
+				<h2>Your Inventory</h2>
+				<p>Your inventory capacity depends on your <i>creature size</i> and <i>strength modifier</i>—the bigger and stronger you are, the more inventory slots you have.</p>
+				<p>As your size increases, so too does your bulk—a larger creature takes more effort to carry. Your bulk equals the larger of either a) your <i>minimum bulk</i> or b) the total bulk of everything in your inventory.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Creature Inventory</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--inventory-size">
+							<thead>
+								<tr>
+									<th>Creature Size</th>
+									<th>Inventory Slots</th>
+									<th>Minimum Bulk</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Tiny</td>
+									<td>6 + STR</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>Small</td>
+									<td>14 + STR</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Medium</td>
+									<td>18 + STR</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td>Large</td>
+									<td>22 + <span style="opacity: 0.5">[</span> STR x 2 <span style="opacity: 0.5">]</span></td>
+									<td>40</td>
+								</tr>
+								<tr>
+									<td>Huge</td>
+									<td>30 + <span style="opacity: 0.5">[</span> STR x 4 <span style="opacity: 0.5">]</span></td>
+									<td>80</td>
+								</tr>
+								<tr>
+									<td>Gargantuan</td>
+									<td>46 + <span style="opacity: 0.5">[</span> STR x 8 <span style="opacity: 0.5">]</span></td>
+									<td>160</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Here we see three characters calculate their inventory:</p>
+						<ul>
+							<li>Valiant, a human cleric, is a medium-sized creature (18 slots) with +2 STR (+2 slots). He has a total of 20 inventory slots, and occupies a minimum of 20 slots when carried.</li>
+							<li>Crackle, a kobold wizard, is a small creature (14 slots) with −1 STR (−1 slot). She has 13 inventory slots and occupies a minimum of 10 slots.</li>
+							<li>Brakken, a goliath barbarian, is a medium-sized creature with <i>Powerful Build</i> (22 slots) and +3 STR (+6 slots). She has 28 inventory slots and occupies a minimum of 20 slots when carried.</li>
+						</ul>
+					</section>
+				</example>
+			</page>
+			<page class="page page--generic page--active-inventory">
+				<h3>Basic Supplies</h3>
+				<p>In addition to inventory slots, you can freely carry a limited number of basic supplies—one ration box, one waterskin, and one purse.</p>
+
+				<ul>
+					<li><strong>Ration box:</strong> Stores up to five basic food rations.</li>
+					<li><strong>Waterskin:</strong> Holds enough liquid for five drink rations.</li>
+					<li><strong>Purse:</strong> Holds up to 100 assorted coins.</li>
+				</ul>
+
+				<p>These three basic supply containers don't occupy any inventory slots, but they can still be affected by NPCs and monsters in some fashion—stolen, damaged, destroyed, etc—so keep an eye on them.</p>
+				<p><strong>Additional Supplies:</strong> You can carry additional supplies (more rations, waterskins, purses, etc) by adding them into your inventory space as normal.</p>
+
+				<h2>Carrying Objects</h3>
+				<p>When you hold or carry an object, you add it to your inventory. Fill a number of <i>inventory slots</i> according to the object's <i>bulk</i>—the bulkier the object, the more inventory slots you must fill.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Valiant buys some hempen rope (2 bulk) and a torch (1 bulk) and puts them in his backpack, filling 3 slots.</p>
+						<p>Later, when Crackle is knocked unconscious by a rock trap, Valiant carries her to safety. As a small creature (10 bulk), she occupies 10 inventory slots.</p>
+					</section>
+				</example>
+
+				<h4>Estimating Bulk</h4>
+				<p>To choose a bulk rating for an object, consider its general size, weight, and shape—the more uncomfortable an item is to hold, the higher the bulk rating. Check the <i>Bulk</i> table below for some example guidelines.</p>
+				<p><strong>Extremely Small Objects:</strong> Some items are <i>especially</i> small and easy to pack together—pins, coins, paperclips, etc. It takes 100 of these items to fill one inventory slot.</p>
+				<p><strong>Extremely Large Objects:</strong> If you need to assign a bulk rating to an extremely large object, use a multiple of 18 for your bulk rating—18/36/54/72, etc.</p>
+
+				<col-break></col-break>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Bulk Ratings</h4>
+					</header>
+					<section class="panel__body">
+						<p>Bulk ratings assume the perspective of a medium-sized creature by default. Use larger bulk ratings to reflect larger-than-normal items (giant-forged swords, ogre armor, etc), and smaller ratings for smaller-than-normal equipment (gnome rock-hammers, pixie armor, etc).</p>
+					</section>
+				</aside>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>Clanda, inside the chest you find 300 silver coins and a small marble carving of a horse.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Brilliant. I'll pour it all into my bag.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>300 coins will take up 3 slots, and the statue another 1 slot. What's your load?</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Damn it, 4 slots puts me way over my limit. Hey, dwarf—you have room, carry this for me.</span></li>
+							<li><span class="chat__speaker">Krazak:</span><span>Sure thing, witch. <i>For a price.</i></span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Son of a...</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h3>Encumbrance</h3>
+				<p>If you find yourself carrying more than your inventory capacity allows, you are <i>encumbered</i>. While you are encumbered, you gain the following condition:</p>
+
+				<trait class="panel panel--trait">
+					<header class="panel__header">
+						<h4 class="panel__title">Encumbered</h4>
+						<ul class="panel__tags">
+							<li>Condition</li>
+						</ul>
+					</header>
+					<section class="panel__body">
+						<div class="description">
+							<ul>
+								<li>Your speed is halved</li>
+								<li>You have disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.</li>
+							</ul>
+						</div>
+					</section>
+				</trait>
+
+				<h4>Maximum Capacity</h4>
+				<p>You can't exceed your inventory capacity by more than half your maximum inventory slots (rounded down).</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Valiant has an inventory capacity of 20 slots. He is encumbered from 21 slots, and can't carry more than 30 bulk in total.</p>
+					</section>
+				</example>
+
+				<div class="layout--col-wide layout--fixed-bottom" data-website="wide">
+					<list class="panel panel--list">
+						<header class="panel__header">
+							<h4 class="panel__title">Bulk</h4>
+						</header>
+						<section class="panel__body">
+							<table class="table table--item-sizes">
+								<thead>
+									<tr>
+										<th>Category</th>
+										<th>Bulk</th>
+										<th>Size</th>
+										<th>Weight</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Tiny</td>
+										<td>0.2</td>
+										<td><strong>Tiny:</strong> Smaller than the palm of your hand. You can hold many of these in one hand.</td>
+										<td><strong>Negligible:</strong> A negligible or trivial weight.</td>
+									</tr>
+									<tr>
+										<td>Small</td>
+										<td>1</td>
+										<td><strong>Short:</strong> Up to a handspan / 9 inches. Can be held comfortably with one hand.</td>
+										<td><strong>Light:</strong> Up to 2 lbs. The weight of a loaf of bread or a bag of sugar.</td>
+									</tr>
+									<tr>
+										<td>Medium</td>
+										<td>2</td>
+										<td><strong>Medium:</strong> Up to an arms-length / 2 feet long. Can be held with one hand.</td>
+										<td><strong>Medium:</strong> Up to 5 lbs. About as heavy as a few big bags of sugar.</td>
+									</tr>
+									<tr>
+										<td>Large</td>
+										<td>3</td>
+										<td><strong>Long:</strong> Longer than an arm. Usually can be held with one hand, but us most comfortable with two.</td>
+										<td><strong>Heavy:</strong> Up to 10 lbs. About as heavy as a cat or a sack of potatoes.</td>
+									</tr>
+									<tr>
+										<td>X-Large</td>
+										<td>6</td>
+										<td><strong>Extra-long:</strong> Longer than the height of an average person. Requires two hands to hold.</td>
+										<td><strong>Extra-heavy:</strong> Up to 35 lbs. About a quarter of the weight of an average person.</td>
+									</tr>
+									<tr>
+										<td>XX-Large</td>
+										<td>9</td>
+										<td><strong>Extensive:</strong> Longer than the height of two people. Requires two hands to hold.</td>
+										<td><strong>Leaden:</strong> Up to 70 lbs. About half as heavy as an average person.</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+					</list>
+				</div>
+			</page>
+			<page class="page page--generic page--active-inventory">
+				<h3>Equipping Characters</h3>
+				<p>Here are two examples of new characters buying some starting equipment and stashing it in their inventory.</p>
+
+				<h4>Valiant, Human Cleric</h4>
+				<p>Valiant, a human cleric with +2 STR, can hold 20 inventory slots of inventory. Rolling 15 on the <i>Starting Wealth</i> table, he starts with 150 gp to his name.</p>
+				<p>Expecting to be in the thick of battle, Valiant wants thick armor and a sturdy shield to keep danger at bay.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Valiant's Inventory</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--equipment-example">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Contents</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Carried (18/20)</td>
+									<td>
+										<ul>
+											<li>Chain Mail (75 gp, 9 bulk)</li>
+											<li>War Pick (5 gp, 2 bulk)</li>
+											<li>Shield (10 gp, 2 bulk)</li>
+											<li>Healer's Kit (5 gp, 1 bulk)</li>
+											<li>Prayer Book (25 gp, 1 bulk)</li>
+											<li>Torch (1 cp, 1 bulk)</li>
+											<li>Bedroll (1 gp, 2 bulk)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Ration Box</td>
+									<td>
+										<ul>
+											<li>Basic Ration (5)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Waterskin</td>
+									<td>
+										<ul>
+											<li>Clean Water (5)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Purse</td>
+									<td>
+										<ul>
+											<li>28 gp, 9 sp, 9 cp (46 coins)</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<p>Wearing heavy armor cuts Valiant's free inventory space down to 11 slots. He fills 9 slots with adventuring gear, leaving 2 slots for trinkets and treasures.</p>
+				<p>This leaves Valiant with 2 inventory slots and just under 29 gp to live on—enough for two weeks of a modest lifestyle.</p>
+
+				<h4>Krazak, Dwarf Barbarian</h4>
+				<p>Krazak, a dwarf barbarian with +3 STR, has 21 inventory slots to fill with 60 gp. With <i>Unarmored Defense</i>, he doesn't need nor want any additional armor—except perhaps a shield for those cowardly archers. But he does have a weakness for weapons—the bigger, the better.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Krazak's Inventory</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--equipment-example">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Contents</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Carried (14/21)</td>
+									<td>
+										<ul>
+											<li>Handaxe (5 gp, 2 bulk)</li>
+											<li>Shield (10 gp, 2 bulk)</li>
+											<li>Greataxe (30 gp, 3 bulk)</li>
+											<li>Gaming Set, Dice (1 sp, 1 bulk)</li>
+											<li>Whetstone (1 cp, 1 bulk)</li>
+											<li>Chain (5 gp, 1 bulk)</li>
+											<li>Torch (1 cp, 1 bulk)</li>
+											<li>Cook's Utensils (1 gp, 2 bulk)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Ration Box</td>
+									<td>
+										<ul>
+											<li>Basic Ration (5)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Waterskin</td>
+									<td>
+										<ul>
+											<li>Dwarven Ale (5)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Purse</td>
+									<td>
+										<ul>
+											<li>9 gp, 9 sp, 8 cp (26 coins)</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<p>Of his 21 inventory slots, Krazak fills 13—plenty of room left to store loot aplenty from the next wild adventure.</p>
+				<p>Spending half his gold on a beloved greataxe was a costly investment, but a barbarian is nothing without his weapons. Krazak is keen to put them to good use.</p>
+
+				<col-break></col-break>
+
+				<h2>Dragging Objects</h2>
+				<p>When you drag or pull an object, that object can still affect your inventory. Halve the bulk value of any object that you are dragging or pulling (rounding down).</p>
+				<p><strong>Heaped Objects:</strong> If you're pulling a <i>pile</i> of objects, halve the <i>total</i> amount of bulk—not the individual items.</p>
+				<p><strong>Rolling Transport:</strong> If you're pulling an object that is designed to travel easily (a cart, a wagon, a sled), you may quarter that object's bulk value.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Krazak finds a rotting chest that holds 1,900 assorted copper coins (19 bulk carried, 9 bulk when dragged). He drags the chest back up to the surface and loads it onto a hand cart (20 bulk carried, 5 bulk when pulled).</p>
+					</section>
+				</example>
+
+				<h2>Wearables</h2>
+				<p>Wearable items—clothes, gloves, boots, hats, necklaces, etc—can be categorized into two groups: <i>attire</i> and <i>armor</i>.</p>
+
+				<ul>
+					<li><p><strong>Attire:</strong> Clothing and finery (necklaces, rings, bracelets, etc) don't occupy any inventory slots while worn—unless that attire is <i>awkward</i> for you.</p></li>
+					<li><p><strong>Armor:</strong> Armor—and other <i>awkward</i> wearables—continue to occupy inventory slots while worn.</p></li>
+				</ul>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Valiant can carry 20 slots-worth of equipment. Before heading out into adventure, he dons a set of common clothes (attire, 1 bulk) and some chainmail (armor, 9 bulk)—he has 11 slots left for other equipment.</p>
+						<p>Crackle, meanwhile, is trying to infiltrate a draconic cult. She has fashioned a dragon costume (attire, 2 bulk) that is awkward to move around in—it continues to fill 2 inventory slots even when worn.</p>
+					</section>
+				</example>
+
+				<h3>Armor Expertise</h3>
+				<p>Armor is big and bulky, but there's a trade-off—you become more resistant to harm.</p>
+				<p>If you're wearing medium or heavy armor (and you're appropriately proficient) you gain one of the following perks. These doesn't stack with any additional armor feats or bonuses you might gain—use the highest value.</p>
+
+				<mechanic class="panel panel--mechanic panel--mechanic--align-left">
+					<header class="panel__header">
+						<h4 class="panel__title">Armor Expertise</h4>
+					</header>
+					<section class="panel__body">
+						<p><strong>Medium Armor:</strong> Reduce any bludgeoning, piercing, and slashing damage that you take from non-magical weapons by half your proficiency bonus (rounded down), to a minimum of 1.</p>
+						<p><strong>Heavy Armor:</strong> Reduce any bludgeoning, piercing, and slashing damage that you take from non-magical weapons by your proficiency bonus, to a minimum of 1.</p>
+					</section>
+				</mechanic>
+			</page>
+			<page class="page page--generic page--active-inventory">
+				<h2>Transporting Goods</h2>
+				<p>On your travels, you may need to transport goods in large quantities—carting gold from a dragon's lair, shipping ore across the sea, moving grain from one village to another. For this, you'll need transport vehicles and containers.</p>
+
+				<h3>Vehicles</h3>
+				<p> Vehicles—carts, carriages, ships, trains, etc—store items in the same way as characters: with <i>inventory slots</i>.</p>
+				<p>Vehicle capacity is measured in six scales of <i>spacing</i>—this describes the number of inventory slots available to carry creatures and cargo.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Vehicle Capacity</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--vehicles">
+							<thead>
+								<tr>
+									<th>Spacing</th>
+									<th>Examples</th>
+									<th>Slots</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Cramped</td>
+									<td>Cart (Hand), Sled (Hand)</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td>Snug</td>
+									<td>Cart (Horse), Chariot, Rowboat</td>
+									<td>60</td>
+								</tr>
+								<tr>
+									<td>Compact</td>
+									<td>Wagon, Carriage (Horse), Keelboat</td>
+									<td>180</td>
+								</tr>
+								<tr>
+									<td>Spacious</td>
+									<td>Carriage (Train)</td>
+									<td>540</td>
+								</tr>
+								<tr>
+									<td>Capacious</td>
+									<td>Longship, Sailing Ship</td>
+									<td>1,620</td>
+								</tr>
+								<tr>
+									<td>Vast</td>
+									<td>Galley, Warship</td>
+									<td>4,860</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Valiant, Crackle, and Krazak need to cross the Brindle River. Together, they occupy a total of 50 bulk—they hire a snug rowboat, safe in the knowledge that it can carry all three of them and (probably) won't sink.</p>
+					</section>
+				</example>
+
+				<!-- <p>Use these capacities as a guide—but be mindful of the fiction. A galley may be able to hold up to 4,374 slots of inventory, but that doesn't necessarily mean it can carry 112 gargantuan dragons.</p> -->
+
+				<h4>Transport Animals</h4>
+				<p>Creatures can also carry items for you—pack mules, horses, elephants, etc. The carrying capacity of these creatures depends on their size category and strength modifier—the same as any character.</p>
+
+				<h3>Storage Containers</h3>
+				<p>You may need to transport goods within storage containers—chests, crates, barrels, etc—for security or convenience. A storage container has a number of inventory slots equal to its bulk rating:</p>
+				<ul>
+					<li>A <i>small</i> chest (1 bulk) has 1 inventory slot.</li>
+					<li>A <i>large</i> crate (3 bulk) has 3 inventory slots.</li>
+					<li>An <i>extra-large</i> barrel (6 bulk) has 6 inventory slots.</li>
+				</ul>
+
+				<h4>Nested Containers</h4>
+				<p>You can store containers within containers—but a nested container must be at least one size category smaller than its parent.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Crackle has three containers—two small (1 bulk) chests and one large (3 bulk) crate.</p>
+						<p>She can't fit a 1 bulk chest inside another 1 bulk chest, but she can put both chests inside the crate.</p>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Fiction First</h4>
+					</header>
+					<section class="panel__body">
+						<p>Use the vehicle capacities listed here as a guide, but be mindful of the fiction—a galley may have 4,860 inventory slots, but that doesn't necessarily mean it can support the weight of 30 gargantuan dragons at once.</p>
+						<p>If you think a vehicle is being put <i>under duress</i> by cargo or passengers, apply an appropriate penalty to its inventory capacity—or put the vehicle at harm's risk.</p>
+					</section>
+				</aside>
+
+				<h2>Magical Containers</h2>
+				<p>On your adventures, you may find magical containers that can change their storage capacity far beyond the normal. For example:</p>
+
+				<ul>
+					<li><strong>Bag of Holding:</strong> This magical bag (1 bulk) can hold many more items than its size would suggest. A <i>Bag of Holding</i> has 6 inventory slots.</li>
+					<li><strong>Portable Hole:</strong> This magical object (1 bulk) can be folded out into a container with 9 inventory slots.</li>
+					<li><strong>Handy Haversack:</strong> This magical haversack (2 bulk) has 12 inventory slots.</li>
+				</ul>
+
+				<p>These containers can be very valuable to adventurers with limited access to transport vehicles or animals.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>In the ruins of the Arcane Sanctum, Valiant finds a Bag of Holding—still intact after all these years. He places the bag (1 bulk) inside his leather backpack, increasing his total inventory space by 5 slots.</p>
+					</section>
+				</example>
+
+				<h2>Inventory Interactions</h2>
+				<p>Once you have an object stowed away in your inventory, you must draw it out before you can use it. During your turn, you may use one free object interaction (PHB p190) with your inventory to:</p>
+
+				<ul>
+					<li><strong>Add/sheathe</strong> one item (or collection of tiny items).</li>
+					<li><strong>Remove/draw</strong> one item (or collection of tiny items).</li>
+				</ul>
+
+				<p>To make a second change to your inventory during the same turn—or to interact with another character's inventory—you must take the <i>Use an Object</i> action.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Krazak wants to draw out his axe and charge forward, bashing open a door in his way. To do this, he must use his free <i>object interaction</i> to grab the axe from his inventory, his movement to rush forward, and the <i>Use an Object</i> action to bash open the door.</p>
+						<p>Viridian, meanwhile, wants to draw both a sword and a healing potion from his bag on his turn. He draws the sword as his free <i>object interaction</i>, and uses his full action to take out the potion.</p>
+					</section>
+				</example>
+			</page>
+			<page class="page page--generic page--columns-1 page--active-inventory">
+				<list class="panel panel--list" data-website="wide">
+					<header class="panel__header">
+						<h4 class="panel__title">Armor</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--equipment-sizes-armor">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Armor Class (AC)</th>
+										<th>Cost</th>
+										<th>Bulk</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Light, Padded</td>
+										<td>11 + DEX</td>
+										<td>5 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Light, Leather</td>
+										<td>11 + DEX</td>
+										<td>10 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Light, Studded Leather</td>
+										<td>12 + DEX</td>
+										<td>45 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Medium, Hide</td>
+										<td>12 + DEX (Max 2)</td>
+										<td>10 gp</td>
+										<td><i>XL</i>, 6</td>
+									</tr>
+									<tr>
+										<td>Medium, Chain Shirt</td>
+										<td>13 + DEX (Max 2)</td>
+										<td>50 gp</td>
+										<td><i>XL</i>, 6</td>
+									</tr>
+									<tr>
+										<td>Medium, Scale Mail</td>
+										<td>14 + DEX (Max 2)</td>
+										<td>50 gp</td>
+										<td><i>XL</i>, 6</td>
+									</tr>
+									<tr>
+										<td>Medium, Breastplate</td>
+										<td>14 + DEX (Max 2)</td>
+										<td>400 gp</td>
+										<td><i>XL</i>, 6</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Armor Class (AC)</th>
+										<th>Cost</th>
+										<th>Bulk</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Medium, Half Plate</td>
+										<td>15 + DEX (Max 2)</td>
+										<td>750 gp</td>
+										<td><i>XL</i>, 6</td>
+									</tr>
+									<tr>
+										<td>Heavy, Ring Mail</td>
+										<td>14</td>
+										<td>30 gp</td>
+										<td><i>XXL</i>, 9</td>
+									</tr>
+									<tr>
+										<td>Heavy, Chain Mail</td>
+										<td>16</td>
+										<td>75 gp</td>
+										<td><i>XXL</i>, 9</td>
+									</tr>
+									<tr>
+										<td>Heavy, Splint Mail</td>
+										<td>17</td>
+										<td>200 gp</td>
+										<td><i>XXL</i>, 9</td>
+									</tr>
+									<tr>
+										<td>Heavy, Plate Mail</td>
+										<td>18</td>
+										<td>1,500 gp</td>
+										<td><i>XXL</i>, 9</td>
+									</tr>
+									<tr>
+										<td>Shield</td>
+										<td>+2</td>
+										<td>10 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr class="empty">
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<list class="panel panel--list" data-website="wide" data-resize=15>
+					<header class="panel__header">
+						<h4 class="panel__title">Weapons</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--equipment-sizes-weapons">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Damage</th>
+										<th>Cost</th>
+										<th>Bulk</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Battleaxe</td>
+										<td>1d8 slashing</td>
+										<td>10 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Blowgun</td>
+										<td>1 piercing</td>
+										<td>10 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Club</td>
+										<td>1d4 bludgeoning</td>
+										<td>1 sp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Crossbow, Hand</td>
+										<td>1d6 piercing</td>
+										<td>75 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Crossbow, Light</td>
+										<td>1d8 piercing</td>
+										<td>25 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Crossbow, Heavy</td>
+										<td>1d10 piercing</td>
+										<td>50 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Dagger</td>
+										<td>1d4 piercing</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Dart</td>
+										<td>1d4 piercing</td>
+										<td>5 cp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Flail</td>
+										<td>1d8 bludgeoning</td>
+										<td>10 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Glaive</td>
+										<td>1d10 slashing</td>
+										<td>20 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Greataxe</td>
+										<td>1d12 slashing</td>
+										<td>30 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Greatclub</td>
+										<td>1d8 bludgeoning</td>
+										<td>2 sp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Greatsword</td>
+										<td>2d6 slashing</td>
+										<td>50 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Halberd</td>
+										<td>1d10 slashing</td>
+										<td>20 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Handaxe</td>
+										<td>1d6 slashing</td>
+										<td>5 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Javelin (5)</td>
+										<td>1d6 piercing</td>
+										<td>5 sp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Lance</td>
+										<td>1d12 piercing</td>
+										<td>10 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Light Hammer</td>
+										<td>1d4 bludgeoning</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Longbow</td>
+										<td>1d8 piercing</td>
+										<td>50 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Damage</th>
+										<th>Cost</th>
+										<th>Bulk</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Longsword</td>
+										<td>1d8 slashing</td>
+										<td>15 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Mace</td>
+										<td>1d6 bludgeoning</td>
+										<td>5 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Maul</td>
+										<td>2d6 bludgeoning</td>
+										<td>10 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Morningstar</td>
+										<td>1d8 piercing</td>
+										<td>15 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Net</td>
+										<td><span class="empty">—</span></td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Pike</td>
+										<td>1d10 piercing</td>
+										<td>5 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Quarterstaff</td>
+										<td>1d6 bludgeoning</td>
+										<td>2 sp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Rapier</td>
+										<td>1d8 piercing</td>
+										<td>25 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Scimitar</td>
+										<td>1d6 slashing</td>
+										<td>25 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Shortbow</td>
+										<td>1d6 piercing</td>
+										<td>25 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Shortsword</td>
+										<td>1d6 piercing</td>
+										<td>10 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Sickle</td>
+										<td>1d4 slashing</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Sling</td>
+										<td>1d4 bludgeoning</td>
+										<td>1 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Spear</td>
+										<td>1d6 piercing</td>
+										<td>1 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Trident</td>
+										<td>1d6 piercing</td>
+										<td>5 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>War Pick</td>
+										<td>1d8 piercing</td>
+										<td>5 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Warhammer</td>
+										<td>1d8 bludgeoning</td>
+										<td>15 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Whip</td>
+										<td>1d4 slashing</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr class="empty">
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<list class="panel panel--list" data-website="wide">
+					<header class="panel__header">
+						<h4 class="panel__title">Transportation</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--equipment-sizes-transportation">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Transportation</th>
+									<th>Size</th>
+									<th>Speed</th>
+									<th>Cost</th>
+									<th>Slots</th>
+									<th>Bulk</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Animal</td>
+									<td>Camel</td>
+									<td>Large</td>
+									<td>50 ft</td>
+									<td>50 gp</td>
+									<td>28</td>
+									<td>40</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Donkey or Mule</td>
+									<td>Medium</td>
+									<td>40 ft</td>
+									<td>8 gp</td>
+									<td>26</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Elephant</td>
+									<td>Huge</td>
+									<td>40 ft</td>
+									<td>200 gp</td>
+									<td>54</td>
+									<td>80</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Horse, Draft</td>
+									<td>Large</td>
+									<td>50 ft</td>
+									<td>50 gp</td>
+									<td>30</td>
+									<td>40</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Horse, Riding</td>
+									<td>Large</td>
+									<td>60 ft</td>
+									<td>75 gp</td>
+									<td>25</td>
+									<td>40</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Mastiff</td>
+									<td>Medium</td>
+									<td>40 ft</td>
+									<td>25 gp</td>
+									<td>19</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Pony</td>
+									<td>Medium</td>
+									<td>40 ft</td>
+									<td>30 gp</td>
+									<td>20</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Warhorse</td>
+									<td>Large</td>
+									<td>60 ft</td>
+									<td>400 gp</td>
+									<td>26</td>
+									<td>40</td>
+								</tr>
+								<tr class="divider">
+									<td>Vehicle (Land)</td>
+									<td>Carriage, Horse</td>
+									<td>Huge</td>
+									<td><span class="empty">—</span></td>
+									<td>100 gp</td>
+									<td>180</td>
+									<td>180</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Cart (Hand)</td>
+									<td>Medium</td>
+									<td><span class="empty">—</span></td>
+									<td>5 gp</td>
+									<td>20</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Cart (Horse)</td>
+									<td>Large</td>
+									<td><span class="empty">—</span></td>
+									<td>15 gp</td>
+									<td>60</td>
+									<td>60</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Chariot</td>
+									<td>Large</td>
+									<td><span class="empty">—</span></td>
+									<td>250 gp</td>
+									<td>60</td>
+									<td>60</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sled (Hand)</td>
+									<td>Medium</td>
+									<td><span class="empty">—</span></td>
+									<td>5 gp</td>
+									<td>20</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sled (Horse)</td>
+									<td>Huge</td>
+									<td><span class="empty">—</span></td>
+									<td>20 gp</td>
+									<td>180</td>
+									<td>180</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Wagon</td>
+									<td>Huge</td>
+									<td><span class="empty">—</span></td>
+									<td>35 gp</td>
+									<td>180</td>
+									<td>180</td>
+								</tr>
+								<tr class="divider">
+									<td>Vehicle (Water)</td>
+									<td>Galley</td>
+									<td>Gargantuan</td>
+									<td>4 mph</td>
+									<td>30,000 gp</td>
+									<td>4,860</td>
+									<td>4,860</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Keelboat</td>
+									<td>Gargantuan</td>
+									<td>3 mph</td>
+									<td>3,000 gp</td>
+									<td>180</td>
+									<td>180</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Longship</td>
+									<td>Gargantuan</td>
+									<td>5 mph</td>
+									<td>10,000 gp</td>
+									<td>1,620</td>
+									<td>1,620</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Rowboat</td>
+									<td>Large</td>
+									<td>3 mph</td>
+									<td>50 gp</td>
+									<td>60</td>
+									<td>60</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sailing Ship</td>
+									<td>Gargantuan</td>
+									<td>5 mph</td>
+									<td>10,000 gp</td>
+									<td>1,620</td>
+									<td>1,620</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Warship</td>
+									<td>Gargantuan</td>
+									<td>4 mph</td>
+									<td>25,000 gp</td>
+									<td>4,860</td>
+									<td>4,860</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+			</page>
+			<page class="page page--generic page--columns-1 page--active-inventory">
+				<list class="panel panel--list" data-resize=75>
+					<header class="panel__header">
+						<h4 class="panel__title">Adventuring Gear</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--columns-3 tables--equipment-sizes">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Cost</th>
+										<th>Bulk</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Abacus</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Acid (vial)</td>
+										<td>25 gp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Alchemist’s Fire (flask)</td>
+										<td>50 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Ammo, Arrows (20)</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Ammo, Bolts (20)</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Ammo, Bullets (20)</td>
+										<td>4 cp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Ammo, Needles (50)</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Antitoxin (vial)</td>
+										<td>50 gp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Arcane Focus, Crystal</td>
+										<td>10 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Arcane Focus, Orb</td>
+										<td>20 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Arcane Focus, Rod</td>
+										<td>10 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Arcane Focus, Staff</td>
+										<td>5 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Arcane Focus, Wand</td>
+										<td>10 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Ball Bearings (1,000)</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Barrel</td>
+										<td>2 gp</td>
+										<td><i>XXL</i>, 9</td>
+									</tr>
+									<tr>
+										<td>Bedroll</td>
+										<td>1 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Bell</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Blanket</td>
+										<td>5 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Block & Tackle</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Book</td>
+										<td>25 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Bottle, Glass</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Bucket</td>
+										<td>5 cp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Caltrops (20)</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Candle</td>
+										<td>1 cp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Case</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Chain (10 ft)</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Chalk (1 piece)</td>
+										<td>1 cp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Chest</td>
+										<td>5 gp</td>
+										<td><i>XL</i>, 6</td>
+									</tr>
+									<tr>
+										<td>Clothes, Common</td>
+										<td>5 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Clothes, Costume</td>
+										<td>5 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Clothes, Fine</td>
+										<td>15 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Clothes, Traveler’s</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Component Pouch</td>
+										<td>25 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Crowbar</td>
+										<td>2 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Druid Focus, <span class="letter-spacing-md">Mistletoe</span></td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Druid Focus, Staff</td>
+										<td>5 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Druid Focus, Totem</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Druid Focus, Wand</td>
+										<td>10 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Fishing Tackle</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Flask or Tankard</td>
+										<td>2 cp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Game, Cards</td>
+										<td>5 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Game, Dice</td>
+										<td>1 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Game, Dragonchess</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Game, 3 Dragon Ante</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Cost</th>
+										<th>Bulk</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Grappling Hook</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Hammer</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Hammer, Sledge</td>
+										<td>2 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Holy Symbol, Amulet</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Holy Symbol, Emblem</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Holy Symbol, Reliquary</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Holy Water (flask)</td>
+										<td>25 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Hourglass</td>
+										<td>25 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Hunting Trap</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Ink</td>
+										<td>10 gp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Ink Pen</td>
+										<td>2 cp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Instrument, Bagpipes</td>
+										<td>30 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Instrument, Drum</td>
+										<td>6 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Instrument, Dulcimer</td>
+										<td>25 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Instrument, Flute</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Instrument, Horn</td>
+										<td>3 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Instrument, Lute</td>
+										<td>35 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Instrument, Lyre</td>
+										<td>30 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Instrument, Pan Flute</td>
+										<td>12 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Instrument, Shawm</td>
+										<td>2 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Instrument, Viol</td>
+										<td>30 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Jug or Pitcher</td>
+										<td>2 cp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Kit, Climbers</td>
+										<td>25 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Kit, Disguise</td>
+										<td>25 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Kit, Forgery</td>
+										<td>15 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Kit, Healer’s</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Kit, Herbalism</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Kit, Mess</td>
+										<td>2 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Kit, Poisoner’s</td>
+										<td>50 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Ladder (10 ft)</td>
+										<td>1 sp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Lamp</td>
+										<td>5 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Lantern, Bullseye</td>
+										<td>10 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Lantern, Hooded</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Lock</td>
+										<td>10 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Magnifying Glass</td>
+										<td>100 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Manacles</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Mirror, Steel</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Oil (flask)</td>
+										<td>1 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Paper (1 sheet)</td>
+										<td>2 sp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Parchment (1 sheet)</td>
+										<td>1 sp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Perfume (vial)</td>
+										<td>5 gp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Pick, Miner’s</td>
+										<td>2 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Piton</td>
+										<td>5 cp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Poison, Basic (vial)</td>
+										<td>100 gp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Cost</th>
+										<th>Bulk</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Pole (10 ft)</td>
+										<td>5 cp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Pot, Iron</td>
+										<td>2 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Potion of Healing</td>
+										<td>50 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Ram, Portable</td>
+										<td>4 gp</td>
+										<td><i>XL</i>, 6</td>
+									</tr>
+									<tr>
+										<td>Ration (1)</td>
+										<td>1 sp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Ration Box</td>
+										<td>5 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Rope, Hempen (50 ft)</td>
+										<td>1 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Rope, Silk (50 ft)</td>
+										<td>10 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Scale, Merchant’s</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Sealing Wax</td>
+										<td>5 sp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Shovel</td>
+										<td>2 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Signal Whistle</td>
+										<td>5 cp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Signet Ring</td>
+										<td>5 gp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Soap</td>
+										<td>2 cp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Spellbook</td>
+										<td>50 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Spikes, Iron (10)</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Spyglass</td>
+										<td>1,000 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tent, Two-person</td>
+										<td>2 gp</td>
+										<td><i>L</i>, 3</td>
+									</tr>
+									<tr>
+										<td>Tinderbox</td>
+										<td>5 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tools, Alchemist</td>
+										<td>50 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Brewer</td>
+										<td>20 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Calligrapher</td>
+										<td>10 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tools, Carpenter</td>
+										<td>8 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tools, Cartographer</td>
+										<td>15 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tools, Cobbler</td>
+										<td>5 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tools, Cook</td>
+										<td>1 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Glassblower</td>
+										<td>30 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Jeweler</td>
+										<td>25 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tools, Leatherworker</td>
+										<td>5 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Mason</td>
+										<td>10 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Navigator</td>
+										<td>25 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tools, Painter</td>
+										<td>10 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Potter</td>
+										<td>10 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Smith</td>
+										<td>20 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Thieves</td>
+										<td>25 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tools, Tinker</td>
+										<td>50 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Tools, Weaver</td>
+										<td>1 gp</td>
+										<td><i>M</i>, 2</td>
+									</tr>
+									<tr>
+										<td>Tools, Woodcarver</td>
+										<td>1 gp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Torch</td>
+										<td>1 cp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Vial</td>
+										<td>1 gp</td>
+										<td><i>T</i>, 0.2</td>
+									</tr>
+									<tr>
+										<td>Waterskin</td>
+										<td>2 sp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td>Whetstone</td>
+										<td>1 cp</td>
+										<td><i>S</i>, 1</td>
+									</tr>
+									<tr>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Equipment Packs</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--equipment-sizes-packs">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Pack</th>
+										<th>Cost</th>
+										<th>Total Bulk</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Burglar's Pack</td>
+										<td>16 gp</td>
+										<td>17</td>
+									</tr>
+									<tr>
+										<td>Diplomat's Pack</td>
+										<td>39 gp</td>
+										<td>9</td>
+									</tr>
+									<tr>
+										<td>Dungeoneer's Pack</td>
+										<td>12 gp</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>Entertainer's Pack</td>
+										<td>40 gp</td>
+										<td>11</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Pack</th>
+										<th>Cost</th>
+										<th>Total Bulk</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Explorer's Pack</td>
+										<td>10 gp</td>
+										<td>20</td>
+									</tr>
+									<tr>
+										<td>Priest's Pack</td>
+										<td>19 gp</td>
+										<td>11</td>
+									</tr>
+									<tr>
+										<td>Scholar's Pack</td>
+										<td>40 gp</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td colspan="3"><strong>Note:</strong> Assume 1 days-worth of rations = 2 individual rations</td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+			</page>
+			<page class="page page--generic page--active-inventory">
+				<h2>Variant Dials</h2>
+				<p>If you want to customize the <i>Active Inventory</i> for your game, consider the following variant dials.</p>
+
+				<h3><span class="h3__highlight">A</span>Containers</h3>
+				<p>Use <i>containers</i> to introduce a <i>granular</i> system of inventory management that focuses on item placement.</p>
+				<p>Characters divide their inventory slots into distinct containers—bags, belts, sheathes, etc—that they name, categorize, and place about their person.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Valiant has 11 free inventory slots (with 9 slots already occupied by his chain mail). He divides these into:</p>
+						<ul>
+							<li>a 4-slot weapon sheath (for his war pick and shield)</li>
+							<li>a 3-slot belt (for his healer's kit and torch)</li>
+							<li>a 4-slot bag (for his prayer book and bedroll).</li>
+						</ul>
+					</section>
+				</example>
+
+				<h4>Container Categories</h4>
+				<p>Containers can be broadly separated into 5 categories. When you create your inventory containers, assign a category to each—you can mix and match categories however you like, or even rename them to something more fitting (purse, bandolier, backpack, etc).</p>
+				<p>Some containers can only hold items of a particular size, or require more time to retrieve an item—so pick the right containers to suit your needs.</p>
+				<ul>
+					<li><strong>Bag:</strong> A bag holds items of any size. You can draw an item from a bag with a full action.</li>
+					<li><strong>Belt:</strong> A belt can hold only small and tiny items. You can draw an item from a belt with a free action.</li>
+					<li><strong>Sheath:</strong> A sheath holds weapons and shields. You can draw an item from a sheath with a free action.</li>
+					<li><strong>Quiver:</strong> A quiver stores bows, crossbows, arrows, quarrels, and javelins. You can draw an item from a quiver with a free action.</li>
+					<li><strong>Worn:</strong> Space reserved for significant wearables, such as armor and awkward attire.</li>
+				</ul>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Krazak wants rapid access to his weapons—he puts them in a sheath so he can draw them as a free action.</p>
+						<p>His downtime equipment—cooking tools, gaming sets, whetstones, etc—is unlikely to be needed at sudden notice, and can be stashed away in a bag.</p>
+					</section>
+				</example>
+
+				<h4>Changing Containers</h4>
+				<p>Characters can change their containers for free during a long rest, providing they have access to basic supplies and commodities via a village, town, or city.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>While in town, Valiant swaps out a 6-slot bag for a 4-slot bag and 2-slot belt to hold his healing potions.</p>
+					</section>
+				</example>
+
+				<col-break></col-break>
+
+				<h4>Equipping Characters</h4>
+				<p>To demonstrate how containers work, here we see two characters divide their inventory slots into containers.</p>
+
+				<h5>Chansi, Halfling Ranger</h5>
+				<p>Chansi, a halfing ranger with −1 STR, can have only 13 inventory slots due to her small size and strength—humans have it so <i>easy</i>. Rolling 12, she starts with 120 gp.</p>
+				<p>Some decent leather armor is a must when ranging through the wild forests—animals have sharp claws. Chansi favors the trap and shortbow, but carries a sword and dagger for times when her prey gets too close.</p>
+				<p>The armor was costly, but it's saved Chansi's life on more than one occasion—well worth the price, and there's plenty of work for a talented ranger nowadays anyway.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Chansi's Inventory</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--equipment-containers-example">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Contents</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Quiver (3/3)</td>
+									<td>
+										<ul>
+											<li>Shortbow (25 gp, 2 slot)</li>
+											<li>Arrows (1 gp, 1 slot)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Sheath (3/3)</td>
+									<td>
+										<ul>
+											<li>Shortsword (10 gp, 2 bulk)</li>
+											<li>Dagger (2 gp, 1 bulk)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Bag (4/4)</td>
+									<td>
+										<ul>
+											<li>Hunting Trap (5 gp, 2 bulk)</li>
+											<li>Rope (1 gp, 2 bulk)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Worn (3)</td>
+									<td>
+										<ul>
+											<li>Studded Leather (45 gp, 3 bulk)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Ration Box</td>
+									<td>
+										<ul>
+											<li>Basic Ration (5)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Waterskin</td>
+									<td>
+										<ul>
+											<li>Clean Water (5)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Purse</td>
+									<td>
+										<ul>
+											<li>31 gp (31 coins)</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h5>Vikan, Goliath Sorcerer</h5>
+				<p>Vikan, a goliath sorcerer with +2 STR, can have up to 26 inventory slots thanks to his <i>Powerful Build</i>—he might smash his head on a few ceilings, but being big does have its advantages. Rolling 6, he starts with 60 gp.</p>
+				<p>As a sorcerer, Vikan eschews armor—it gets in the way of his raw arcane energies. He carries a quarterstaff for some basic defense and a crossbow for hunting.</p>
+				<p>A keen painter, Vikan carries painting supplies with him to capture inspirational scenes out in the wild. His art isn't going to win any awards, but Vikan paints for the love of the craft and not the reward.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Vikan's Inventory</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--equipment-containers-example">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Contents</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Sheath (3/3)</td>
+									<td>
+										<ul>
+											<li>Quarterstaff (2 sp, 3 bulk)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Quiver (3/3)</td>
+									<td>
+										<ul>
+											<li>Light Crossbow (25 gp, 2 bulk)</li>
+											<li>Bolts (1 gp, 1 slot)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Belt (4/6)</td>
+									<td>
+										<ul>
+											<li>Focus, Orb (20 gp, 1 bulk)</li>
+											<li>Gaming Set, Cards (5 sp, 1 bulk)</li>
+											<li>Lamp (5 sp, 1 bulk)</li>
+											<li>Oil (1 sp, 1 bulk)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Bag (5/14)</td>
+									<td>
+										<ul>
+											<li>Painter's Supplies (10 gp, 2 bulk)</li>
+											<li>Blanket (5 sp, 1 bulk)</li>
+											<li>Bedroll (1 gp, 2 bulk)</li>
+											<li>Rope, Hempen (1 gp, 2 bulk)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Ration Box</td>
+									<td>
+										<ul>
+											<li>Basic Ration (5)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Waterskin</td>
+									<td>
+										<ul>
+											<li>Clean Water (5)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>Purse</td>
+									<td>
+										<ul>
+											<li>8 sp (8 coins)</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+			</page>
+			<page class="page page--generic page--active-inventory">
+				<h4>Vehicles and Buildings</h4>
+				<p>You can also use containers to divide up other forms of inventory—such as vehicle and building storage. Use these to control where items are placed. For example:</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>The <i>Amber Jewel</i>, sailing ship of Port Rondel, has a total of 1,620 inventory slots. These are divided into:</p>
+						<ul>
+							<li>Crew and Passengers: 810 slots</li>
+							<li>Cargo (secure): 405 slots</li>
+							<li>Cargo (unsecured): 405 slots</li>
+						</ul>
+						<p>The spacious <i>Landril Warehouse</i> on the Port's eastern docks can hold up to 540 inventory slots. These are divided into four regions:</p>
+						<ul>
+							<li>General Cargo: 220 slots</li>
+							<li>Frozen Goods: 135 slots</li>
+							<li>Secured Cargo: 135 slots</li>
+							<li>Vaulted Goods: 50 slots</li>
+						</ul>
+					</section>
+				</example>
+
+				<h3 id="quickdraw"><span class="h3__highlight">B</span>Quickdraw</h3>
+				<p>If you want to make inventory access a little more restricting for your players, use <i>Quickdraw</i> items.</p>
+				<p>Characters nominate any 3 items in their inventory as <i>quickdraw</i> items. Quickdraw items can be draw/removed from the inventory using a free <i>object interaction</i> as normal. However, non-quickdraw items can only be accessed using a full action.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Krazak nominates his greataxe, handaxe, and shield as his 3 <i>quickdraw</i> items—he can take out these 3 items using a free <i>object interaction</i> as normal.</p>
+						<p>During a descent into the <i>Shadowed Maw</i>, the dwarf tries to take out a torch to light the way. This isn't a quickdraw item, and so it takes Krazak a full action to dig out the torch from his bag.</p>
+					</section>
+				</example>
+
+				<h4>Changing Items</h4>
+				<p>A character may rearrange their inventory and change their quickdraw items during a short or long rest.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Viridian has a shortsword, dagger, and rope as his 3 quickdraw items. Because hit points are running low across the party, Viridian swaps his quickdraw rope for a healing potion in the next short rest—just in case someone should need a quick restorative to hand.</p>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">C</span>Pack Endurance</h4>
+				<p>if you want to make a slight increase to the amount of inventory space, use <i>Pack Endurance</i>.</p>
+				<p>A creature may use either a) their Strength modifier or b) their Constitution modifier to calculate their inventory slots—whichever is highest.</p>
+
+				<col-break></col-break>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Chansi is a halfling ranger with -1 STR and +2 CON. With <i>Pack Endurance</i> and her Constitution modifier, Chansi has 16 inventory slots.</p>
+					</section>
+				</example>
+
+				<h3><span class="h3__highlight">D</span>Object Scaling</h3>
+				<p>The bulk ratings listed in the equipment tables assume the perspective of a medium-sized character for simplicity.</p>
+				<p>But if you want to scale object sizes up or down, apply the following bulk category modifiers when appropriate.</p>
+				<p><strong>Creature Sizing:</strong> A creature can't use an object that's inappropriate for their size (either too small or too large).</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Scaling Modifiers</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--equipment-object-scaling">
+							<thead>
+								<tr>
+									<th>Scale</th>
+									<th>Description</th>
+									<th>Bulk Category</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Tiny</td>
+									<td>Much smaller than normal.</td>
+									<td>−2</td>
+								</tr>
+								<tr>
+									<td>Small</td>
+									<td>Smaller than normal.</td>
+									<td>−1</td>
+								</tr>
+								<tr>
+									<td>Large</td>
+									<td>Larger than normal.</td>
+									<td>+1</td>
+								</tr>
+								<tr>
+									<td>Huge</td>
+									<td>Much larger than normal.</td>
+									<td>+2</td>
+								</tr>
+								<tr>
+									<td>Gargantuan</td>
+									<td>Much, much larger than normal.</td>
+									<td>+3</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Krazak encounters an ogre with a greatclub. Normally, a greatclub is a 3 bulk weapon—but this one is <i>larger</i> than normal and so is 6 bulk (+1 bulk category).</p>
+					</section>
+				</example>
+
+				<h4>Armor Sizes</h4>
+				<p>To scale armor with creature size ratings, use these alternate bulk ratings instead.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Armor Sizes</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--equipment-armor-scaling">
+							<thead>
+								<tr>
+									<th>Size</th>
+									<th colspan="4"><span class="spacer">Armor Bulk</span></th>
+								</tr>
+								<tr>
+									<th></th>
+									<th>Light</th>
+									<th>Medium</th>
+									<th>Heavy</th>
+									<th>Shield</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Tiny</td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Small</td>
+									<td>2</td>
+									<td>5</td>
+									<td>7</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Medium</td>
+									<td>3</td>
+									<td>6</td>
+									<td>9</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Large</td>
+									<td>4</td>
+									<td>7</td>
+									<td>11</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>Huge</td>
+									<td>5</td>
+									<td>10</td>
+									<td>15</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>Gargantuan</td>
+									<td>8</td>
+									<td>15</td>
+									<td>23</td>
+									<td>5</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Chansi wants to buy some light armor. Because she is a halfling, her <i>small-sized</i> light armor is only 2 bulk.</p>
+						<p>Viridian also buys some light armor. As a tiefling, his <i>medium-sized</i> light armor is 3 bulk.</p>
+					</section>
+				</example>
+
+				<h5>Mismatched Armor Sizes</h5>
+				<p>A creature can't use or wear armor that's not of their size category—it simply doesn't fit.</p>
+				<p><strong>Armor Alterations:</strong> A skilled armorer may (with appropriate tools) permanently change the size of a piece of armor by one step (smaller or larger) from its natural size—for a negotiable fee (25% of the armor's base cost).</p>
+			</page>
+		</book>
+	</body>
+</html>

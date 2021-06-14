@@ -1,0 +1,181 @@
+// Styles for character creation pages.
+
+.page--character-creation {
+
+	.tables--race,
+	.tables--background,
+	.tables--class {
+
+		.table {
+			@include table-column(1, center, 48px);
+		}
+	}
+
+	.table--subrace {
+		@include table-column(1, left, 21%);
+		@include table-column(2, center, 14%);
+		@include table-column(3, left, 22%);
+		@include table-column(4, center, 14%);
+		@include table-column(5, left, 29%);
+
+		tr.rowspan-child {
+			width: 100%;
+			padding-left: 21%;
+			@include table-column(1, center, 14%);
+			@include table-column(2, left, 22%);
+			@include table-column(3, center, 14%);
+			@include table-column(4, left, 29%);
+		}
+	}
+
+	.table--class-specialisation {
+		@include table-column(1, left, 17%);
+		@include table-column(2, center, 14%);
+		@include table-column(3, left, 28%);
+		@include table-column(4, center, 14%);
+		@include table-column(5, left, 27%);
+
+		tr.rowspan td:first-child {
+			height: 0;
+		}
+
+		tr.rowspan {
+
+			td:nth-of-type(5) {
+				padding-right: 0;
+			}
+		}
+
+		tr.rowspan-child {
+			width: 100%;
+			padding-left: 17%;
+			@include table-column(1, center, 14%);
+			@include table-column(2, left, 28%);
+			@include table-column(3, center, 14%);
+			@include table-column(4, left, 27%);
+
+			td:nth-of-type(2) {
+				padding-right: 0;
+			}
+		}
+	}
+
+	.tables--ability-scores .table {
+		@include table-column(1, center, 50%);
+		@include table-column(2, center, 50%);
+	}
+
+	.table--character-age,
+	.table--character-height,
+	.table--character-weight,
+	.table--character-family,
+	.table--character-parents,
+	.table--character-feature {
+		@include table-column(1, center, 2.6rem);
+		@include table-column-align(2, left);
+	}
+
+	.table--habit {
+		@include table-column(1, center, 2.6rem);
+		@include table-column-align(2, left);
+
+		td:last-child {
+			padding-right: 0;
+		}
+	}
+
+	.table {
+
+		&.table--character-age,
+		&.table--character-height {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		&.table--character-weight,
+		&.table--character-feature {
+			border-radius: 0;
+		}
+
+		&.table--character-parents,
+		&.table--character-family {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+	}
+
+	.table--memories,
+	.table--motivation {
+		@include table-column(1, center, 2.6rem);
+		@include table-column(2, left, 90px);
+		@include table-column-align(3, left);
+
+		td:nth-of-type(3) {
+			padding-right: 0;
+		}
+	}
+
+	.table--quest {
+		@include table-column(1, center, 2.6rem);
+		@include table-column(2, left, 66px);
+		@include table-column-align(3, left);
+
+		td:last-child {
+			padding-right: 0;
+		}
+	}
+
+	.table--wealth {
+		@include table-column(1, left, 20%);
+		@include table-column(2, center, 20%);
+		@include table-column(3, center, 20%);
+		@include table-column(4, center, 20%);
+		@include table-column(5, center, 20%);
+
+		thead tr:first-of-type th:last-of-type {
+			width: 80%;
+		}
+	}
+
+	.table--languages {
+		@include table-column(1, center, 15%);
+		@include table-column(2, left, 85%);
+	}
+
+	.table--random-rewards {
+		@include table-column(1, left, 22%);
+		@include table-column(2, left, 33%);
+		@include table-column(3, left, 45%);
+	}
+
+	.panel--character-creation-viridian {
+
+		.abilities {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-column-gap: 2px;
+			margin-top: 7px;
+			margin-bottom: 8px;
+
+			.ability {
+				background: #f4eeed;
+				border-radius: 7px;
+				text-align: center;
+				padding: 7.5px 0;
+			}
+
+			.ability__name,
+			.ability__value {
+				display: block;
+			}
+
+			.ability__name {
+				font-weight: bold;
+			}
+
+			.ability__value {
+				font-size: 11px;
+			}
+		}
+	}
+}

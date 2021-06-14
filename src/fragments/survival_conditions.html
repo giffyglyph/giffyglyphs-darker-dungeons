@@ -1,0 +1,422 @@
+<html>
+	<body>
+		<book class="book">
+			<page class="page page--generic page--survival-conditions" data-header-icon="heart-bottle">
+				<h1 id="survival-conditions">Survival Conditions</h1>
+				<p>Characters don't exist in a bubble; they affect and are affected by their surroundings—going without sleep makes you tired, failing to eat makes you hungry, not drinking makes you thirsty. With <i>survival conditions</i>, players track the physical state of their character. It's hard, thirsty work being an adventurer—do you have the resources to survive?</p>
+				<p>This chapter introduces several survival conditions and examples of how to use them in your game.</p>
+
+				<h2>Your Conditions</h2>
+				<p>With <i>survival conditions</i>, players keep track of three basic physical states that can affect their character's general performance: hunger, thirst, and fatigue.</p>
+				<ol type="A">
+					<li><strong>Hunger:</strong> Few things burn through calories as fast as adventuring, so keep some snacks in your pocket.</li>
+					<li><strong>Thirst:</strong> Adventure, travel, and combat are thirsty work. Keep a waterskin close by to avoid dehydration.</li>
+					<li><strong>Fatigue:</strong> It takes a keen mind to watch out for danger, so get regular sleep to stay alert and aware.</li>
+				</ol>
+
+				<col-break></col-break>
+
+				<p>These basic conditions worsen naturally throughout the day, becoming more severe and—if left untreated—can eventually lead to increasing levels of exhaustion. Depending on the situation, this can be a real problem for your character:</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Viridian has been travelling at speed through the Emerald Rift for two days, chased by the relentless <i>Witch of Gloamgard</i>. His supplies are running low, and—due to the chase—hasn't been able to rest easily in the haunted woods.</p>
+						<p>The bard is ravenous (5 hunger), parched (3 thirst), and barely awake (6 fatigue)—he has +2 exhaustion from his conditions, cutting his speed in half. Unless Viridian can find food fast for some quick energy, the dreaded Witch will be right on his heels.</p>
+					</section>
+				</example>
+
+				<p>Keep an eye on your conditions and use your supplies to manage them as best you can—eat food to stave off hunger, drink water to quench your thirst, and get some sleep to remove your fatigue.</p>
+
+				<div class="layout--col-wide layout--fixed-bottom">
+					<list class="panel panel--list" data-resize=30>
+						<header class="panel__header">
+							<h4 class="panel__title">Survival Conditions</h4>
+						</header>
+						<section class="panel__body">
+							<table class="table table--survival-conditions">
+								<thead>
+									<tr>
+										<th>Stage</th>
+										<th>Hunger</th>
+										<th>Thirst</th>
+										<th>Fatigue</th>
+										<th>Temperature</th>
+										<th>Effect</th>
+										<th>Stamina DC</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>0</td>
+										<td>Stuffed</td>
+										<td>Quenched</td>
+										<td>Energized</td>
+										<td>Perfect</td>
+										<td>−1 Exhaustion</td>
+										<td><span class="empty">—</span></td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Well-fed</td>
+										<td>Refreshed</td>
+										<td>Well-rested</td>
+										<td>Comfortable</td>
+										<td><span class="empty">—</span></td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Ok</td>
+										<td>Ok</td>
+										<td>Ok</td>
+										<td>Ok</td>
+										<td><span class="empty">—</span></td>
+										<td>10</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Peckish</td>
+										<td>Parched</td>
+										<td>Tired</td>
+										<td>Noticeable</td>
+										<td><span class="empty">—</span></td>
+										<td>15</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Hungry</td>
+										<td>Thirsty</td>
+										<td>Sleepy</td>
+										<td>Uncomfortable</td>
+										<td><span class="empty">—</span></td>
+										<td>20</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Ravenous</td>
+										<td>Dry</td>
+										<td>Very sleepy</td>
+										<td>Overwhelming</td>
+										<td>+1 Exhaustion</td>
+										<td>25</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Starving</td>
+										<td>Dehydrated</td>
+										<td>Barely awake</td>
+										<td>Unbearable</td>
+										<td>+1 Exhaustion</td>
+										<td>30</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+					</list>
+				</div>
+			</page>
+			<page class="page page--generic page--survival-conditions">
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Using Survival Conditions</h4>
+					</header>
+					<section class="panel__body">
+						<p>Survival conditions can be a fun, easy way to immerse players in the fiction of your campaign, but they only have an impact if resources—like food and water—are restricted and hard to come by.</p>
+						<p>If your characters have easy access to food and water—or time is not an issue, or survival is not an important theme in your game—conditions won't have much impact.</p>
+					</section>
+				</aside>
+
+				<h3>Gaining a Condition</h3>
+				<p>Characters gain hunger, thirst, and fatigue in four primary ways whilst adventuring: through the natural passage of time, by falling to 0 hit points, through failure consequences, and by suffering certain monster attacks.</p>
+
+				<h4>Time of Day</h4>
+				<p>As the day progresses, characters become more hungry, thirsty, and tired. Conditions worsen at dawn, noon, and dusk—the specific effects are listed in the table below.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Hunger, Thirst & Fatigue</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--hunger-thirst-fatigue">
+							<thead>
+								<tr>
+									<th>Time</th>
+									<th>Hunger</th>
+									<th>Thirst</th>
+									<th>Fatigue</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Dawn</td>
+									<td>+1</td>
+									<td>+1</td>
+									<td><span class="empty">—</span></td>
+								</tr>
+								<tr>
+									<td>Noon</td>
+									<td><span class="empty">—</span></td>
+									<td><span class="empty">—</span></td>
+									<td>+1</td>
+								</tr>
+								<tr>
+									<td>Dusk</td>
+									<td>+1</td>
+									<td>+1</td>
+									<td>+1</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<p>Across a normal, uneventful day, a character will gain +2 hunger, +2 thirst, and +2 fatigue—this means a character needs 2 rations of food, 2 rations of water, and a good night's sleep each day to stay in good form.</p>
+				<p>During the adventure, the GM—or whoever else is keeping track of time—announces the changes in character conditions when appropriate.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>It's been a long afternoon, but <i>dusk</i> approaches. Everyone gains +1 hunger, +1 thirst, and +1 fatigue.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h4>Falling to 0 HP</h4>
+				<p>Nearing death is an exhausting shock to the body. If you fall to 0 hit points for any reason—including shapeshifted forms such as <i>Wild Shape</i>—you gain +1 fatigue.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>The orc clubs you for 9 hit points, Sarien.</span></li>
+							<li><span class="chat__speaker">Sarien:</span><span>Ouch, that knocks me unconscious.</span></li>
+							<li><span class="chat__speaker">GM:</span><span>Bad luck. Gain +1 fatigue.</span></li>
+							<li><span class="chat__speaker">Sarien:</span><span>Damn it. If I survive this, I'm gonna need the longest sleep tonight...</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h4>Consequences</h4>
+				<p>You may gain survival conditions as a consequence of failing an action, at your GM's discretion—or, if using the <i>Degrees of Success</i> rules, offer to gain a condition and succeed at a cost.</p>
+
+				<col-break></col-break>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>To cross the pit requires a simple jump, Clanda—roll a DC 10 Athletics check.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>Ok.. <span class="chat__action">(rolls 9)</span> ...augh, so close!</span></li>
+							<li><span class="chat__speaker">GM:</span><span>You clear the jump with a stumble, noticing a rumble in your stomach as you land. Gain +1 hunger.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h4>Monster Attacks</h4>
+				<p>Monster and environmental effects can drain characters of their stamina and resources. As GM, add condition modifiers to some of your existing monster attacks and traps—or add brand new condition-causing powers.</p>
+				<ul>
+					<li>A fire elemental burns the air around you with a blast of searing heat: you gain <i>+1 thirst</i>.</li>
+					<li>A green ooze wraps around your arm and sucks the nutrients from your flesh: you gain <i>+1 hunger</i>.</li>
+					<li>An eldritch mage whispers a cacophonous verse and commands you to sleep: you gain <i>+1 fatigue</i>.</li>
+				</ul>
+
+				<h3>Improving Your Condition</h3>
+				<p>Whenever appropriate, your character can attempt to improve their physical condition in a manner that makes sense. Some of the most common actions are:</p>
+				<ul>
+					<li><strong>Eat a ration of food:</strong> −1 hunger per ration. Better quality food may relieve more hunger per ration.</li>
+					<li><strong>Drink a ration of water:</strong> −1 thirst per ration. Better quality water may relieve more thirst per ration.</li>
+					<li><strong>Get a good night's sleep:</strong> (undisturbed) −3 fatigue. A disturbed night's sleep grants only −1 fatigue.</li>
+				</ul>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>You rise at dawn, Valiant, your stomach growling. Gain +1 hunger and +1 thirst.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>I'll eat one of my rations (−1 hunger) and take a swig from my waterskin (−1 thirst)—that should keep me going till nightfall.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h2>Exhaustion</h2>
+				<p>As your character's condition worsens, they become increasingly more exhausted. Whenever a condition reaches stage 5 or 6, it generates +1 exhaustion—for a maximum of +3 exhaustion across all conditions.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Valiant is ravenous (5 hunger), dry (5 thirst), and barely awake (6 fatigue)—he has +3 exhaustion from his unfortunate conditions.</p>
+						<p>Unable to find food, he later finds himself starving (6 hunger). His exhaustion remains at +3.</p>
+					</section>
+				</example>
+
+				<p><strong>Persistent:</strong> Once a condition has begun to cause exhaustion, that exhaustion remains on your character until the condition is sufficiently improved (such as by being reduced to stage 4 or lower).</p>
+			</page>
+			<page class="page page--generic page--survival-conditions">
+
+				<h3>Relieving Exhaustion</h3>
+				<p>A condition stops causing exhaustion once it has been improved to stage 4 or higher. After the next short rest, update the character's exhaustion counters.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<p>Valiant finds a cache of food supplies. He immediately eats 3 rations-worth, healing 3 hunger and improving his overall condition to <i>Peckish</i>.</p>
+						<p>His <i>Hunger</i> condition continues to add +1 exhaustion until he takes a short rest, at which point his total exhaustion drops from +3 to +2.</p>
+					</section>
+				</example>
+
+				<h2>Stamina Check</h2>
+				<p>It's hard work being an adventurer—battles to fight, ropes to climb, rivers to swim—and such activity can be draining to those without the proper constitution.</p>
+				<p>After a particularly strenuous event, the GM can ask you to make a <i>Stamina check</i> (Constitution saving throw) against the DC of your best condition. A failure means that your stamina was tapped during the event—roll a d6 to see which condition worsens.</p>
+
+				<list class="panel panel--list">
+					<header class="panel__header">
+						<h4 class="panel__title">Stamina Check</h4>
+					</header>
+					<section class="panel__body">
+						<tables class="tables tables--stamina-check">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>d6</th>
+										<th>Outcome</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1-2</td>
+										<td>+1 Hunger</td>
+									</tr>
+									<tr>
+										<td>3-4</td>
+										<td>+1 Thirst</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>d6</th>
+										<th>Outcome</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>5-6</td>
+										<td>+1 Fatigue</td>
+									</tr>
+									<tr>
+										<td><span class="empty">—</span></td>
+										<td><span class="empty">—</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</tables>
+					</section>
+				</list>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>The last goblin drops his dagger and flees into the night. Well done, everyone. Now roll a Stamina check.</span></li>
+							<li><span class="chat__speaker">Valiant:</span><span>14. I didn't break a sweat.</span></li>
+							<li><span class="chat__speaker">Sarien:</span><span>9. That's what I get for skipping breakfast... <span class="chat__action">(rolls 6)</span> ...+1 fatigue. Getting <i>sleepy</i> here.</span></li>
+							<li><span class="chat__speaker">Clanda:</span><span>7. Damn, not enough. I gain... <span class="chat__action">(rolls 4)</span> ...+1 thirst. Great, and my waterskin's dry already. Anyone got a drink? I'm feeling pretty <i>thirsty</i> right now.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h2>Variant: Temperature</h2>
+				<p>If you want to give a mechanical environmental effects, add the <i>Temperature</i> survival condition to your game.</p>
+				<p>With the <i>Temperature</i> condition, characters must watch out for the weather and keep their body temperature in check to avoid suffering from exhaustion.</p>
+
+				<aside class="panel panel--aside">
+					<header class="panel__header">
+						<h4 class="panel__title">Using Temperature</h4>
+					</header>
+					<section class="panel__body">
+						<p>The <i>Temperature</i> condition works best in games that feature a lot of exploration in harsh climates with unpredictable or unforgiving weather patterns—a scorching desert, a frozen mountain pass, a temperamental jungle.</p>
+					</section>
+				</aside>
+
+				<col-break></col-break>
+
+				<h3>Gaining Temperature</h3>
+				<p>Your body temperature is affected primarily by the weather and environment. The GM describes the baseline temperature when appropriate—often when you enter or research a new region, dungeon, or lair:</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>It's starting to rain outside and, as you step out, an <i>uncomfortably</i> cold wind blows past. You think it might become <i>unbearably</i> cold outside tonight if the rain continues to pour.</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h4>Hot or Cold</h4>
+				<p>The temperature conditions apply to both hot and cold climates—it could be <i>unbearably cold</i> in the arctic wastes, or <i>unbearably hot</i> in the arid desert.</p>
+
+				<h4>Time of Day</h4>
+				<p>Temperatures change throughout the day as the sun rises and sets. Check the table below to see how the baseline temperature might be affected by your climate.</p>
+
+				<list class="panel panel--list" data-resize=15>
+					<header class="panel__header">
+						<h4 class="panel__title">Climate Temperature Change</h4>
+					</header>
+					<section class="panel__body">
+						<table class="table table--temperature">
+							<thead>
+								<tr>
+									<th>Time</th>
+									<th>Hot</th>
+									<th>Moderate</th>
+									<th>Cold</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Morning</td>
+									<td>+1</td>
+									<td><span class="empty">—</span></td>
+									<td>+1</td>
+								</tr>
+								<tr>
+									<td>Afternoon</td>
+									<td>+2</td>
+									<td>−1</td>
+									<td><span class="empty">—</span></td>
+								</tr>
+								<tr>
+									<td>Evening</td>
+									<td>+1</td>
+									<td><span class="empty">—</span></td>
+									<td>+1</td>
+								</tr>
+								<tr>
+									<td>Night</td>
+									<td><span class="empty">—</span></td>
+									<td>+1</td>
+									<td>+2</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</list>
+
+				<h4>Monster Effects</h4>
+				<p>Some monsters can affect the surrounding temperature by their sheer presence, producing scorching heat or chilling winds.</p>
+
+				<example class="panel panel--example">
+					<section class="panel__body">
+						<ul class="chat">
+							<li><span class="chat__speaker">GM:</span><span>Frozen winds surround the <i>King of Frost</i>—it is unbearably cold around him. If you end your turn adjacent to him, you'll suffer the chill...</span></li>
+						</ul>
+					</section>
+				</example>
+
+				<h3>Improving your Temperature</h3>
+				<p>Whenever appropriate, your character can improve their temperature in a manner that makes sense. Some of the most common actions are:</p>
+
+				<ul>
+					<li><strong>Appropriate clothing:</strong> Thick furs and cloaks will help protect you from the cold, while thin fabrics will help cool you in the heat.</li>
+					<li><strong>Find shelter:</strong> Sometimes you have to take a break and rest. Build a shelter to keep warm against a freezing wind, or provide shade against a scoring sun.</li>
+					<li><strong>Cast spells:</strong> Some spells and abilities may provide you with a burst of much-needed warmth or cold.</li>
+					<li><strong>Racial abilities:</strong> Some races are naturally resilient against cold or heat. These innate characteristics will help protect you against certain temperatures.</li>
+				</ul>
+			</page>
+		</book>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name":"darker_dungeons",
+  "binder": {
+    "version": {
+      "minimum": "1.0.0",
+      "maximum": "1.0.0"
+    },
+    "scripts": [ "modules/darker_dungeons.js" ],
+    "formats": {
+      "book": {
+        "languages": [ "en" ]
+      },
+      "website": {
+        "languages": [ "en" ]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Styles for wounds and injuries chapters.
+
+.page--wounds-and-injuries {
+
+	.tables--wounds .table {
+		@include table-column(1, center, 25%);
+		@include table-column(2, left, 75%);
+	}
+
+	.table--exhaustion,
+	.table--reopened-wounds {
+		@include table-column(1, center, 15%);
+		@include table-column(2, left, 85%);
+	}
+
+	.table--injuries {
+		@include table-column(1, center, 10%);
+		@include table-column(2, left, 53%);
+		@include table-column(3, left, 37%);
+
+		th:nth-child(2),
+		td:nth-child(2) {
+			padding-left: 6px;
+			padding-right: 3px;
+		}
+	}
+}

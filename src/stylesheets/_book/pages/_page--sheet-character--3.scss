@@ -1,0 +1,180 @@
+// Styles for the character sheet (page 3).
+
+.page--character-sheet--3 {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr 240px;
+		grid-template-rows: 580px auto;
+		grid-template-areas:
+			"damage damage conditions"
+			"magic-items holdings conditions";
+		grid-column-gap: $sheet-spacing;
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.damage {
+		grid-area: damage;
+
+		> .box__body {
+			display: grid;
+			height: 100%;
+			grid-template-columns: 3fr 1fr 2fr;
+			grid-template-rows: 70px 60px 1fr 1fr 150px;
+			grid-template-areas:
+				"exhaustion stress stress-breakpoints"
+				"exhaustion afflictions afflictions"
+				"wounds afflictions afflictions"
+				"injuries afflictions afflictions"
+				"survival survival survival";
+			grid-column-gap: $sheet-spacing;
+			grid-row-gap: $sheet-spacing;
+		}
+
+		.exhaustion {
+			grid-area: exhaustion;
+
+			table {
+				@include sheet-table-column(1, center, 8%, 0);
+				@include sheet-table-column(2, center, 11%, 0);
+				@include sheet-table-column(3, left, 81%, 5px);
+			}
+		}
+
+		.wounds {
+			grid-area: wounds;
+		}
+
+		.injuries {
+			grid-area: injuries;
+		}
+
+		.wounds,
+		.injuries {
+
+			table {
+				@include sheet-table-column(1, left, 85%, 0);
+				@include sheet-table-column(2, center, 15%, 0);
+			}
+
+			li:last-of-type {
+				border-bottom: 0;
+			}
+		}
+
+		.stress {
+			grid-area: stress;
+		}
+
+		.stress-breakpoints {
+			grid-area: stress-breakpoints;
+
+			ul {
+				margin: 0;
+				text-align: left;
+				padding-top: 1px;
+				left: 2px;
+
+				.detail {
+					color: $sheet-bg-color;
+				}
+
+				li {
+					line-height: 9px;
+				}
+
+				.dot {
+					margin: 1px 3px -1px 0;
+				}
+			}
+		}
+
+		.afflictions {
+			grid-area: afflictions;
+
+			table {
+				@include sheet-table-column(1, center, 9%, 0);
+				@include sheet-table-column(2, left, 31%, 5px);
+				@include sheet-table-column(3, left, 60%, 5px);
+			}
+		}
+
+		.survival {
+			grid-area: survival;
+
+			table {
+				@include sheet-table-column(1, left, 20%, 5px);
+				@include sheet-table-column(2, left, 20%, 5px);
+				@include sheet-table-column(3, left, 20%, 5px);
+				@include sheet-table-column(4, left, 20%, 5px);
+				@include sheet-table-column(5, left, 20%, 5px);
+			}
+
+			.dot {
+				margin-bottom: -2px;
+				margin-right: 3px;
+			}
+		}
+	}
+
+	.conditions {
+		grid-area: conditions;
+
+		.title {
+			font-weight: bold;
+			text-align: left;
+			text-transform: uppercase;
+			letter-spacing: 0.25px;
+			line-height: 1.5;
+			font-size: 8px;
+
+			.dot {
+				margin: 2px 4px -2px 2px;
+			}
+		}
+
+		.detail {
+			padding-left: 16px;
+			text-align: left;
+			line-height: 1.5;
+			letter-spacing: -0.2px;
+			color: $sheet-bg-color;
+		}
+
+		.lines {
+			li + li {
+				margin-top: 1px;
+				padding-top: 1px;
+			}
+		}
+	}
+
+	.magic-items {
+		grid-area: magic-items;
+
+		> .box__body {
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			grid-row-gap: $sheet-spacing;
+		}
+
+		.magic-item {
+
+			> section {
+				color: $sheet-bg-color;
+				text-align: left;
+				padding-top: 3px;
+
+				.dot {
+					float: right;
+					margin: 2px 0 -2px;
+				}
+			}
+		}
+	}
+
+	.holdings {
+		grid-area: holdings;
+	}
+}

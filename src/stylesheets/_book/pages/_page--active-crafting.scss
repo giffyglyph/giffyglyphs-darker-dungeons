@@ -1,0 +1,59 @@
+// Styles for feature changes pages.
+
+.page--active-crafting {
+
+	.table--material-properties {
+		@include table-column(1, center, 7%);
+		@include table-column(2, left, 15%);
+		@include table-column(3, left, 78%);
+
+		.header td {
+			width: 100%;
+		}
+	}
+
+	.table--gathering {
+		@include table-column(1, left, 34%);
+		@include table-column(2, center, 33%);
+		@include table-column(3, center, 33%);
+	}
+
+	.tables--example-materials {
+		@include table-column(1, left, 44%);
+		@include table-column(2, left, 56%);
+	}
+
+	.table--recipe-armor-materials {
+		@include table-column(1, center, 12%);
+		@include table-column(2, left, 38%);
+		@include table-column(3, left, 50%);
+	}
+
+	.table--recipe-materials {
+		@include table-column(1, left, 27%);
+		@include table-column(2, left, 23%);
+		@include table-column(3, left, 50%);
+	}
+
+	.table--recipe-time {
+		@include table-column(1, left, 22%);
+		@include table-column(2, left, 22%);
+		@include table-column(3, left, 56%);
+	}
+
+	.table--node-richness {
+		@include table-column(1, left, 20%);
+		@include table-column(2, left, 19%);
+		@include table-column(3, left, 61%);
+	}
+
+	.tables--node-gathering .table {
+		@include table-column(1, left, 50%);
+		@include table-column(2, left, 50%);
+	}
+
+	.table--node-skills {
+		@include table-column(1, left, 32%);
+		@include table-column(2, left, 68%);
+	}
+}

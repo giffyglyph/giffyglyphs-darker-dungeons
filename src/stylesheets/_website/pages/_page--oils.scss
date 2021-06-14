@@ -1,0 +1,88 @@
+// Styles for oils chapters.
+
+.page--oils {
+
+	.panel--item--oil-recipe {
+		counter-reset: h5-index;
+
+		h5 {
+			position: relative;
+			background: rgba($panel--item__header--bg, 0.75);
+			color: $panel--item__section--bg;
+			font-family: 'Alegreya Sans SC';
+			padding: 4px 7px 3px 4px;
+			border-radius: 1cm;
+			counter-increment: h5-index;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+
+			strong {
+				margin-right: 3px;
+				background: $panel--item__header--bg;
+				padding-left: 25px;
+				width: 60px;
+				border-radius: 1cm;
+				margin-left: -3px;
+				margin-top: -4px;
+				margin-bottom: -3px;
+				line-height: 21px;
+				margin-right: 7px;
+			}
+
+			&::before {
+				content: counter(h5-index, upper-alpha);
+				position: absolute;
+				left: 3px;
+				width: 1rem;
+				background: white;
+				color: $panel--item__header--bg;
+				border-radius: 1rem;
+				text-align: center;
+				margin-right: 7px;
+				display: inline-block;
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 16px;
+				top: 3px;
+			}
+
+			+ * {
+				margin-top: 8px;
+			}
+		}
+
+		* + h5::after {
+			content: '';
+			width: calc(100% + 14px);
+			border-top: 1px dotted rgba($panel--item__header--bg, 0.2);
+			left: -7px;
+			top: -8px;
+			position: absolute;
+		}
+
+		&--top {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+
+			.panel__body {
+				border-bottom: 2px solid lighten($panel--item__header--bg, 30%);
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				padding-bottom: 5.5px;
+			}
+		}
+
+		&--bottom {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+
+			.panel__body {
+				border-top: 2px solid lighten($panel--item__header--bg, 30%);
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				padding-top: 5.5px;
+			}
+		}
+	}
+}

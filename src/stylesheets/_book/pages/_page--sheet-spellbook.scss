@@ -1,0 +1,29 @@
+// Styles for the calendar sheet (day).
+
+.page--spellbook {
+
+	.sheet__body {
+		display: grid;
+		height: 100%;
+		grid-template-rows: ($sheet-spacing * 10) auto;
+		grid-template-areas:
+			"header"
+			"spellbook";
+		grid-row-gap: $sheet-spacing;
+	}
+
+	.spells {
+
+		.table {
+			@include sheet-table-column(1, center, 4%, 0);
+			@include sheet-table-column(2, left, 17%, 5px);
+			@include sheet-table-column(3, left, 41%, 5px);
+			@include sheet-table-column(4, center, 6%, 0);
+			@include sheet-table-column(5, center, 6%, 0);
+			@include sheet-table-column(6, center, 6%, 0);
+			@include sheet-table-column(7, center, 8%, 0);
+			@include sheet-table-column(8, center, 6%, 0);
+			@include sheet-table-column(9, center, 5%, 0);
+		}
+	}
+}

@@ -1,0 +1,14 @@
+// ammunition
+
+.page--ammunition-dice {
+
+	.tables--ammunition-dice-uses .table {
+		@include table-column(1, center, 40%);
+		@include table-column(2, center, 60%);
+	}
+
+	.tables--replenishing-ammunition .table {
+		@include table-column(1, center, 48%);
+		@include table-column(2, center, 52%);
+	}
+}

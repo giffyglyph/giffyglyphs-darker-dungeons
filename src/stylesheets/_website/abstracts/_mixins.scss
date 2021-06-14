@@ -1,0 +1,52 @@
+// Common book mixins
+
+@mixin table($column-width) {
+
+	th,
+	td {
+		box-sizing: border-box;
+		text-align: center;
+		width: $column-width;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+}
+
+@mixin table-column($column, $text-align, $width) {
+
+	th:nth-of-type(#{$column}),
+	td:nth-of-type(#{$column}) {
+		text-align: $text-align;
+		width: $width;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+}
+
+@mixin table-column-align($column, $text-align) {
+
+	th:nth-of-type(#{$column}),
+	td:nth-of-type(#{$column}) {
+		text-align: $text-align;
+	}
+}
+
+@mixin table-column-width($column, $width) {
+
+	th:nth-of-type(#{$column}),
+	td:nth-of-type(#{$column}) {
+		width: $width;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+}
+
+@mixin sheet-table-column($column, $text-align, $width, $padding-left) {
+
+	th:nth-of-type(#{$column}),
+	td:nth-of-type(#{$column}) {
+		text-align: $text-align;
+		width: $width;
+		padding-left: $padding-left;
+	}
+}
